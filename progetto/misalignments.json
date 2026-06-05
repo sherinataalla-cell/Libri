@@ -2,7 +2,7 @@
   "_meta": {
     "note": "Rolling file misalignment — L'Ombra del Vesper. Aggiornato dal distillatore durante le passate di distillazione.",
     "formato": "lista di oggetti, uno per misalignment. Non si risolve qui: solo si segnala.",
-    "ultima_modifica": "2026-06-05 (cap_05)"
+    "ultima_modifica": "2026-06-05 (cap_07)"
   },
   "misalignments": [
     {
@@ -242,6 +242,22 @@
       "azione_suggerita": "Decidere se la scena dell'arma è una scelta narrativa deliberata (autonomia di Rory) o un dettaglio da spiegare. Se deliberata, il momento in cui Rory prende l'arma potrebbe essere un micro-flash da aggiungere alla prosa finale.",
       "risolto": false,
       "note": "Bassa gravità ma alta coerenza di caratterizzazione: Rory che prende un'arma segna una transizione da giornalista a partecipante attiva."
+    },
+    {
+      "id": "M16",
+      "rilevato_in": "distillazione cap_07 — Passata 1 (cap_07_s04 / cap_07_s09)",
+      "data": "2026-06-05",
+      "tipo": "continuita_interna_capitolo",
+      "gravita": "bassa",
+      "descrizione": "In cap_07, i due POV descrivono la posizione di Adrian alla morte di Marcus in modo potenzialmente divergente. POV Rory (cap_07_s04): la foto di Marcus è 'sulla pavimentazione sotto il tuo attico' — suggerisce che Adrian fotografasse dall'esterno/terrazza. POV Dante (cap_07_s09): 'Quando Marcus è saltato, Adrian era lì. Nascosto nell'ombra del mio studio' — suggerisce che Adrian fosse nello studio interno. Possibile lettura coerente: lo studio è nel complesso dell'attico e Adrian vedeva dalla soglia verso la terrazza. Ma non è esplicitato.",
+      "fonti_in_conflitto": [
+        "progetto/narrazione_fattuale/cap_07.md, POV Rory: 'foto di Marcus sulla pavimentazione sotto il tuo attico' (terrazza/esterno)",
+        "progetto/narrazione_fattuale/cap_07.md, POV Dante: 'Adrian era lì. Nascosto nell'ombra del mio studio' (studio/interno)"
+      ],
+      "fonte_di_verita": null,
+      "azione_suggerita": "Decidere se lo 'studio' e la 'terrazza/attico' sono lo stesso spazio o adiacenti. Se adiacenti, aggiungere una riga nella prosa di cap_07 (POV Dante) che mostri Adrian vedere la terrazza dallo studio attraverso vetrate. Se stesso spazio: nessuna azione.",
+      "risolto": false,
+      "note": "Connesso alla posizione fisica dello studio di Dante rispetto alla terrazza del suo attico."
     }
   ]
 }

@@ -1,0 +1,130 @@
+unit_id: cap_07
+title: "Il Gioco del Cacciatore"
+slug: il_gioco_del_cacciatore
+position: 7
+block_id: la_caduta
+
+register: "dark romance/thriller — confessione reciproca nel safe house, primo bacio disperato, training da cacciatore, trappola attivata"
+estimated_length: 7500
+
+ambient_conditions:
+  season: autunno
+  time_of_day: "giorno→sera"
+  weather: pioggia
+  wind: null
+
+dominant_attributes:
+  tema_dominante: "il cacciatore che insegna alla preda a diventare cacciatrice — backstory reciproca svelata (sorveglianza Adrian su Rory / Marcus+Mina), primo bacio come punto di non ritorno, la trappola si attiva con la risposta 'Con piacere'"
+  registro_emotivo: "dark romance/thriller — confessione/trauma condiviso, bacio disperato e reciproco ('dieci secondi'), training trasformativo (sopravvissuta → cacciatrice), countdown 18→6 ore"
+  pov: "alternato (Rory → Dante)"
+
+premise: "Rory e Dante nel safe house (quartiere industriale Seattle), 18 ore rimanenti prima della mossa di Adrian. Dante insegna a Rory come sopravvivere ad Adrian mentre entrambi abbattono le difese reciproche — confessano le loro storie, le paure, i segreti mai detti."
+
+problem: "Per costruire un piano contro Adrian, Rory e Dante devono capire perché Adrian l'ha scelta due anni fa. Questo richiede svelamento reciproco: Rory racconta la sorveglianza di Adrian (fonte 'Alex', 6 mesi di foto, la mostra nell'appartamento con la foto di Marcus morto, il biglietto-manifesto). Dante rivela Marcus+Mina (il tradimento, la tortura psicologica, l'adozione mancata). La tensione raggiunge il punto di rottura: il primo bacio. Quando l'invito viene consegnato ad Adrian, la risposta è 'Con piacere' più una foto recente della terrazza dell'attico: Adrian era già lì."
+
+threshold_moment: "Il bacio nel safe house: 'Non fu dolce. Non fu tenero. Fu disperato e affamato e pieno di una verità che nessuno dei due poteva dire ad alta voce.' Dieci secondi, fronte contro fronte. 'Questo è un errore. Lo so. Adrian lo userà contro di noi. Lo so. Per i prossimi dieci secondi, possiamo fingere di essere solo due persone che non sono rotte oltre ogni riparazione?'"
+
+resolution_mode: "L'invito ad Adrian viene consegnato (carta color crema, inchiostro rosso sangue — Alexei) e lui risponde. Dante trasforma Rory da sopravvissuta a cacciatrice nelle 6 ore rimaste. Prima e seconda lezione enunciate. La terza lezione resta sospesa: 'a volte per vincere devi lasciare che la preda pensi di averti catturato.' Fine: 'È ora di invitare il diavolo a cena.' / 'Assicuriamoci che si strozzi col dessert.'"
+
+cast_in_scene:
+  - entity_id: rory_winters
+    role_in_unit: protagonista_pov_1
+    active_modality: "testimone_che_diventa_cacciatrice — svela il passato con Adrian (fonte Alex, mostra fotografica, foto Marcus morto), riceve la verità su Marcus+Mina, slip involontario su infertilità, il bacio come resa consapevole, abbraccia l'identità di cacciatrice"
+    vincoli_locali:
+      max_detti: null
+      max_onomatopee_firma: null
+  - entity_id: dante_ravencroft
+    role_in_unit: protagonista_pov_2
+    active_modality: "confessore_che_insegna — rivela Marcus+Mina senza censura, spiega come pensa Adrian, insegna con la Glock 19, il bacio come capitolazione necessaria, enuncia le prime due lezioni del cacciatore"
+    vincoli_locali:
+      max_detti: null
+      max_onomatopee_firma: null
+  - entity_id: maya
+    role_in_unit: alleata_remota
+    active_modality: "tether_al_mondo_reale — voce via telefono, sollievo e rabbia, accetta il ruolo di guardiana della chiavetta USB, promette di pubblicare tutto"
+    vincoli_locali:
+      max_detti: null
+      max_onomatopee_firma: null
+  - entity_id: alexei
+    role_in_unit: intel_operativo
+    active_modality: "esecutore_trappola — consegna l'invito, trasmette la risposta 'Con piacere' più foto terrazza, prepara la carta color crema inchiostro rosso sangue"
+    vincoli_locali:
+      max_detti: null
+      max_onomatopee_firma: null
+  - entity_id: marco
+    role_in_unit: sentinella_campo
+    active_modality: "avvistamento_vesper — messaggio: 'Movimento al Vesper. Adrian ha mandato i suoi esploratori'"
+    vincoli_locali:
+      max_detti: null
+      max_onomatopee_firma: null
+  - entity_id: il_cacciatore
+    role_in_unit: antagonista_assente_attivo
+    active_modality: "risposta_al_gioco — 'Con piacere'; foto terrazza recente; presenza come ombra che già si muove; il giocatore che accetta l'invito senza sapere che è una trappola"
+    vincoli_locali:
+      max_detti: null
+      max_onomatopee_firma: null
+  - entity_id: marcus
+    role_in_unit: assente_referito_centrale
+    active_modality: null
+    vincoli_locali:
+      max_detti: null
+      max_onomatopee_firma: null
+  - entity_id: mina
+    role_in_unit: assente_referita
+    active_modality: null
+    vincoli_locali:
+      max_detti: null
+      max_onomatopee_firma: null
+
+primary_location_id: safe_house
+secondary_location_ids:
+  - appartamento_rory
+  - attico_dante
+  - the_vesper
+  - seattle
+
+callbacks_in:
+  - trappola_per_adrian
+  - dante_si_scusa_prima_volta
+  - dante_rifiuta_bacio_ragioni_sbagliate
+  - adrian_chiama_direttamente
+  - rory_armata_quando
+  - dove_e_quando_avviene_la_trappola
+  - marcus_figlio_per_scelta_dimitri
+
+seeds_planted:
+  - bacio_safe_house
+  - rory_non_puo_avere_figli
+  - mina_adozione_mancata
+  - chiavetta_usb_backup
+  - backstory_sorveglianza_adrian_rory
+  - tre_morti_accordo_marcus
+  - foto_attico_recente
+  - da_sopravvissuta_a_cacciatrice
+  - terza_lezione_cacciatore
+
+seeds_blooming:
+  - trappola_per_adrian
+  - dante_rifiuta_bacio_ragioni_sbagliate
+
+seeds_maturing:
+  - bacio_safe_house
+  - da_sopravvissuta_a_cacciatrice
+
+debts_opened:
+  - rory_infertilita_come_sa_adrian
+  - terza_lezione_cacciatore_cosa_e
+  - mina_dove_e_ora
+  - foto_attico_quando_era_adrian
+
+debts_closed:
+  - dove_e_quando_avviene_la_trappola
+  - rory_armata_quando
+
+narrazione_fattuale_path: "progetto/narrazione_fattuale/cap_07.md"
+brief_path: null
+testo_finale_path: "progetto/testi_finali/cap_07.md"
+
+status: "scenes_distilled"
+
+scenes: []
