@@ -11,9 +11,9 @@
 @capitolo.next: 09 (da scrivere)
 @parole.totali: ~60.000 stimato (8 capitoli, ~7.500 parole/cap)
 @completamento: ~40% (8/20 capitoli)
-@versione_grafo: 0.0.0 (inizializzato, cap_01+cap_02 distillati)
+@versione_grafo: 0.0.0 (inizializzato, cap_01+cap_02+cap_03 distillati)
 @versione_schema: bozza (grafo_schema.json — Fase 02 non ancora completata)
-@branch.attivo: claude/chapter-2-distillation-dvm3g
+@branch.attivo: claude/chapter-3-distillation-UOJ8I
 ```
 
 ---
@@ -45,12 +45,12 @@
 ```
 ◉bootstrap: ✅ completato (story_graph.json — 10 entità iniziali)
 ◉entità.promosse.extra: marco, alexei, ufficio_dante (da cap_01)
-◉misalignments: misalignments.json aperto (M01, M02, M03, M04)
+◉misalignments: misalignments.json aperto (M01, M02, M03, M04, M05, M06, M07)
 
 ◉distillazione.retroattiva:
   cap_01 ✅ — 9 scene, 5 seeds, 2 debts, 3 entità promosse (2026-06-05)
   cap_02 ✅ — 11 scene, 5 seeds, 5 debts, 10 entità promosse (2026-06-05)
-  cap_03 ⬜
+  cap_03 ✅ — 11 scene, 4 seeds, 3 debts, 4 entità promosse (2026-06-05)
   cap_04 ⬜
   cap_05 ⬜
   cap_06 ⬜
@@ -89,16 +89,16 @@
 ## §PROSSIMA SESSIONE
 
 ```
-@obiettivo: distillazione cap_03 — "Il Contratto Non Scritto"
-@branch: creare claude/chapter-3-distillation-XXXXX (nuovo branch da main)
-@regola: una unità per chat — non mescolare cap_03 e cap_04
+@obiettivo: distillazione cap_04 — "Territori Pericolosi"
+@branch: creare claude/chapter-4-distillation-XXXXX (nuovo branch da main)
+@regola: una unità per chat — non mescolare cap_04 e cap_05
 
 @passi:
   1. Leggere STATO_PROGETTO.md (questo file)
-  2. Verificare/creare branch per cap_03
-  3. Leggere story_graph.json per vedere seeds/debts aperti da cap_02
-  4. Leggere narrazione_fattuale/cap_03.md
-  5. Avviare distillazione cap_03 (Passata 0 → 1 → 2)
+  2. Verificare/creare branch per cap_04
+  3. Leggere story_graph.json per vedere seeds/debts aperti da cap_03
+  4. Leggere narrazione_fattuale/cap_04.md
+  5. Avviare distillazione cap_04 (Passata 0 → 1 → 2)
 ```
 
 ---
@@ -110,6 +110,9 @@ M01 — POV order cap_01: framework dice Dante/Rory, testo è Rory/Dante [bassa 
 M02 — Campo 'pov' assente da TEMPLATE_unita.yaml e write_node_to_graph.py [media gravità]
 M03 — Macchia di sangue polsino Dante (cap_02): origine non spiegata [bassa gravità]
 M04 — voce_nel_buio "sente" Rory senza spiegazione meccanismo percettivo [media gravità]
+M05 — interlocutore_numero_privato (cap_02) = contatto caccia (cap_03)? identità da confermare [bassa gravità]
+M06 — prigioniero level-2 (cap_02) vs Sofia al level-2 (cap_03): stessa entità o due distinte? [media gravità]
+M07 — voce_nel_buio (cap_02) vs voce_altoparlanti=Cacciatore (cap_03): coincidono? risolverebbe M04 [bassa gravità]
 → Dettagli: progetto/misalignments.json
 ```
 
@@ -119,6 +122,6 @@ M04 — voce_nel_buio "sente" Rory senza spiegazione meccanismo percettivo [medi
 
 ```
 @data.ultima.modifica: 2026-06-05
-@evento: distillazione cap_02 completa (11 scene, 10 entità promosse, 2 misalignment annotati)
-@stato: pronto per distillazione cap_03
+@evento: distillazione cap_03 completa (11 scene, 4 entità promosse, 3 misalignment annotati M05-M07)
+@stato: pronto per distillazione cap_04
 ```
