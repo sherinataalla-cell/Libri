@@ -1,0 +1,156 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Saga palette (HSL channels, used as `hsl(var(--token))`) */
+    --paper: 39 53% 93%;
+    --paper-soft: 37 62% 96%;
+    --ink: 30 38% 16%;
+    --ink-soft: 23 12% 43%;
+    --ink-faint: 20 12% 61%;
+    --rule: 30 22% 75%;
+    --rule-soft: 33 31% 86%;
+    --accent: 12 49% 32%;
+    --accent-foreground: 37 62% 96%;
+    --accent-warm: 31 65% 48%;
+
+    /* shadcn/ui tokens — mapped onto saga palette */
+    --background: var(--paper);
+    --foreground: var(--ink);
+    --card: var(--paper-soft);
+    --card-foreground: var(--ink);
+    --popover: var(--paper-soft);
+    --popover-foreground: var(--ink);
+    --primary: var(--ink);
+    --primary-foreground: var(--paper);
+    --secondary: var(--rule-soft);
+    --secondary-foreground: var(--ink);
+    --muted: var(--rule-soft);
+    --muted-foreground: var(--ink-soft);
+    --destructive: 0 70% 45%;
+    --destructive-foreground: 0 0% 98%;
+    --border: var(--rule);
+    --input: var(--rule);
+    --ring: var(--accent);
+
+    --radius: 0.5rem;
+
+    /* Orchestra: palette stagionale + tipi luogo + semi */
+    --season-inverno-ink: #3a4a5c;
+    --season-inverno-wash: #dde4ec;
+    --season-primavera-ink: #4a6a3a;
+    --season-primavera-wash: #e3ead4;
+    --season-estate-ink: #8a6324;
+    --season-estate-wash: #f1e6c8;
+    --season-autunno-ink: #8a4226;
+    --season-autunno-wash: #ecd2c1;
+
+    --loc-abitato: #b08252;
+    --loc-alto: #6f7e94;
+    --loc-costa: #5a8aa0;
+    --loc-acqua: #4f8ca8;
+    --loc-selvatico: #5e7d4e;
+
+    --seed-planted: #6b4a2d;
+    --seed-bloomed: #c2701f;
+  }
+
+  .dark {
+    --paper: 30 15% 12%;
+    --paper-soft: 30 15% 16%;
+    --ink: 39 53% 93%;
+    --ink-soft: 33 31% 75%;
+    --ink-faint: 30 22% 60%;
+    --rule: 23 12% 30%;
+    --rule-soft: 23 12% 22%;
+    --accent: 31 65% 55%;
+    --accent-foreground: 30 38% 12%;
+    --accent-warm: 31 65% 55%;
+
+    --background: var(--paper);
+    --foreground: var(--ink);
+    --card: var(--paper-soft);
+    --card-foreground: var(--ink);
+    --popover: var(--paper-soft);
+    --popover-foreground: var(--ink);
+    --primary: var(--ink);
+    --primary-foreground: var(--paper);
+    --secondary: var(--rule-soft);
+    --secondary-foreground: var(--ink);
+    --muted: var(--rule-soft);
+    --muted-foreground: var(--ink-soft);
+    --destructive: 0 60% 50%;
+    --destructive-foreground: 0 0% 98%;
+    --border: var(--rule);
+    --input: var(--rule);
+    --ring: var(--accent);
+
+    --season-inverno-ink: #aab9cc;
+    --season-inverno-wash: #2a3340;
+    --season-primavera-ink: #b6c9a4;
+    --season-primavera-wash: #2c3625;
+    --season-estate-ink: #d8b97a;
+    --season-estate-wash: #3d3220;
+    --season-autunno-ink: #d5957a;
+    --season-autunno-wash: #3d2820;
+    --loc-abitato: #c79a73;
+    --loc-alto: #93a3ba;
+    --loc-costa: #7eaec5;
+    --loc-acqua: #6fa9c4;
+    --loc-selvatico: #82a26e;
+    --seed-planted: #c2a583;
+    --seed-bloomed: #e3a061;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-paper text-ink font-serif;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+}
+
+/* Catalogo: chrome layout */
+@media (min-width: 800px) {
+  .catalogo-topbar-mobile { display: none !important; }
+}
+
+/* Saga prose: markdown rendering catalogo */
+.prose-saga { @apply font-serif text-ink leading-relaxed; font-size: 0.95rem; }
+.prose-saga p { @apply my-3; }
+.prose-saga h1 { @apply font-serif text-3xl font-semibold tracking-tight text-ink mt-6 mb-3; }
+.prose-saga h2 { @apply font-serif text-2xl font-semibold text-ink mt-6 mb-2; }
+.prose-saga h3 { @apply font-serif text-xl font-semibold text-ink mt-5 mb-2; }
+.prose-saga h4 { @apply font-serif text-lg font-semibold text-ink mt-4 mb-2; }
+.prose-saga ul { @apply list-disc pl-6 my-3 space-y-1; }
+.prose-saga ol { @apply list-decimal pl-6 my-3 space-y-1; }
+.prose-saga li { @apply leading-relaxed; }
+.prose-saga a { @apply text-accent underline underline-offset-2 hover:text-accent/80; }
+.prose-saga strong { @apply font-semibold text-ink; }
+.prose-saga em { @apply italic; }
+.prose-saga blockquote { @apply border-l-2 border-accent/40 pl-4 text-ink-soft italic my-4; }
+.prose-saga code { @apply font-mono text-[0.85em] bg-rule-soft/40 rounded px-1 py-0.5 text-ink; }
+.prose-saga pre { @apply font-mono text-xs bg-rule-soft/30 rounded-md p-3 my-4 overflow-x-auto; }
+.prose-saga pre code { @apply bg-transparent p-0; }
+.prose-saga hr { @apply border-rule-soft my-6; }
+.prose-saga table { @apply w-full text-sm my-4 border-collapse; }
+.prose-saga th, .prose-saga td { @apply border border-rule-soft px-2 py-1 text-left; }
+.prose-saga th { @apply bg-rule-soft/40 font-semibold; }
+.prose-saga img { @apply max-w-full rounded-md my-4; }
+
+/* Orchestra: utility per palette stagionale e tipi luogo */
+.season-inverno { --season-ink: var(--season-inverno-ink); --season-wash: var(--season-inverno-wash); }
+.season-primavera { --season-ink: var(--season-primavera-ink); --season-wash: var(--season-primavera-wash); }
+.season-estate { --season-ink: var(--season-estate-ink); --season-wash: var(--season-estate-wash); }
+.season-autunno { --season-ink: var(--season-autunno-ink); --season-wash: var(--season-autunno-wash); }
+
+.loc-abitato { color: var(--loc-abitato); }
+.loc-alto { color: var(--loc-alto); }
+.loc-costa { color: var(--loc-costa); }
+.loc-acqua { color: var(--loc-acqua); }
+.loc-selvatico { color: var(--loc-selvatico); }

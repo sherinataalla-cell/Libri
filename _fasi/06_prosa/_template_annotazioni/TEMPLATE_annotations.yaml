@@ -1,0 +1,53 @@
+# Template — Annotazioni autoriali post-prosa
+#
+# File: <repo-progetto>/.../testi_finali/_annotations/<id-unita>.yaml
+#
+# Compila DOPO aver completato la scrittura della unità. Dichiara ground
+# truth scena per scena: cast, luoghi qualified, oggetti, frasi-codice
+# integrate, callback/seeds. Sovrascrive il NER fuzzy negli script downstream.
+
+unita_id: "<id-unita>"
+versione: 1
+ultima_modifica: YYYY-MM-DD
+schema_annotazioni_version: "1.0"
+
+scene:
+
+  - scena_id: "<id-unita>_s01"
+    pagine_prodotto:                          # id pagine-prodotto associate (vedi marker_machine_readable.md §2)
+      - "<id-unita>_s01a"
+      - "<id-unita>_s01b"
+
+    location:
+      id: "<id_luogo>"                        # OBBLIGATORIO se la scena ha un luogo
+      qualifier: null                         # esterno | interno | cortile | null
+
+    cast_presente:
+      - id: "<id_personaggio_1>"              # OBBLIGATORIO. Riferisce a entities.characters.<id> nel grafo
+        modalita_attiva: null                 # opz. se personaggio multi-modale
+        ruolo_in_scena: "primario"            # primario | secondario | sfondo
+
+      # - id: "<id_personaggio_2>"
+      #   modalita_attiva: null
+      #   ruolo_in_scena: "secondario"
+
+    oggetti_presenti: []                      # se la scena ha oggetti significativi
+      # - id: "<id_oggetto>"
+      #   stato: null                         # opz. se oggetto multi-stato
+
+    frasi_codice_integrate: []                # frasi canoniche del cast integrate nel testo finale
+      # - personaggio: "<id_personaggio>"
+      #   frase: "<la frase canonica>"
+      #   position_in_text: null              # offset nel testo finale (opzionale ma utile per audit)
+
+    callback_chiamati: []                     # id callback chiamati in questa scena
+    seeds_piantati: []                        # id seeds piantati in questa scena
+    seeds_blooming: []                        # id seeds che fioriscono in questa scena
+    seeds_maturing: []                        # id seeds che maturano in questa scena
+    debts_aperti: []                          # id debiti narrativi aperti in questa scena
+    debts_chiusi: []                          # id debiti narrativi chiusi in questa scena
+
+    note_autoriali: null                      # eventuali note libere dell'autore
+
+  # - scena_id: "<id-unita>_s02"
+  #   ... (ripeti per ogni scena della unità)

@@ -1,0 +1,87 @@
+# Template YAML — Unità narrativa (livello medio)
+#
+# Compila questo file per UNA unità del progetto. Lo script writer
+# (_scripts/write_node_to_graph.py) lo legge, valida con N controlli,
+# scrive nel grafo a livello medio, aggiorna global_relations e
+# quote_tracker.
+#
+# Convenzioni:
+# - usa null per i campi non popolati (mai stringa vuota o omettere il campo)
+# - usa [] per liste vuote
+# - segui id snake_case ASCII per tutti gli id
+# - i riferimenti a entità (entity_id) devono esistere nel grafo a livello macro
+
+# === IDENTITA UNITA ===
+
+unit_id: "<id_snake_case_unita>"            # OBBLIGATORIO. Es: cap03 / s05 / ep12
+title: "<Titolo Visualizzato>"               # OBBLIGATORIO
+slug: "<slug_url_friendly>"                  # OBBLIGATORIO. Es: la_visita_inattesa
+position: 1                                  # OBBLIGATORIO. Numero ordinale 1..N
+block_id: null                               # opz. ciclo / volume / parte di appartenenza
+
+# === REGISTRO ===
+
+register: "<registro_stilistico>"            # es: caldo, asciutto, contemplativo
+estimated_length: 1500                       # parole target (per testo) o equivalente medium
+
+# === CONDIZIONI AMBIENTALI (opzionali) ===
+
+ambient_conditions:
+  season: null                                # es: estate, autunno
+  time_of_day: null                           # es: mattino, sera, notte
+  weather: null                               # es: nebbia, sereno, pioggia
+  wind: null                                  # es: nord-est forte, fermo
+
+# === ATTRIBUTI DOMINANTI (framework strutturale silente, opzionali) ===
+
+dominant_attributes: {}                       # es: { tema_dominante: "soglia", colore: "ocra" }
+
+# === CORE NARRATIVO ===
+
+premise: null                                 # premessa della unità in 1-2 frasi
+problem: null                                 # problema/tensione che guida la unità
+threshold_moment: null                        # il momento di soglia/svolta (se applicabile)
+resolution_mode: null                         # come si risolve (se applicabile)
+
+# === CAST IN SCENA ===
+
+cast_in_scene:
+  - entity_id: "<id_personaggio_1>"
+    role_in_unit: null                        # opz. ruolo specifico in questa unità (es: protagonista, voce, comparsa)
+    active_modality: null                     # opz. modalità attiva del personaggio (es: ferma, intuitiva, silenziosa)
+    vincoli_locali:                           # opz. vincoli specifici per questa unità
+      max_detti: null                         # numero max battute dirette (se rilevante)
+      max_onomatopee_firma: null              # numero max onomatopee canoniche
+  # - entity_id: "<id_personaggio_2>"
+  #   ...
+
+# === LUOGHI ===
+
+primary_location_id: null                     # OBBLIGATORIO se il progetto ha luoghi
+secondary_location_ids: []                    # luoghi secondari attraversati nella unità
+
+# === RELAZIONI GLOBALI ===
+
+callbacks_in: []                              # id callback espliciti chiamati qui
+seeds_planted: []                             # id seeds piantati qui
+seeds_blooming: []                            # id seeds che fioriscono qui
+seeds_maturing: []                            # id seeds che maturano qui
+debts_opened: []                              # id debiti narrativi aperti qui
+debts_closed: []                              # id debiti chiusi qui
+
+# === RIFERIMENTI A FILE ESTERNI ===
+
+narrazione_fattuale_path: null                # popolato dopo che il file esiste
+brief_path: null                              # popolato dopo Fase 05
+testo_finale_path: null                       # popolato dopo Fase 06
+
+# === STATO ===
+
+status: "macro_distilled"                     # macro_distilled | scenes_distilled | brief_ready | drafted | final
+
+# === SCENE (livello micro) ===
+# Se inserite qui, vengono scritte nel grafo come scene di questa unità.
+# Alternativamente, le scene possono vivere in TEMPLATE_scene.yaml separato.
+# Per livello micro denso, è preferibile separare.
+
+scenes: []                                    # vedi TEMPLATE_scene.yaml per la forma di una scena

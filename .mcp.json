@@ -1,0 +1,27 @@
+{
+  "_comment": "Configurazione MCP per Claude Code — L'Ombra del Vesper. Vedi _mcp_server/README.md per dettagli.",
+  "_setup": [
+    "1. Installa il server: cd _mcp_server && pip install -e .",
+    "2. Apri Claude Code in questa cartella (radice repo)",
+    "3. Conferma quando Claude Code propone l'attivazione del server kit-orchestrator"
+  ],
+  "mcpServers": {
+    "kit-orchestrator": {
+      "command": "kit-orchestrator",
+      "env": {
+        "REPO_ROOT": ".",
+        "GRAPH_PATH": "./progetto/story_graph.json",
+        "SCHEMA_PATH": "./progetto/grafo_schema.json",
+        "CATALOG_DIR": "./progetto/catalogo",
+        "BIBBIA_PATH": "./progetto/_documenti_anima/bibbia.md",
+        "CARTA_VOCE_PATH": "./progetto/_documenti_anima/carta_voce.md",
+        "PATTERN_AI_PATH": "./progetto/_documenti_anima/pattern_ai_da_bandire.md",
+        "NARRAZIONE_DIR": "./progetto/narrazione_fattuale",
+        "BRIEFS_DIR": "./progetto/briefs",
+        "TESTI_FINALI_DIR": "./progetto/testi_finali",
+        "GLOSSARY_PATH": "./progetto/glossario_consegna.json",
+        "CATALOG_INDEX_PATH": "./progetto/catalogo_index/data/entities.json"
+      }
+    }
+  }
+}

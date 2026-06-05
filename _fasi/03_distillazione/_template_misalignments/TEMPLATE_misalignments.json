@@ -1,0 +1,27 @@
+{
+  "_description": "Rolling file di misalignment fra le fonti del progetto. Vedi _convenzioni/stato_progetto.md §2. Issue mai cancellati: aperti restano in 'open', risolti spostati in 'resolved' come trail di audit storico.",
+  "open": [
+    {
+      "id": "mis_001",
+      "rilevato_il": "YYYY-MM-DD",
+      "rilevato_da": "<agente o autore>",
+      "fonti_coinvolte": [
+        "catalogo:<famiglia>/<id>",
+        "bibbia:§<X.Y>",
+        "grafo:<path-nodo>"
+      ],
+      "descrizione": "Descrizione testuale chiara dell'incoerenza fra fonti.",
+      "proposta_risoluzione": "decisione autoriale richiesta",
+      "stato": "aperto"
+    }
+  ],
+  "resolved": [
+    {
+      "id": "mis_000",
+      "rilevato_il": "YYYY-MM-DD",
+      "risolto_il": "YYYY-MM-DD",
+      "risolto_da": "<autore>",
+      "decisione": "Vince <fonte>. <altra fonte> da aggiornare al prossimo bump."
+    }
+  ]
+}
