@@ -18,7 +18,7 @@ estimated_length: 7500
 # === CONDIZIONI AMBIENTALI ===
 
 ambient_conditions:
-  season: null                          # non esplicitato — da proporre Passata 2
+  season: "autunno"                     # proposto Passata 2: Seattle, pioggia, cappotto, mood dark
   time_of_day: "notte"                  # club di sera, ora tarda (Dante: "nonostante l'ora tarda")
   weather: "pioggia"                    # esplicito: "la pioggia di Seattle le inzuppasse il cappotto"
   wind: null

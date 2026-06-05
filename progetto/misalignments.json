@@ -1,0 +1,42 @@
+{
+  "_meta": {
+    "note": "Rolling file misalignment — L'Ombra del Vesper. Aggiornato dal distillatore durante le passate di distillazione.",
+    "formato": "lista di oggetti, uno per misalignment. Non si risolve qui: solo si segnala.",
+    "ultima_modifica": "2026-06-05"
+  },
+  "misalignments": [
+    {
+      "id": "M01",
+      "rilevato_in": "distillazione cap_01 — Passata 2",
+      "data": "2026-06-05",
+      "tipo": "framework_vs_testo",
+      "gravita": "bassa",
+      "descrizione": "Il framework_strutturale.md elenca POV Dante prima di POV Rory per cap_01. Il testo scritto apre con POV Rory, poi POV Dante. Ordine invertito.",
+      "fonti_in_conflitto": [
+        "progetto/_documenti_anima/framework_strutturale.md (cap_01: 'POV Dante' per primo)",
+        "progetto/narrazione_fattuale/cap_01.md (apre con 'POV - RORY')"
+      ],
+      "fonte_di_verita": "progetto/narrazione_fattuale/cap_01.md",
+      "azione_suggerita": "Aggiornare framework_strutturale.md per riflettere l'ordine reale: POV Rory → POV Dante per cap_01.",
+      "risolto": false,
+      "note": null
+    },
+    {
+      "id": "M02",
+      "rilevato_in": "distillazione cap_01 — Passata 2",
+      "data": "2026-06-05",
+      "tipo": "schema_vs_template_vs_script",
+      "gravita": "media",
+      "descrizione": "Il grafo_schema.json prevede il campo 'pov' come campo top-level del nodo unità. Né TEMPLATE_unita.yaml né write_node_to_graph.py (build_unit_node) includono questo campo. Durante la distillazione di cap_01, il valore 'alternato' è stato inserito in dominant_attributes come workaround.",
+      "fonti_in_conflitto": [
+        "progetto/grafo_schema.json (properties.units.additionalProperties.properties.pov: definito)",
+        "_fasi/03_distillazione/_template_yaml_unita/TEMPLATE_unita.yaml (campo pov assente)",
+        "_scripts/write_node_to_graph.py, build_unit_node() (campo pov non mappato)"
+      ],
+      "fonte_di_verita": "progetto/grafo_schema.json",
+      "azione_suggerita": "Aggiungere campo 'pov' a TEMPLATE_unita.yaml e a build_unit_node() in write_node_to_graph.py. Richiede autorizzazione creatore (modifica strutturale template/script).",
+      "risolto": false,
+      "note": "Workaround applicato: pov inserito in dominant_attributes del YAML cap_01."
+    }
+  ]
+}
