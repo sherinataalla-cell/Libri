@@ -2,7 +2,7 @@
   "_meta": {
     "note": "Rolling file misalignment — L'Ombra del Vesper. Aggiornato dal distillatore durante le passate di distillazione.",
     "formato": "lista di oggetti, uno per misalignment. Non si risolve qui: solo si segnala.",
-    "ultima_modifica": "2026-06-05 (cap_03)"
+    "ultima_modifica": "2026-06-05 (cap_04)"
   },
   "misalignments": [
     {
@@ -115,6 +115,38 @@
       "azione_suggerita": "Chiarire se voce_nel_buio (cap_02) = il_cacciatore (cap_03) oppure sono due entità distinte. La risposta risolve anche M04.",
       "risolto": false,
       "note": "Se il Cacciatore era già nel sistema in cap_02, il seed 'cacciatore_nel_sistema_vesper' piantato in cap_03 potrebbe dover essere anticipato a cap_02."
+    },
+    {
+      "id": "M08",
+      "rilevato_in": "distillazione cap_04 — Passata 1",
+      "data": "2026-06-05",
+      "tipo": "meccanismo_narrativo_non_spiegato",
+      "gravita": "bassa",
+      "descrizione": "In cap_04 (POV Dante) il Cacciatore chiama Dante su 'numero sconosciuto' con voce distorta e digitale. Non è mai spiegato come il Cacciatore sia in possesso del numero personale di Dante, che per definizione è privato e noto a pochissimi. Il seed 'cacciatore_numero_privato_dante' traccia questa domanda aperta.",
+      "fonti_in_conflitto": [
+        "progetto/narrazione_fattuale/cap_04.md ('Il telefono vibrò. Numero sconosciuto. Bella l\\'esca.')",
+        "cap_02: il numero privato di Dante è usato anche da interlocutore_numero_privato (M05)"
+      ],
+      "fonte_di_verita": "progetto/narrazione_fattuale/cap_04.md",
+      "azione_suggerita": "Decidere se il numero di Dante è compromesso (il Cacciatore ha infiltrato i suoi contatti) oppure se il Cacciatore ha capacità tecniche di intercettazione. La risposta impatta anche M05 (interlocutore_numero_privato).",
+      "risolto": false,
+      "note": null
+    },
+    {
+      "id": "M09",
+      "rilevato_in": "distillazione cap_04 — Passata 1",
+      "data": "2026-06-05",
+      "tipo": "timeline_ambigua",
+      "gravita": "bassa",
+      "descrizione": "In cap_03, al momento della foto-trofeo del Cacciatore, parte il timer da 48 ore. In cap_04, Marco dice 'Due ore fa era nel suo ufficio al Vesper', ma Rory conta immediatamente 42 ore rimanenti — non 46. Discrepanza di 4 ore non contabilizzate nel testo. Possibile spiegazione: più tempo è passato durante l'evacuazione del Vesper e il trasferimento all'attico di quanto Marco non suggerisca.",
+      "fonti_in_conflitto": [
+        "progetto/narrazione_fattuale/cap_03.md (timer 48h al momento della foto)",
+        "progetto/narrazione_fattuale/cap_04.md ('Marco depositò la borsa. Due ore fa era nel suo ufficio.' / 'Quarantadue rimanenti.')"
+      ],
+      "fonte_di_verita": null,
+      "azione_suggerita": "Verificare se la discrepanza è intenzionale (6 ore passate tra la foto e l'arrivo all'attico, non due) o se è un refuso. Se intenzionale, chiarire il riferimento di Marco ('due ore fa' potrebbe essere impreciso o riferirsi a un momento diverso).",
+      "risolto": false,
+      "note": "Bassa gravità: non impatta la coerenza narrativa centrale, solo la precisione del countdown."
     }
   ]
 }
