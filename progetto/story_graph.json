@@ -308,7 +308,346 @@
       }
     }
   },
-  "units": {},
+  "units": {
+    "cap_01": {
+      "id": "cap_01",
+      "title": "Il Cacciatore e la Preda",
+      "slug": "il_cacciatore_e_la_preda",
+      "position": 1,
+      "block_id": "la_danza",
+      "register": "dark/predatorio — tensione latente, ironia secca, sensorialità controllata",
+      "estimated_length": 7500,
+      "ambient_conditions": {
+        "season": "autunno",
+        "time_of_day": "notte",
+        "weather": "pioggia",
+        "wind": null
+      },
+      "dominant_attributes": {
+        "tema_dominante": "primo incontro — la caccia inizia",
+        "registro_emotivo": "attrazione-repulsione, tensione predatoria",
+        "pov": "alternato"
+      },
+      "premise": "Rory Winters entra al Vesper sotto identità parzialmente falsa (usa il nome di Natasha Volkov) per investigare tre ragazze scomparse che avevano in comune l'ultima apparizione nel club. Dante Ravencroft la identifica immediatamente e sceglie di non buttarla fuori.\n",
+      "problem": "Chi manipola chi? Rory vuole informazioni sulle ragazze scomparse e usa il Vesper come punto di accesso. Dante sa chi è Rory dal momento in cui entra (Alexei lo informa) e decide di usarla — non di eliminarla. Il controllo del territorio vs. il bisogno di verità.\n",
+      "threshold_moment": "Dante le offre il braccio nel corridoio dopo che lei ha rivelato le tre ragazze scomparse. Rory prende il braccio: l'intrusa diventa ospite (consentita). La caccia diventa gioco condiviso.\n",
+      "resolution_mode": "Accordo sospeso: Dante propone che Rory lavori come PR del Vesper ottenendo in cambio accesso dall'interno. 24 ore per decidere. Biglietto da visita nero, solo un numero. Rory viene scortata fuori da Marco senza che la decisione sia presa.\n",
+      "cast_in_scene": [
+        {
+          "entity_id": "rory_winters",
+          "role_in_unit": "protagonista_pov_1",
+          "active_modality": "investigativa/infiltrata",
+          "vincoli_locali": {
+            "max_detti": null,
+            "max_onomatopee_firma": null
+          }
+        },
+        {
+          "entity_id": "dante_ravencroft",
+          "role_in_unit": "protagonista_pov_2",
+          "active_modality": "predatoria/controllo",
+          "vincoli_locali": {
+            "max_detti": null,
+            "max_onomatopee_firma": null
+          }
+        },
+        {
+          "entity_id": "natasha_volkov",
+          "role_in_unit": "catalizzatrice/sentinella",
+          "active_modality": "ambigua — invidia o avvertimento",
+          "vincoli_locali": {
+            "max_detti": null,
+            "max_onomatopee_firma": null
+          }
+        },
+        {
+          "entity_id": "marco",
+          "role_in_unit": "comparsa_funzionale",
+          "active_modality": "silenziosa/efficiente",
+          "vincoli_locali": {
+            "max_detti": null,
+            "max_onomatopee_firma": null
+          }
+        },
+        {
+          "entity_id": "alexei",
+          "role_in_unit": "comparsa_funzionale",
+          "active_modality": "intelligence/sorveglianza",
+          "vincoli_locali": {
+            "max_detti": null,
+            "max_onomatopee_firma": null
+          }
+        }
+      ],
+      "primary_location_id": "the_vesper",
+      "secondary_location_ids": [
+        "seattle",
+        "ufficio_dante"
+      ],
+      "scenes": [
+        {
+          "id": "cap_01_s01",
+          "position": 1,
+          "type": "atmosfera",
+          "is_signature": false,
+          "moment": "notte",
+          "location": {
+            "id": "seattle",
+            "qualifier": "marciapiede di fronte al Vesper"
+          },
+          "characters_present": [
+            "rory_winters"
+          ],
+          "focal_action": "Rory studia l'ingresso del Vesper dalla pioggia — conta uscite, registratore in tasca, tre ragazze in testa",
+          "focal_object": "registratore_digitale",
+          "atmosphere": "pioggia battente, freddo, tensione da pre-azione controllata — la giornalista che finge di aspettare un taxi",
+          "palette": "grigio/nero, luci filtrate dalla porta del club, bagnato",
+          "ambient_modifier": "pioggia di Seattle",
+          "onomatopee": [],
+          "composition_zone": null,
+          "panel_layout": null,
+          "audio_duration_seconds": null,
+          "asset_path": null,
+          "notes": "Il registratore 'pesa come un'arma carica' — prima occorrenza della metafora registratore=arma",
+          "provenance": "original"
+        },
+        {
+          "id": "cap_01_s02",
+          "position": 2,
+          "type": "infiltrazione",
+          "is_signature": false,
+          "moment": "notte",
+          "location": {
+            "id": "the_vesper",
+            "qualifier": "ingresso esterno"
+          },
+          "characters_present": [
+            "rory_winters"
+          ],
+          "focal_action": "Rory bluffa con il buttafuori usando il nome di Natasha Volkov ed entra al club",
+          "focal_object": null,
+          "atmosphere": "soglia del pericolo — il buttafuori che cataloga tutto in tre secondi, il nome pronunciato come se sapesse fosse una bugia",
+          "palette": "porta nera incassata, uomo-statua, tablet, silenzio",
+          "ambient_modifier": null,
+          "onomatopee": [],
+          "composition_zone": null,
+          "panel_layout": null,
+          "audio_duration_seconds": null,
+          "asset_path": null,
+          "notes": "Prima regola infranta: dà il suo vero nome. 'Benvenuta al Vesper, signorina Winters' — il buttafuori sa già.",
+          "provenance": "original"
+        },
+        {
+          "id": "cap_01_s03",
+          "position": 3,
+          "type": "ricognizione",
+          "is_signature": false,
+          "moment": "notte",
+          "location": {
+            "id": "the_vesper",
+            "qualifier": "piano principale / bar"
+          },
+          "characters_present": [
+            "rory_winters",
+            "dante_ravencroft"
+          ],
+          "focal_action": "Rory studia metodicamente il layout — 23 passi, 3 uscite, telecamere; ordina vodka tonic; nota le scale che scendono; Dante la osserva dall'alto",
+          "focal_object": null,
+          "atmosphere": "disorientamento orchestrato — luci soffuse, musica nelle ossa, specchi fumé che moltiplicano gli spazi",
+          "palette": "marmo nero, cristallo, ombre danzanti, luci soffuse",
+          "ambient_modifier": "musica ambientale a bassa intensità",
+          "onomatopee": [],
+          "composition_zone": null,
+          "panel_layout": null,
+          "audio_duration_seconds": null,
+          "asset_path": null,
+          "notes": "Dante osserva ma non si è ancora mosso. 'Vodka tonic — scelta intelligente, può fingere di berla tutta la notte.' (POV Dante)",
+          "provenance": "original"
+        },
+        {
+          "id": "cap_01_s04",
+          "position": 4,
+          "type": "dialogo_tensione",
+          "is_signature": false,
+          "moment": "notte",
+          "location": {
+            "id": "the_vesper",
+            "qualifier": "bar"
+          },
+          "characters_present": [
+            "rory_winters",
+            "natasha_volkov"
+          ],
+          "focal_action": "Natasha si avvicina a Rory al bar con tempismo sospettosamente perfetto e la affronta su come si conoscono",
+          "focal_object": null,
+          "atmosphere": "gatto-topo in miniatura — sorrisi che non raggiungono gli occhi, domande velate come minacce",
+          "palette": "biondo/nero, eleganza costosa, occhi freddi",
+          "ambient_modifier": null,
+          "onomatopee": [],
+          "composition_zone": null,
+          "panel_layout": null,
+          "audio_duration_seconds": null,
+          "asset_path": null,
+          "notes": "Natasha: 'Dipende da quanto in profondità vuoi andare.' Prima allusione ai sotterranei. Rory inventa la raccolta fondi Morrison per coprirsi.",
+          "provenance": "original"
+        },
+        {
+          "id": "cap_01_s05",
+          "position": 5,
+          "type": "incontro_magnetico",
+          "is_signature": true,
+          "moment": "notte",
+          "location": {
+            "id": "the_vesper",
+            "qualifier": "scale VIP / spazio principale"
+          },
+          "characters_present": [
+            "rory_winters",
+            "dante_ravencroft"
+          ],
+          "focal_action": "Dante scende le scale e i loro sguardi si incontrano per la prima volta — l'atmosfera del locale cambia",
+          "focal_object": null,
+          "atmosphere": "l'aria che si sposta per fargli spazio; tensione magnetica istantanea; il mondo si ferma per due battiti",
+          "palette": "completo nero, occhi scuri quasi neri, luce soffusa che li isola dagli altri",
+          "ambient_modifier": "pressione che cala come prima di un temporale",
+          "onomatopee": [],
+          "composition_zone": null,
+          "panel_layout": null,
+          "audio_duration_seconds": null,
+          "asset_path": null,
+          "notes": "is_signature: primo incontro di sguardi — scena capitale dell'arco. 'Il primo pensiero fu: predatore.' (Rory). 'Ritirata tattica.' (Dante su Rory che distoglie per prima).",
+          "provenance": "original"
+        },
+        {
+          "id": "cap_01_s06",
+          "position": 6,
+          "type": "confronto",
+          "is_signature": false,
+          "moment": "notte",
+          "location": {
+            "id": "the_vesper",
+            "qualifier": "corridoio"
+          },
+          "characters_present": [
+            "rory_winters",
+            "dante_ravencroft"
+          ],
+          "focal_action": "Dante intercetta Rory nel corridoio con un tocco al gomito — lei rivela di indagare sulle tre ragazze scomparse",
+          "focal_object": null,
+          "atmosphere": "confine fisico invaso, distanza ravvicinata, profumo di tabacco e whiskey; 'due minuti per convincermi a non farti buttare fuori'",
+          "palette": "ombre del corridoio, vicinanza fisica impossibile da ignorare",
+          "ambient_modifier": null,
+          "onomatopee": [],
+          "composition_zone": null,
+          "panel_layout": null,
+          "asset_path": null,
+          "notes": "La cicatrice sul sopracciglio sinistro di Rory — Dante la nota e la sfiora. Rory nomina le tre ragazze: questo cambia tutto nell'aria.",
+          "provenance": "original"
+        },
+        {
+          "id": "cap_01_s07",
+          "position": 7,
+          "type": "soglia",
+          "is_signature": true,
+          "moment": "notte",
+          "location": {
+            "id": "the_vesper",
+            "qualifier": "ascensore privato"
+          },
+          "characters_present": [
+            "rory_winters",
+            "dante_ravencroft"
+          ],
+          "focal_action": "Dante porta Rory nell'ascensore privato con codice — sale (non scende), ribaltando l'aspettativa che i segreti siano sottoterra",
+          "focal_object": null,
+          "atmosphere": "claustrofobia consentita, profumo tabacco/pericolo, tensione al limite — troppo vicini, troppe verità dette",
+          "palette": "acciaio, specchi, pulsanti, codice a 5 cifre",
+          "ambient_modifier": null,
+          "onomatopee": [],
+          "composition_zone": null,
+          "panel_layout": null,
+          "audio_duration_seconds": null,
+          "asset_path": null,
+          "notes": "is_signature: l'ascensore che SALE è la svolta strutturale del cap. 'Quale verità? Quella che vuoi trovare o quella che esiste davvero?' Dante tiene le porte chiuse inserendo codice per prolungare il dialogo.",
+          "provenance": "original"
+        },
+        {
+          "id": "cap_01_s08",
+          "position": 8,
+          "type": "proposta",
+          "is_signature": false,
+          "moment": "notte",
+          "location": {
+            "id": "ufficio_dante",
+            "qualifier": "interno"
+          },
+          "characters_present": [
+            "rory_winters",
+            "dante_ravencroft",
+            "marco"
+          ],
+          "focal_action": "Dante propone a Rory di lavorare come PR del Vesper in cambio di accesso alle informazioni; consegna biglietto da visita nero; 24 ore per decidere; Marco scorta Rory fuori",
+          "focal_object": null,
+          "atmosphere": "potere ostentato — vetrate su Seattle come regno, parete monitor spenti, scrivania; proposta che è anche trappola",
+          "palette": "vetrate, luci notturne di Seattle, penombra, mobili costosi",
+          "ambient_modifier": "Seattle visibile come regno conquistato",
+          "onomatopee": [],
+          "composition_zone": null,
+          "panel_layout": null,
+          "audio_duration_seconds": null,
+          "asset_path": null,
+          "notes": "Rory ignora tutta l'opulenza e va diretto ai monitor spenti — gesto rivelatore. 'Preferisco i miei nemici vicini.' Biglietto nero solo numero = oggetto simbolico.",
+          "provenance": "original"
+        },
+        {
+          "id": "cap_01_s09",
+          "position": 9,
+          "type": "epilogo",
+          "is_signature": false,
+          "moment": "notte",
+          "location": {
+            "id": "ufficio_dante",
+            "qualifier": "finestra"
+          },
+          "characters_present": [
+            "dante_ravencroft",
+            "alexei"
+          ],
+          "focal_action": "Dante rimane solo alla finestra su Seattle; telefona ad Alexei rivelando che ha lasciato andare Rory deliberatamente come parte del suo piano",
+          "focal_object": null,
+          "atmosphere": "solitudine del predatore — controllo freddo, pianificazione già in atto, la caccia è decisa prima che Rory lo sappia",
+          "palette": "luci notturne di Seattle, riflesso nella finestra di vetro",
+          "ambient_modifier": null,
+          "onomatopee": [],
+          "composition_zone": null,
+          "panel_layout": null,
+          "audio_duration_seconds": null,
+          "asset_path": null,
+          "notes": "'Se scopre—' Alexei. 'Non lo farà. Perché sarà troppo occupata a scoprire quello che io voglio che lei scopra.' Chiusura: 'Vedremo chi divora chi, piccola cacciatrice.'",
+          "provenance": "original"
+        }
+      ],
+      "narrazione_fattuale_path": "narrazione_fattuale/cap_01.md",
+      "brief_path": null,
+      "testo_finale_path": "testi_finali/cap_01.md",
+      "status": "macro_distilled",
+      "callbacks_in": [],
+      "seeds_planted": [
+        "tre_ragazze_scomparse",
+        "proposta_pr_dante",
+        "dante_sa_tutto_da_subito",
+        "segreto_che_rory_non_deve_scoprire",
+        "ascensore_sale_non_scende"
+      ],
+      "seeds_blooming": [],
+      "seeds_maturing": [],
+      "debts_opened": [
+        "risposta_rory_24h",
+        "identita_tre_ragazze"
+      ],
+      "debts_closed": []
+    }
+  },
   "global_relations": {
     "narrative_promises": {},
     "explicit_callbacks": {},
