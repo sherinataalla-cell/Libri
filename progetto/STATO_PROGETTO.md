@@ -11,9 +11,9 @@
 @capitolo.next: 09 (da scrivere)
 @parole.totali: ~60.000 stimato (8 capitoli, ~7.500 parole/cap)
 @completamento: ~40% (8/20 capitoli)
-@versione_grafo: 0.0.0 (inizializzato, cap_01+cap_02+cap_03 distillati)
+@versione_grafo: 0.0.0 (inizializzato, cap_01+cap_02+cap_03+cap_04 distillati)
 @versione_schema: bozza (grafo_schema.json — Fase 02 non ancora completata)
-@branch.attivo: claude/chapter-3-distillation-UOJ8I
+@branch.attivo: claude/chapter-4-distillation-qkNBS
 ```
 
 ---
@@ -51,7 +51,7 @@
   cap_01 ✅ — 9 scene, 5 seeds, 2 debts, 3 entità promosse (2026-06-05)
   cap_02 ✅ — 11 scene, 5 seeds, 5 debts, 10 entità promosse (2026-06-05)
   cap_03 ✅ — 11 scene, 4 seeds, 3 debts, 4 entità promosse (2026-06-05)
-  cap_04 ⬜
+  cap_04 ✅ — 13 scene, 4 seeds, 2 debts, 1 entità promossa (2026-06-05)
   cap_05 ⬜
   cap_06 ⬜
   cap_07 ⬜
@@ -73,9 +73,10 @@
   ✅ bootstrap_graph.py --apply eseguito
   ✅ cap_01 distillato nel grafo (Passate 0→1→2 complete)
   ✅ Catalogo: schede embrionali per marco, alexei, ufficio_dante
+  ✅ cap_04 distillato nel grafo (13 scene, attico_dante promosso)
 
 @blocchi.pending:
-  🟡 Distillazione cap_02..08 (una per chat)
+  🟡 Distillazione cap_05..08 (una per chat)
   🟡 Completare grafo_schema.json — Fase 02 (skill architetto_grafo) — può attendere
   🟡 Completare glossario_consegna.json — entità secondarie — può attendere
   🟡 pattern_ai_da_bandire.md — chat dedicata
@@ -89,16 +90,16 @@
 ## §PROSSIMA SESSIONE
 
 ```
-@obiettivo: distillazione cap_04 — "Territori Pericolosi"
-@branch: creare claude/chapter-4-distillation-XXXXX (nuovo branch da main)
-@regola: una unità per chat — non mescolare cap_04 e cap_05
+@obiettivo: distillazione cap_05 — "Il Primo Sangue"
+@branch: creare claude/chapter-5-distillation-XXXXX (nuovo branch da main)
+@regola: una unità per chat — non mescolare cap_05 e cap_06
 
 @passi:
   1. Leggere STATO_PROGETTO.md (questo file)
-  2. Verificare/creare branch per cap_04
-  3. Leggere story_graph.json per vedere seeds/debts aperti da cap_03
-  4. Leggere narrazione_fattuale/cap_04.md
-  5. Avviare distillazione cap_04 (Passata 0 → 1 → 2)
+  2. Verificare/creare branch per cap_05
+  3. Leggere story_graph.json per vedere seeds/debts aperti da cap_04
+  4. Leggere narrazione_fattuale/cap_05.md
+  5. Avviare distillazione cap_05 (Passata 0 → 1 → 2)
 ```
 
 ---
@@ -113,6 +114,8 @@ M04 — voce_nel_buio "sente" Rory senza spiegazione meccanismo percettivo [medi
 M05 — interlocutore_numero_privato (cap_02) = contatto caccia (cap_03)? identità da confermare [bassa gravità]
 M06 — prigioniero level-2 (cap_02) vs Sofia al level-2 (cap_03): stessa entità o due distinte? [media gravità]
 M07 — voce_nel_buio (cap_02) vs voce_altoparlanti=Cacciatore (cap_03): coincidono? risolverebbe M04 [bassa gravità]
+M08 — come il Cacciatore ha il numero privato di Dante (cap_04) [bassa gravità]
+M09 — discrepanza timeline countdown: 48h−2h≠42h in cap_04 [bassa gravità]
 → Dettagli: progetto/misalignments.json
 ```
 
@@ -122,6 +125,6 @@ M07 — voce_nel_buio (cap_02) vs voce_altoparlanti=Cacciatore (cap_03): coincid
 
 ```
 @data.ultima.modifica: 2026-06-05
-@evento: distillazione cap_03 completa (11 scene, 4 entità promosse, 3 misalignment annotati M05-M07)
-@stato: pronto per distillazione cap_04
+@evento: distillazione cap_04 completa (13 scene, 4 seeds, 2 debts, 1 entità promossa, 2 misalignment annotati M08-M09)
+@stato: pronto per distillazione cap_05
 ```

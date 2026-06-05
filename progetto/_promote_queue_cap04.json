@@ -1,0 +1,17 @@
+[
+  {
+    "id": "attico_dante",
+    "category": "locations",
+    "promoted_by": "distillatore_cap_04",
+    "promotion_unit": "cap_04",
+    "data": {
+      "id": "attico_dante",
+      "name": "Attico di Dante Ravencroft",
+      "aliases": ["l'attico", "appartamento di Dante", "casa di Dante", "la torre"],
+      "category": "privati",
+      "type": "residenza",
+      "role_saga": "Attico privato di Dante Ravencroft — intero ultimo piano di una torre che graffia il cielo di Seattle. Vetrate floor-to-ceiling con vista panoramica. Cucina da rivista di design, salotto con divani in pelle nera, studio/biblioteca con più libri del previsto, stanza degli ospiti, terrazza sul tetto con vetro blindato sui lati e cecchini sui tetti circostanti. Spazio di massima riservatezza: nessuno vi è mai entrato prima di Rory. Codice sicurezza cambia ogni sei ore. Impronte già registrate. Prima zona davvero privata di Dante nella saga.",
+      "bibbia_section": "luoghi/attico_dante"
+    }
+  }
+]

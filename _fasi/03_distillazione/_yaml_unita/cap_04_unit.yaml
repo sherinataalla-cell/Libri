@@ -1,0 +1,138 @@
+# YAML Unità — cap_04 "Territori Pericolosi"
+# Distillazione: 2026-06-05
+# Branch: claude/chapter-4-distillation-qkNBS
+
+unit_id: cap_04
+title: "Territori Pericolosi"
+slug: territori_pericolosi
+position: 4
+block_id: la_danza
+
+register: "dark romance — confine fisico valicato, intimità forzata nel territorio privato del predatore, il Cacciatore che osserva dall'ombra"
+estimated_length: 7500
+
+ambient_conditions:
+  season: autunno
+  time_of_day: "pomeriggio→notte→alba"
+  weather: null
+  wind: null
+
+dominant_attributes:
+  tema_dominante: "il territorio del predatore — Rory nell'attico di Dante, dalla protezione alla prigionia della logica, primo cedimento fisico irrevocabile"
+  registro_emotivo: "dark romance/thriller — tensione sessuale che esplode sotto alcol e paura, vulnerabilità a strati, il Cacciatore che sorveglia il crollo di entrambi"
+  pov: "alternato (Rory → Dante)"
+
+premise: >
+  Subito dopo l'attacco del Cacciatore al Vesper (cap_03), Dante porta Rory nel suo attico privato
+  — un luogo dove nessuno è mai entrato prima. Marco consegna Rory allo spazio del predatore e se
+  ne va. Rory esplora: lusso controllato, arte che urla denaro, uno studio con più libri del
+  previsto, una terrazza con vista totale su Seattle. Quando Dante arriva porta whiskey e una
+  verità: non sei prigioniera, puoi andartene — ma dove? «Prigioniera della logica: te la
+  costruisci da sola.»
+
+problem: >
+  Il countdown è a 42 ore (poi 41, 39, 37...). Sotto alcol e normalità surreale — Dante che cucina
+  pasta, conversazione su libri e arte — si accumula la rivelazione: Dante conosce la storia di
+  Rory dall'inizio, sa delle fonti sparite, delle minacce, del tracollo di due anni fa. Non è
+  coincidenza. A notte inoltrata Rory non riesce a dormire, entra nello studio e trova i file del
+  Cacciatore: Jessica Chen e Amber Morrison erano attiviste — anti-traffico, diritti delle donne —
+  come Rory lo era prima che «la distruggessero». Il profilo del Cacciatore si cristallizza: non
+  caccia vittime, caccia guerriere.
+
+threshold_moment: >
+  Il cedimento sulla scrivania di Dante — un bacio che è una battaglia, denti e disperazione,
+  «questo è sbagliato» / «lo so» / nessuno si ferma. Vestiti che cadono, scrivania, freddo del
+  legno contro la schiena, calore ovunque. Non è fare l'amore: è sopravvivenza, è bruciare vivi.
+  Dopo — Rory al bagno, specchio, 37 ore — il Cacciatore chiama Dante sul personale: «Bella
+  l'esca. Com'era?» Sa tutto, forse guardava. Poi la silhouette immobile sul tetto nord: dieci
+  minuti a fissare l'attico, poi sparisce nelle ombre.
+
+resolution_mode: >
+  Alexei chiama con la scoperta che cambia l'intera geometria del pericolo: il Cacciatore non è
+  iniziato sei mesi fa. È iniziato due anni fa — quando le fonti di Rory hanno cominciato a
+  sparire, quando la sua carriera è stata distrutta. Aurora Winters non è una vittima casuale: è
+  sempre stata il bersaglio finale. Il gioco è molto più grande di quanto pensassero, e Dante ha
+  appena dato al bastardo la sua arma perfetta.
+
+cast_in_scene:
+  - entity_id: rory_winters
+    role_in_unit: protagonista_pov_1
+    active_modality: "esca_cosciente/investigatrice — si lascia proteggere pur rifiutando di essere posseduta, cede alla tensione, poi si odia per questo"
+    vincoli_locali:
+      max_detti: null
+      max_onomatopee_firma: null
+
+  - entity_id: dante_ravencroft
+    role_in_unit: protagonista_pov_2
+    active_modality: "protettore_predatore — porta Rory nel suo spazio più privato, cucina, rivela ciò che sa, perde il controllo, poi conta gli errori come un inventario"
+    vincoli_locali:
+      max_detti: null
+      max_onomatopee_firma: null
+
+  - entity_id: marco
+    role_in_unit: comparsa_funzionale
+    active_modality: "braccio_operativo — consegna Rory all'attico, dà istruzioni di sicurezza, sparisce"
+    vincoli_locali:
+      max_detti: null
+      max_onomatopee_firma: null
+
+  - entity_id: alexei
+    role_in_unit: comparsa_funzionale
+    active_modality: "intel — solo telefono (POV Dante): prima verifica tetti, poi porta la rivelazione finale"
+    vincoli_locali:
+      max_detti: null
+      max_onomatopee_firma: null
+
+  - entity_id: il_cacciatore
+    role_in_unit: antagonista
+    active_modality: "predatore_telecomandato — voce distorta al telefono personale di Dante, silhouette immobile sul tetto nord, mai in faccia; dimostra di sorvegliare dentro e fuori"
+    vincoli_locali:
+      max_detti: null
+      max_onomatopee_firma: null
+
+  - entity_id: jessica_chen
+    role_in_unit: assente_referita
+    active_modality: null
+    vincoli_locali:
+      max_detti: null
+      max_onomatopee_firma: null
+
+  - entity_id: amber_morrison
+    role_in_unit: assente_referita
+    active_modality: null
+    vincoli_locali:
+      max_detti: null
+      max_onomatopee_firma: null
+
+primary_location_id: attico_dante
+secondary_location_ids: []
+
+callbacks_in:
+  - fonti_sparite_rory
+  - rory_esca_nel_territorio
+
+seeds_planted:
+  - rory_bersaglio_finale
+  - cacciatore_ha_accesso_attico
+  - prima_notte_scrivania
+  - cacciatore_numero_privato_dante
+
+seeds_blooming:
+  - rory_esca_nel_territorio
+  - dante_sa_tutto_da_subito
+
+seeds_maturing:
+  - storia_sepolta_rory
+
+debts_opened:
+  - come_il_cacciatore_sa
+  - rory_bersaglio_da_2_anni
+
+debts_closed:
+  - identita_tre_ragazze
+
+narrazione_fattuale_path: "progetto/narrazione_fattuale/cap_04.md"
+brief_path: null
+testo_finale_path: "progetto/testi_finali/cap_04.md"
+
+status: "scenes_distilled"

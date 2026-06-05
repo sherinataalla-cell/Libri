@@ -1,0 +1,317 @@
+# YAML Scene — cap_04 "Territori Pericolosi"
+# 13 scene | POV Rory (s01-s09) + POV Dante (s10-s13)
+
+unit_id: cap_04
+
+scenes:
+
+  # === POV RORY ===
+
+  - id: cap_04_s01
+    position: 1
+    type: installazione_territorio
+    is_signature: false
+    moment: pomeriggio
+    location:
+      id: attico_dante
+      qualifier: ingresso/soggiorno
+    characters_present:
+      - rory_winters
+      - marco
+    focal_action: "Marco lascia Rory sola nell'attico di Dante dopo aver registrato le sue impronte e illustrato il protocollo di sicurezza (codice ogni 6 ore, non uscire senza scorta)"
+    focal_object: null
+    atmosphere: "disorientamento/prigionia elegante — attico come gabbia dorata; Rory ancora stordita dalla velocità con cui la sua vita è deragliata; Marco che parte senza rispondere alle domande"
+    palette: "pelle nera, vetro, metallo, Seattle grigia attraverso le vetrate"
+    ambient_modifier: "silenzio dopo che Marco chiude la porta — Rory sola nel territorio del predatore"
+    onomatopee: []
+    composition_zone: null
+    panel_layout: null
+    audio_duration_seconds: null
+    asset_path: null
+    notes: "Marco: 'Sei viva. Per ora.' — risposta alla domanda 'Sono prigioniera?'"
+    provenance: original
+
+  - id: cap_04_s02
+    position: 2
+    type: esplorazione_territorio
+    is_signature: false
+    moment: pomeriggio
+    location:
+      id: attico_dante
+      qualifier: terrazza/interno
+    characters_present:
+      - rory_winters
+    focal_action: "Rory esplora sistematicamente l'attico (cucina da rivista, salotto pelle nera, studio con libri inaspettati) poi esce sulla terrazza e guarda Seattle dall'alto"
+    focal_object: null
+    atmosphere: "meraviglia/paura sospesa — la vista che toglie il fiato come controcanto al Cacciatore che conta le sue ore; Seattle come tappeto di luci indifferente"
+    palette: "luci della città, vento, panorama, interni lussuosi e controllati"
+    ambient_modifier: "42 ore nel pensiero di Rory — il countdown come presenza silenziosa in ogni stanza"
+    onomatopee: []
+    composition_zone: null
+    panel_layout: null
+    asset_path: null
+    notes: "Contrasto chiave: arte alle pareti che 'urla soldi e gusto discutibile' vs studio con 'più libri di quanto si aspettasse' — primo segno che Dante è più complesso del previsto"
+    provenance: original
+
+  - id: cap_04_s03
+    position: 3
+    type: dialogo_potere
+    is_signature: false
+    moment: sera
+    location:
+      id: attico_dante
+      qualifier: terrazza
+    characters_present:
+      - rory_winters
+      - dante_ravencroft
+    focal_action: "Dante appare sulla soglia della terrazza con due bicchieri di whiskey; dialogo sulla prigionia della logica, sulla sicurezza del luogo, su chi altro ci sia mai entrato (nessuno)"
+    focal_object: null
+    atmosphere: "territorio predatorio che diventa ambiguamente sicuro — Dante in maniche di camicia arrotolate, domestico in modo disturbante; la tensione del predatore nella sua tana"
+    palette: "luci interne che proiettano silhouette, whiskey ambrato, vento di Seattle"
+    ambient_modifier: "cecchini sui tetti circostanti come cornice surreale alla conversazione"
+    onomatopee: []
+    composition_zone: null
+    panel_layout: null
+    audio_duration_seconds: null
+    asset_path: null
+    notes: "'Questo è spazio privato. Nessuno entra qui.' / 'Tranne me.' / 'Tranne te.' — rivelazione che la distinge da ogni altra donna; il modo in cui lo dice come se fosse una scoperta anche per lui"
+    provenance: original
+
+  - id: cap_04_s04
+    position: 4
+    type: intimita_quotidiana
+    is_signature: false
+    moment: sera
+    location:
+      id: attico_dante
+      qualifier: cucina
+    characters_present:
+      - rory_winters
+      - dante_ravencroft
+    focal_action: "Dante cucina pasta al pomodoro fresco con precisione chirurgica mentre Rory lo osserva e continua a bere whiskey — terzo, quarto bicchiere — e lo provoca sulla sua natura"
+    focal_object: null
+    atmosphere: "normalità surreale — profumi di basilico e pomodoro in cucina sterile; la domesticità come maschera del pericolo; alcol che annebbia i bordi"
+    palette: "rosso del sugo, verde del basilico, bianco della cucina, ambra del whiskey"
+    ambient_modifier: "il coltello che si ferma per un istante quando Rory dice 'come uccidere persone?' poi riprende"
+    onomatopee: []
+    composition_zone: null
+    panel_layout: null
+    audio_duration_seconds: null
+    asset_path: null
+    notes: "'A volte sparire è meglio che morire.' / 'Filosofia da due soldi.' / 'Verità da esperienza.' — primo accenno alla storia di Dante; 'cucinare è meditativo' = umanizzazione inaspettata"
+    provenance: original
+
+  - id: cap_04_s05
+    position: 5
+    type: dialogo_normalita
+    is_signature: false
+    moment: notte_iniziale
+    location:
+      id: attico_dante
+      qualifier: soggiorno
+    characters_present:
+      - rory_winters
+      - dante_ravencroft
+    focal_action: "Cena + vino aperto senza chiedere; conversazione di niente e tutto — libri (li ha davvero letti), arte (la odia ma vale una fortuna), Seattle (entrambi non nativi) — normalità impossibile"
+    focal_object: null
+    atmosphere: "distanza che si assottiglia — l'alcol come solvente dei confini; una sera che potrebbe essere ovunque se non ci fosse un maniaco fuori a contare le ore"
+    palette: "vino rosso, luce calda, divani scuri, finestre nere su Seattle"
+    ambient_modifier: "la domanda che non viene fatta: 'cosa siamo l'uno per l'altra?' fluttua nell'aria senza parole"
+    onomatopee: []
+    composition_zone: null
+    panel_layout: null
+    audio_duration_seconds: null
+    asset_path: null
+    notes: "Rory: 'Dovrei...' — non finisce. Non sa cosa dovrebbe. È il punto di non-ritorno della sera prima che cominci davvero."
+    provenance: original
+
+  - id: cap_04_s06
+    position: 6
+    type: incontro_notturno
+    is_signature: false
+    moment: notte
+    location:
+      id: attico_dante
+      qualifier: corridoio/studio
+    characters_present:
+      - rory_winters
+      - dante_ravencroft
+    focal_action: "Rory non riesce a dormire (39 ore), si alza per acqua, vede luce filtrata dallo studio di Dante aperto, entra senza pensare — Dante alla scrivania, camicia sbottonata, capelli scompigliati, umano in modo che fa male"
+    focal_object: null
+    atmosphere: "transizione — il momento tra il prima e il dopo; Dante 'mai' dorme, file del Cacciatore sulla scrivania, whiskey nel decanter; la luce dello studio come richiamo"
+    palette: "luce calda e tenue dello studio, biancore dei documenti, ombre intorno"
+    ambient_modifier: "Rory sul quinto-sesto whiskey + vino: i numeri non hanno più senso — l'alcol come co-protagonista della scena"
+    onomatopee: []
+    composition_zone: null
+    panel_layout: null
+    audio_duration_seconds: null
+    asset_path: null
+    notes: "Dante non la caccia via. 'C'è whiskey nel decanter.' — accettazione silenziosa della sua presenza nello spazio più privato di tutti."
+    provenance: original
+
+  - id: cap_04_s07
+    position: 7
+    type: rivelazione_investigativa
+    is_signature: false
+    moment: notte
+    location:
+      id: attico_dante
+      qualifier: studio
+    characters_present:
+      - rory_winters
+      - dante_ravencroft
+    focal_action: "Dante mostra a Rory lo schermo con le foto delle vittime — Jessica Chen a una protesta universitaria, Amber Morrison a un casting; entrambe erano attiviste anti-traffico; 'Come te. Due anni fa lo eri, prima che ti distruggessero'"
+    focal_object: null
+    atmosphere: "illuminazione dura come una sala interrogatoria — la verità sui profili delle vittime come specchio su Rory; Dante che rivela di sapere tutto della sua storia"
+    palette: "schermo blu, foto in bianco e nero, notte intorno"
+    ambient_modifier: "Dante si alza, si avvicina — troppo vicino; calore, mascella tesa, profumo costoso e pericoloso; 'perché sei mia e devo proteggerti'"
+    onomatopee: []
+    composition_zone: null
+    panel_layout: null
+    audio_duration_seconds: null
+    asset_path: null
+    notes: "SEED matura: storia_sepolta_rory — la storia di due anni fa e le fonti sparite entrano nell'aperto. 'Non sono tua.' / 'No?' — la sfida che precede il cedimento. Jessica e Amber: attiviste anti-traffico (matura seed identita_tre_ragazze)."
+    provenance: original
+
+  - id: cap_04_s08
+    position: 8
+    type: scena_erotica
+    is_signature: true
+    moment: notte
+    location:
+      id: attico_dante
+      qualifier: studio/scrivania
+    characters_present:
+      - rory_winters
+      - dante_ravencroft
+    focal_action: "Il cedimento: bacio-battaglia che nessuno sa chi ha iniziato; scrivania, carte che volano, libri a terra; non fare l'amore — sopravvivenza, annegare, bruciare vivi; Rory urla il nome di Dante"
+    focal_object: null
+    atmosphere: "esplosione controllata diventata incontrollabile — tutto il conflitto dei tre capitoli precedenti compresso e rilasciato; violenza come forma di desiderio, desiderio come forma di sopravvivenza"
+    palette: "freddo del legno, calore dei corpi, buio con luce dallo schermo acceso"
+    ambient_modifier: "dopo: silenzio; la realtà torna a ondate — nuda sulla scrivania del suo capo/carceriere; 'Non è successo. Capisci? Non è successo.'"
+    onomatopee: []
+    composition_zone: null
+    panel_layout: null
+    audio_duration_seconds: null
+    asset_path: null
+    notes: "SEED piantato: prima_notte_scrivania — evento irrevocabile che cambia la geometria di tutta la saga. Rory: 'Questo è sbagliato.' Dante: 'Lo so.' Nessuno si ferma. Graffi sul petto di Dante (penitenza)."
+    provenance: original
+
+  - id: cap_04_s09
+    position: 9
+    type: aftermath_emotivo
+    is_signature: false
+    moment: notte
+    location:
+      id: attico_dante
+      qualifier: corridoio/bagno
+    characters_present:
+      - rory_winters
+    focal_action: "Rory fugge dallo studio, sbatte contro una parete nel corridoio, trova il bagno per fortuna; vomita; si guarda allo specchio — capelli distrutti, labbra gonfie, segno sul collo che domani sarà un livido; 37 ore"
+    focal_object: null
+    atmosphere: "crollo — la nitidezza crudele dello specchio dopo l'alcol e il sesso; la voce interiore che conta le ore come controcanto al disastro; l'ultima riga è il pensiero peggiore: forse è la prima volta in due anni che si sente viva"
+    palette: "bianco del bagno, specchio, luce fluorescente, livido sul collo"
+    ambient_modifier: "37 ore al Cacciatore. Ma è sopravvissuta a Dante Ravencroft. O forse no. O forse sì."
+    onomatopee: []
+    composition_zone: null
+    panel_layout: null
+    audio_duration_seconds: null
+    asset_path: null
+    notes: "Fine POV Rory cap_04. Chiusura: 'Era la prima volta in due anni che si sentiva viva.' — svolta tematica fondamentale di cap_04."
+    provenance: original
+
+  # === POV DANTE ===
+
+  - id: cap_04_s10
+    position: 10
+    type: monologo_interiore
+    is_signature: false
+    moment: notte
+    location:
+      id: attico_dante
+      qualifier: studio
+    characters_present:
+      - dante_ravencroft
+    focal_action: "Dante fissa il soffitto e cataloga gli errori uno a uno (1-6): portarla qui, bere con lei, lasciarla entrare nello studio, toccarla, non fermarsi, scoparla sulla scrivania come un animale"
+    focal_object: null
+    atmosphere: "freddo del dopo — il suo odore ancora nell'aria; whiskey con mani che vogliono tremare ma non glielo permette; il professionismo come difesa contro se stesso"
+    palette: "buio dello studio, decanter, luce bassa"
+    ambient_modifier: "telefono: Alexei — 'Movimento sui tetti est. Controllato. Niente di anomalo.' Dante mente: 'Sta dormendo.'"
+    onomatopee: []
+    composition_zone: null
+    panel_layout: null
+    audio_duration_seconds: null
+    asset_path: null
+    notes: "Dante raccoglie i documenti sparsi. Rivede il profilo: tutte le vittime del Cacciatore erano attiviste. Il bicchiere si frantuma nella sua mano — 'dolore che aiuta, rende tutto nitido'; si fascia la mano con efficienza pratica."
+    provenance: original
+
+  - id: cap_04_s11
+    position: 11
+    type: rivelazione_antagonista
+    is_signature: true
+    moment: notte
+    location:
+      id: attico_dante
+      qualifier: studio
+    characters_present:
+      - dante_ravencroft
+      - il_cacciatore
+    focal_action: "Il Cacciatore chiama Dante su numero sconosciuto: 'Bella l'esca. Quanto ci hai messo a portartela a casa?' poi 'Com'era? Dolce? Salata? O sa di cenere come tutte le altre?' — Dante stringe il telefono fino a far sbiancare le nocche; la linea muore"
+    focal_object: null
+    atmosphere: "violazione totale — il Cacciatore che sa, forse guardava, certamente ascoltava; la rabbia come acido nelle vene; 'L'hai marchiata. Posso sentirne l'odore da qui'"
+    palette: "schermo del telefono nel buio, niente altro"
+    ambient_modifier: "il Cacciatore ha il numero personale di Dante — come? — SEED piantato"
+    onomatopee: []
+    composition_zone: null
+    panel_layout: null
+    audio_duration_seconds: null
+    asset_path: null
+    notes: "SEED piantato: cacciatore_numero_privato_dante / cacciatore_ha_accesso_attico. La voce è 'distorta, digitale' — tecnologicamente mascherata. 'L'ha marchiata': conferma che il Cacciatore sorvegliava l'attico."
+    provenance: original
+
+  - id: cap_04_s12
+    position: 12
+    type: confronto_antagonista_distanza
+    is_signature: false
+    moment: notte
+    location:
+      id: attico_dante
+      qualifier: terrazza
+    characters_present:
+      - dante_ravencroft
+      - il_cacciatore
+    focal_action: "Dante esce sul terrazzo col visore notturno: sul tetto nord a 50 metri c'è una figura immobile con maschera antigas che fissa l'attico per dieci minuti esatti, poi sparisce nelle ombre come fumo"
+    focal_object: null
+    atmosphere: "guerra dei silenzi — il Cacciatore fisicamente presente ma irraggiunngibile; un messaggio senza parole: 'So dove sei, sto aspettando'; Dante che tiene la posizione senza sparare"
+    palette: "verde del visore notturno, sagoma scura, notte di Seattle"
+    ambient_modifier: "Marco in posizione, istruzione di non sparare a meno che non si muova — disciplina tattica di Dante anche nel momento peggiore"
+    onomatopee: []
+    composition_zone: null
+    panel_layout: null
+    audio_duration_seconds: null
+    asset_path: null
+    notes: "Prima apparizione 'fisica' del Cacciatore (silhouette con maschera antigas — già vista in cap_03 nel corridoio stroboscopico). Qui è fuori, non dentro — escalation della minaccia territoriale."
+    provenance: original
+
+  - id: cap_04_s13
+    position: 13
+    type: rivelazione_narrativa
+    is_signature: false
+    moment: alba
+    location:
+      id: attico_dante
+      qualifier: studio
+    characters_present:
+      - dante_ravencroft
+    focal_action: "Dante si ferma davanti alla porta di Rory senza entrare; torna allo studio; Alexei chiama con la scoperta: il Cacciatore non è iniziato sei mesi fa ma due anni fa, quando le fonti di Rory hanno cominciato a sparire — Rory era sempre il bersaglio finale"
+    focal_object: null
+    atmosphere: "rivelazione che cambia tutto — la geometria del pericolo si espande; Dante guarda la scrivania (evidenza del crollo) e capisce di aver appena dato al Cacciatore l'arma perfetta: Aurora come punto debole"
+    palette: "alba che tinge Seattle, luce grigia attraverso le vetrate, ombre dello studio"
+    ambient_modifier: "'Trentacinque ore e mezza.' — e il gioco è molto più grande di quanto pensasse"
+    onomatopee: []
+    composition_zone: null
+    panel_layout: null
+    audio_duration_seconds: null
+    asset_path: null
+    notes: "SEED piantato: rory_bersaglio_finale. DEBT aperto: rory_bersaglio_da_2_anni (chi, perché, mandante?). Fine POV Dante cap_04. Chiusura: 'erano tutti prede — di desideri che non potevano controllare, di destini che non potevano evitare, di verità che bruciavano più di ogni menzogna.'"
+    provenance: original
