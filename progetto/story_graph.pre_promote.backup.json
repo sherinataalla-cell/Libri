@@ -141,36 +141,6 @@
           "promoted_by": "bootstrap",
           "promotion_unit": null
         }
-      },
-      "marco": {
-        "id": "marco",
-        "name": "Marco",
-        "aliases": [],
-        "category": "secondari",
-        "type": "personaggio_secondario",
-        "role_saga": "braccio destro di Dante al Vesper, ex-militare, gestisce operazioni interne",
-        "bibbia_section": "personaggi/marco",
-        "appears_in_units": [],
-        "promotion": {
-          "promoted_at": "2026-06-05",
-          "promoted_by": "distillatore_cap_01",
-          "promotion_unit": "cap_01"
-        }
-      },
-      "alexei": {
-        "id": "alexei",
-        "name": "Alexei",
-        "aliases": [],
-        "category": "secondari",
-        "type": "personaggio_secondario",
-        "role_saga": "responsabile sicurezza del Vesper, sorveglianza e intelligence interna",
-        "bibbia_section": "personaggi/alexei",
-        "appears_in_units": [],
-        "promotion": {
-          "promoted_at": "2026-06-05",
-          "promoted_by": "distillatore_cap_01",
-          "promotion_unit": "cap_01"
-        }
       }
     },
     "locations": {
@@ -239,25 +209,6 @@
           "promoted_at": "2026-06-05",
           "promoted_by": "bootstrap",
           "promotion_unit": null
-        }
-      },
-      "ufficio_dante": {
-        "id": "ufficio_dante",
-        "name": "Ufficio privato di Dante",
-        "aliases": [
-          "il piano privato",
-          "il sancta sanctorum",
-          "il suo piano"
-        ],
-        "category": "privati",
-        "type": "area_privata",
-        "role_saga": "piano riservato di Dante al Vesper, accessibile solo via ascensore con codice — vetrate su Seattle, parete monitor, scrivania",
-        "bibbia_section": "luoghi/ufficio_dante",
-        "appears_in_units": [],
-        "promotion": {
-          "promoted_at": "2026-06-05",
-          "promoted_by": "distillatore_cap_01",
-          "promotion_unit": "cap_01"
         }
       }
     },
