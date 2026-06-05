@@ -11,9 +11,9 @@
 @capitolo.next: 09 (da scrivere)
 @parole.totali: ~60.000 stimato (8 capitoli, ~7.500 parole/cap)
 @completamento: ~40% (8/20 capitoli)
-@versione_grafo: 0.0.0 (inizializzato, cap_01+cap_02+cap_03+cap_04+cap_05 distillati)
+@versione_grafo: 0.0.0 (inizializzato, cap_01+cap_02+cap_03+cap_04+cap_05+cap_06 distillati)
 @versione_schema: bozza (grafo_schema.json — Fase 02 non ancora completata)
-@branch.attivo: claude/chapter-5-distillation-6ZRPK
+@branch.attivo: claude/chapter-6-distillation-8cjes
 ```
 
 ---
@@ -53,7 +53,7 @@
   cap_03 ✅ — 11 scene, 4 seeds, 3 debts, 4 entità promosse (2026-06-05)
   cap_04 ✅ — 13 scene, 4 seeds, 2 debts, 1 entità promossa (2026-06-05)
   cap_05 ✅ — 17 scene, 5 seeds, 3 debts, 3 entità promosse (2026-06-05)
-  cap_06 ⬜
+  cap_06 ✅ — 10 scene, 5 seeds, 3 debts, 3 entità promosse (2026-06-05)
   cap_07 ⬜
   cap_08 ⬜
 ```
@@ -75,9 +75,10 @@
   ✅ Catalogo: schede embrionali per marco, alexei, ufficio_dante
   ✅ cap_04 distillato nel grafo (13 scene, attico_dante promosso)
   ✅ cap_05 distillato nel grafo (17 scene, detective_chen + dimitri_volkov + album_fotografico promossi)
+  ✅ cap_06 distillato nel grafo (10 scene, compound_volkov + marcus + fascicolo_adrian_bell promossi)
 
 @blocchi.pending:
-  🟡 Distillazione cap_05..08 (una per chat)
+  🟡 Distillazione cap_07..08 (una per chat)
   🟡 Completare grafo_schema.json — Fase 02 (skill architetto_grafo) — può attendere
   🟡 Completare glossario_consegna.json — entità secondarie — può attendere
   🟡 pattern_ai_da_bandire.md — chat dedicata
@@ -91,16 +92,16 @@
 ## §PROSSIMA SESSIONE
 
 ```
-@obiettivo: distillazione cap_06 — "Quello che Non Diciamo"
-@branch: creare claude/chapter-6-distillation-XXXXX (nuovo branch da main dopo merge cap_05)
-@regola: una unità per chat — non mescolare cap_06 e cap_07
+@obiettivo: distillazione cap_07 — "Il Gioco del Cacciatore"
+@branch: creare claude/chapter-7-distillation-XXXXX (nuovo branch da main dopo merge cap_06)
+@regola: una unità per chat — non mescolare cap_07 e cap_08
 
 @passi:
-  1. Merge branch cap_05 su main (su richiesta utente)
-  2. Creare nuovo branch per cap_06
-  3. Leggere story_graph.json per seeds/debts aperti da cap_05
-  4. Leggere narrazione_fattuale/cap_06.md
-  5. Avviare distillazione cap_06 (Passata 0 → 1 → 2)
+  1. Merge branch cap_06 su main (su richiesta utente)
+  2. Creare nuovo branch per cap_07
+  3. Leggere story_graph.json per seeds/debts aperti da cap_06 (trappola_per_adrian, dante_si_scusa_prima_volta, rory_armata_quando)
+  4. Leggere narrazione_fattuale/cap_07.md
+  5. Avviare distillazione cap_07 (Passata 0 → 1 → 2)
 ```
 
 ---
@@ -118,7 +119,11 @@ M07 — voce_nel_buio (cap_02) vs voce_altoparlanti=Cacciatore (cap_03): coincid
 M08 — come il Cacciatore ha il numero privato di Dante (cap_04) [bassa gravità]
 M09 — discrepanza timeline countdown: 48h−2h≠42h in cap_04 [bassa gravità]
 M10 — il Cacciatore usa il numero di Alexei (cap_05): compromissione rete Dante [media gravità]
-M11 — pronome ambiguo nel messaggio finale cap_05: chi ha "quasi preso" chi 2 anni fa? [bassa gravità]
+M11 — pronome ambiguo nel messaggio finale cap_05: chi ha "quasi preso" chi 2 anni fa? [bassa gravità] — cap_06 supporta Interpretazione B
+M12 — doppione entità grafo: 'il_cacciatore' e 'adrian' sono la stessa persona (Adrian Bell/Belkov) [alta gravità]
+M13 — categoria '?' per dimitri_volkov e detective_chen nel grafo [bassa gravità]
+M14 — Sofia promessa ai Kozlov a sei anni (cap_06): info nuova, verificare vs fonti esistenti [media gravità]
+M15 — Rory appare armata in cap_06_s08 senza spiegazione di quando ha preso l'arma [bassa gravità]
 → Dettagli: progetto/misalignments.json
 ```
 
@@ -128,6 +133,6 @@ M11 — pronome ambiguo nel messaggio finale cap_05: chi ha "quasi preso" chi 2 
 
 ```
 @data.ultima.modifica: 2026-06-05
-@evento: distillazione cap_05 completa (17 scene, 5 seeds, 3 debts, 3 entità promosse: detective_chen + dimitri_volkov + album_fotografico, 2 misalignment M10-M11)
-@stato: pronto per distillazione cap_06 (dopo merge branch cap_05)
+@evento: distillazione cap_06 completa (10 scene, 5 seeds, 3 debts, 3 entità promosse: compound_volkov + marcus + fascicolo_adrian_bell, 4 misalignment M12-M15)
+@stato: pronto per distillazione cap_07 (dopo merge branch cap_06)
 ```

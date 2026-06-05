@@ -177,7 +177,71 @@
       "fonte_di_verita": null,
       "azione_suggerita": "Decidere l'interpretazione canonica del messaggio. Se A (Rory ha quasi scoperto il Cacciatore): spiegare quando e come in un capitolo successivo. Se B (il Cacciatore ha quasi preso Rory): chiarisce la motivazione della pazienza biennale.",
       "risolto": false,
-      "note": "Bassa gravità narrativa ma alta gravità di caratterizzazione: il significato del messaggio definisce il profilo psicologico del Cacciatore."
+      "note": "Cap_06 aggiunge contesto: Adrian Bell era infiltrato come fonte 'Alex' due anni fa — supporta Interpretazione B (il Cacciatore era vicino a Rory ma si fermò deliberatamente per studiare ulteriormente). Conferma da autore ancora necessaria."
+    },
+    {
+      "id": "M12",
+      "rilevato_in": "distillazione cap_06 — Passata 0",
+      "data": "2026-06-05",
+      "tipo": "doppione_entita_grafo",
+      "gravita": "alta",
+      "descrizione": "Nel grafo esistono due entità separate: 'il_cacciatore' (categoria antagonisti) e 'adrian' (categoria antagonisti). Cap_06 rivela in modo definitivo che sono la stessa persona: Adrian Bell (nato Adrian Belkov), il Cacciatore. Le due entità nel grafo rappresentano la stessa persona e devono essere unificate. L'entità 'il_cacciatore' è quella principale usata nel cast delle unità; 'adrian' sembra una promozione anticipata del nome.",
+      "fonti_in_conflitto": [
+        "progetto/story_graph.json: entities.characters.il_cacciatore (role_saga: 'Il Cacciatore')",
+        "progetto/story_graph.json: entities.characters.adrian (role_saga: 'Adrian')",
+        "progetto/narrazione_fattuale/cap_06.md ('Il nome che usava era Adrian Bell' / 'Nato Adrian Belkov')"
+      ],
+      "fonte_di_verita": "progetto/narrazione_fattuale/cap_06.md",
+      "azione_suggerita": "Unificare le entità: mantenere 'il_cacciatore' come id principale, aggiungere aliases ['Adrian Bell', 'Adrian Belkov', 'Alex (fonte)', 'Adrian']. Deprecare l'entità 'adrian' o marcarla come alias. Richiede autorizzazione autore per decidere quale id tenere.",
+      "risolto": false,
+      "note": "Nella distillazione cap_06, il cast usa 'il_cacciatore' come entity_id. L'entità 'adrian' nel grafo rimane un doppione inattivo per ora."
+    },
+    {
+      "id": "M13",
+      "rilevato_in": "distillazione cap_06 — Passata 2",
+      "data": "2026-06-05",
+      "tipo": "campo_non_popolato_grafo",
+      "gravita": "bassa",
+      "descrizione": "Le entità 'dimitri_volkov' e 'detective_chen' nel grafo hanno il campo 'category' valorizzato a '?' invece di una categoria valida ('protagonisti' / 'secondari' / 'antagonisti' / 'minori'). Questo è un refuso della promozione in cap_05.",
+      "fonti_in_conflitto": [
+        "progetto/story_graph.json: entities.characters.dimitri_volkov.category = '?'",
+        "progetto/story_graph.json: entities.characters.detective_chen.category = '?'"
+      ],
+      "fonte_di_verita": "progetto/grafo_schema.json (categoria enum validi)",
+      "azione_suggerita": "Correggere category di 'dimitri_volkov' a 'secondari' (o 'antagonisti' — decisione autore) e 'detective_chen' a 'secondari'. Operazione di contenuto, non strutturale, fattibile via script.",
+      "risolto": false,
+      "note": null
+    },
+    {
+      "id": "M14",
+      "rilevato_in": "distillazione cap_06 — Passata 1 (cap_06_s02)",
+      "data": "2026-06-05",
+      "tipo": "info_nuova_potenzialmente_conflittuale",
+      "gravita": "media",
+      "descrizione": "In cap_06, Natasha rivela che Sofia è stata promessa ai Kozlov a sei anni ('sei quando hai iniziato a pianificare'). Questa informazione è nuova e potenzialmente in conflitto con quanto saputo finora su Sofia. In cap_03 Sofia era al level -2 del Vesper in una 'suite di recupero'. Il collegamento con la promessa ai Kozlov non è esplicitato. Debt aperto: sofia_promessa_kozlov_conferma.",
+      "fonti_in_conflitto": [
+        "progetto/narrazione_fattuale/cap_06.md (Natasha: 'Sei quando hai iniziato a pianificare. È scappata perché—')",
+        "progetto/narrazione_fattuale/cap_03.md (Sofia al level -2, suite di recupero)"
+      ],
+      "fonte_di_verita": null,
+      "azione_suggerita": "Verificare se la promessa ai Kozlov è già nella bibbia/framework o è una nuova info introdotta in cap_06. Aggiornare la scheda Sofia se confermata. Chiarire la connessione tra la promessa ai Kozlov e il rifugio di Sofia al Vesper.",
+      "risolto": false,
+      "note": "Connesso a M06 (voce_nel_buio vs Sofia) e al debt sofia_promessa_kozlov_conferma aperto in cap_06."
+    },
+    {
+      "id": "M15",
+      "rilevato_in": "distillazione cap_06 — Passata 1 (cap_06_s08)",
+      "data": "2026-06-05",
+      "tipo": "dettaglio_narrativo_non_spiegato",
+      "gravita": "bassa",
+      "descrizione": "In cap_06 (POV Dante, scena al Vesper), Rory appare armata senza che il testo spieghi quando o come abbia preso l'arma. Dante stesso si sorprende: 'Non sai sparare.' Rory: 'So abbastanza.' Non è chiaro se l'arma provenga dalla scorta di Dante all'attico, dalla sala controllo, o da un'altra fonte. Debt aperto: rory_armata_quando.",
+      "fonti_in_conflitto": [
+        "progetto/narrazione_fattuale/cap_06.md ('Lei uscì già vestita. Armata — quando aveva preso la pistola?')"
+      ],
+      "fonte_di_verita": "progetto/narrazione_fattuale/cap_06.md",
+      "azione_suggerita": "Decidere se la scena dell'arma è una scelta narrativa deliberata (autonomia di Rory) o un dettaglio da spiegare. Se deliberata, il momento in cui Rory prende l'arma potrebbe essere un micro-flash da aggiungere alla prosa finale.",
+      "risolto": false,
+      "note": "Bassa gravità ma alta coerenza di caratterizzazione: Rory che prende un'arma segna una transizione da giornalista a partecipante attiva."
     }
   ]
 }

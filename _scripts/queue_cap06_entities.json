@@ -1,0 +1,55 @@
+[
+  {
+    "id": "compound_volkov",
+    "category": "locations",
+    "promoted_by": "distillatore_cap06",
+    "promotion_unit": "cap_06",
+    "data": {
+      "id": "compound_volkov",
+      "name": "Compound dei Volkov",
+      "category": "luoghi_esterni",
+      "type": "location",
+      "role_saga": "Sede del potere dei Volkov fuori Seattle — fortezza medievale adibita a quartier generale del crimine organizzato West Coast",
+      "appears_in_units": ["cap_06"],
+      "arc_summary": "Luogo-verità: è qui che il velo sull'identità del Cacciatore si squarcia e che Dante e Rory scoprono Adrian Bell / la connessione Marcus."
+    }
+  },
+  {
+    "id": "marcus",
+    "category": "characters",
+    "promoted_by": "distillatore_cap06",
+    "promotion_unit": "cap_06",
+    "data": {
+      "id": "marcus",
+      "name": "Marcus",
+      "aliases": ["dolce Marcus"],
+      "category": "minori",
+      "type": "character",
+      "role_saga": "Antagonista del passato — uomo di fiducia di Dante, tradì vendendo informazioni che costarono la vita a tre uomini; Dante lo distrusse psicologicamente fino al suicidio. Mentore e amante di Adrian Bell (il Cacciatore). Figura che genera tutta la catena di vendetta.",
+      "appears_in_units": ["cap_06"],
+      "arc_summary": "Morto prima della storia — la sua esistenza e morte sono il movente di tutto il plot del Cacciatore.",
+      "voice": {
+        "register": null,
+        "frasi_codice": [],
+        "verbi_dominanti": [],
+        "modalita_attive": [],
+        "vincoli_max": {}
+      }
+    }
+  },
+  {
+    "id": "fascicolo_adrian_bell",
+    "category": "objects",
+    "promoted_by": "distillatore_cap06",
+    "promotion_unit": "cap_06",
+    "data": {
+      "id": "fascicolo_adrian_bell",
+      "name": "Fascicolo Adrian Bell",
+      "category": "documenti",
+      "type": "object",
+      "role_saga": "Dossier consegnato da Dimitri Volkov a Dante: identità di Adrian Bell (nato Adrian Belkov), posti sicuri, abitudini, reti. Chiave tattica per la cattura del Cacciatore.",
+      "appears_in_units": ["cap_06"],
+      "arc_summary": "MacGuffin tattico — trasforma la caccia in possibilità concreta."
+    }
+  }
+]
