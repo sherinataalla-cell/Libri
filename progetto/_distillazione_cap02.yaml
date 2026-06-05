@@ -1,0 +1,445 @@
+# Distillazione cap_02 — "Maschere di Velluto"
+# Passata 1 (carpentiere meccanico) + Passata 2 (proposte sui null)
+# Data: 2026-06-05
+# Branch: claude/chapter-2-distillation-dvm3g
+#
+# PASSATA 0 — SENTINELLA CATALOGO
+# Entità nuove rilevate:
+#   Personaggi: maya, jessica_chen, amber_morrison, senatore_williams,
+#               voce_nel_buio, interlocutore_numero_privato, vivian (stub), luca (stub)
+#   Luoghi: appartamento_rory, negozio_alta_moda (stub)
+# Coda promozione: progetto/_promote_queue_cap02.json
+#
+# MISALIGNMENT RILEVATO IN PASSATA 2:
+# M03: macchia di sangue sul polsino di Dante (cap_02_s09) — mai spiegata nel testo;
+#      potenziale continuità narrativa o dettaglio trascurato. Annotato in misalignments.json.
+# M04: il prigioniero del level -2 "sente" Rory senza che glielo abbiano detto —
+#      meccanismo non spiegato (soprannaturale? tecnologico? conoscenza pregressa?) Annotato.
+
+# === IDENTITÀ UNITÀ ===
+
+unit_id: "cap_02"
+title: "Maschere di Velluto"
+slug: "maschere_di_velluto"
+position: 2
+block_id: "la_danza"
+
+# === REGISTRO ===
+
+register: "dark/psicologico — negoziazione di potere, maschere sociali, contratto come trappola"
+estimated_length: 7500
+
+# === CONDIZIONI AMBIENTALI ===
+
+ambient_conditions:
+  season: "autunno"           # continuità da cap_01: stessa stagione, Seattle autunnale
+  time_of_day: "giorno→sera"  # dalla mattina (+18h dal biglietto) all'apertura del club di sera
+  weather: null               # non esplicitamente menzionato nel testo
+  wind: null
+
+# === ATTRIBUTI DOMINANTI ===
+
+dominant_attributes:
+  tema_dominante: "la maschera diventa armatura — Rory accetta il ruolo, paga il prezzo dell'accesso"
+  registro_emotivo: "psicologico/contrattuale — potere negoziale, trasformazione identitaria, tensione erotica controllatissima"
+  pov: "alternato"            # POV Rory (prima metà) → POV Dante (seconda metà)
+
+# === CORE NARRATIVO ===
+
+premise: >
+  A 18 ore dalla proposta, Rory è ancora senza risposta ma la scoperta che Sofia Volkov è
+  cugina di Natasha la spinge a chiamare Dante e accettare. Dante l'aspettava: ha già studiato
+  il suo dossier, le ha mandato un vestito come primo test. Nell'ufficio si negoziano le regole —
+  lei chiede le sue garanzie, lui le sue. La danza ricomincia in modo diverso: non più
+  infiltrazione ma contratto.
+
+problem: >
+  Chi sta usando chi? Rory accetta il lavoro credendo di avere il controllo — accesso dall'interno,
+  possibilità di trovare la verità sulle ragazze. Dante sa che lei è l'esca perfetta per stanare
+  chi caccia nel suo territorio. Il vestito come primo test di obbedienza. Le regole come
+  negoziazione di territorio. Entrambi fingono di avere il controllo che non hanno.
+
+threshold_moment: >
+  La scena della finestra: Dante dietro di lei a 42 metri di vuoto, il suo respiro sul collo,
+  "Ancora indecisa." Non è una domanda. Il corpo di Rory tradisce il pericolo ma lei non si
+  muove. È il momento in cui la maschera da giornalista cede alla maschera da PR — e lei lo sa.
+
+resolution_mode: >
+  Rory accetta formalmente il lavoro (stipendio, contratto un anno, bonus per "sopravvivere").
+  Dante la manda con Marco al suo ufficio con "accesso al level 2". Dopo, rivela ad un
+  interlocutore sconosciuto il piano vero: Rory come esca. Scende al level -2 dove un
+  prigioniero senza nome profetizza "questa volta brucerà tutto."
+
+# === CAST IN SCENA ===
+
+cast_in_scene:
+  - entity_id: "rory_winters"
+    role_in_unit: "protagonista_pov_1"
+    active_modality: "calcolatrice/trasformazione_identitaria"
+    vincoli_locali:
+      max_detti: null
+      max_onomatopee_firma: null
+
+  - entity_id: "dante_ravencroft"
+    role_in_unit: "protagonista_pov_2"
+    active_modality: "stratega/controllo_totale"
+    vincoli_locali:
+      max_detti: null
+      max_onomatopee_firma: null
+
+  - entity_id: "marco"
+    role_in_unit: "comparsa_funzionale"
+    active_modality: "silenziosa/efficiente"
+    vincoli_locali:
+      max_detti: null
+      max_onomatopee_firma: null
+
+  - entity_id: "alexei"
+    role_in_unit: "comparsa_funzionale"
+    active_modality: "intelligence/sorveglianza"
+    vincoli_locali:
+      max_detti: null
+      max_onomatopee_firma: null
+
+  - entity_id: "maya"
+    role_in_unit: "voce_esterna_ammonimento"
+    active_modality: "protettiva/informata"
+    vincoli_locali:
+      max_detti: null
+      max_onomatopee_firma: null
+
+  - entity_id: "vivian"
+    role_in_unit: "comparsa_funzionale"
+    active_modality: "complice_inconsapevole"
+    vincoli_locali:
+      max_detti: null
+      max_onomatopee_firma: null
+
+  - entity_id: "senatore_williams"
+    role_in_unit: "menzione_assente"
+    active_modality: "ricattato"
+    vincoli_locali:
+      max_detti: null
+      max_onomatopee_firma: null
+
+  - entity_id: "voce_nel_buio"
+    role_in_unit: "antagonista_latente/oracolo"
+    active_modality: "profetica/incatenata"
+    vincoli_locali:
+      max_detti: null
+      max_onomatopee_firma: null
+
+# === LUOGHI ===
+
+primary_location_id: "ufficio_dante"
+secondary_location_ids:
+  - "appartamento_rory"
+  - "the_vesper"
+  - "negozio_alta_moda"
+  - "vesper_level_minus2"
+  - "seattle"
+
+# === RELAZIONI GLOBALI ===
+
+callbacks_in:
+  - "risposta_rory_24h"           # debt da cap_01 — si chiude qui: lei chiama entro 24h
+  - "proposta_pr_dante"           # seed da cap_01 — sboccia: Rory accetta il lavoro
+
+seeds_planted:
+  - "storia_sepolta_rory"         # 2 anni fa: storia traffico minori, fonti fatte sparire
+  - "sospetti_dante_assassino"    # Dante ha sospetti ma non certezze ("tecnicamente vero")
+  - "rory_esca_nel_territorio"    # Dante usa Rory come esca per chi caccia nel Vesper
+  - "profezia_voce_buio"          # "questa volta brucerà tutto" — il prigioniero sa qualcosa
+  - "interlocutore_numero_privato" # chi chiama Dante sul numero privato "che pochi conoscevano"?
+
+seeds_blooming:
+  - "proposta_pr_dante"           # da cap_01 — la proposta diventa accordo firmato
+  - "dante_sa_tutto_da_subito"    # da cap_01 — Alexei fornisce dossier completo su Rory
+  - "tre_ragazze_scomparse"       # da cap_01 — nomi rivelati: Jessica Chen, Amber Morrison, Sofia Volkov
+
+seeds_maturing:
+  - "ascensore_sale_non_scende"   # da cap_01 — il level -2 esiste davvero sotto; ribaltamento parziale del seed
+
+debts_opened:
+  - "fonti_sparite_rory"          # Alexei deve trovare le fonti sparite 2 anni fa
+  - "ragazzo_finestra_5anni_fa"   # chi era il ragazzo che saltò dalla finestra? ("il suono")
+  - "chi_caccia_nel_territorio"   # chi usa il Vesper come terreno di caccia?
+  - "identita_voce_nel_buio"      # chi è la figura incatenata al level -2?
+  - "senatore_williams_ricatto"   # il Senatore ricattato con foto — quanto durerà?
+
+debts_closed:
+  - "risposta_rory_24h"           # da cap_01 — Rory chiama entro 24h e accetta
+
+# === RIFERIMENTI A FILE ESTERNI ===
+
+narrazione_fattuale_path: "narrazione_fattuale/cap_02.md"
+brief_path: null
+testo_finale_path: "testi_finali/cap_02.md"
+
+# === STATO ===
+
+status: "macro_distilled"
+
+# === SCENE (livello micro) ===
+
+scenes:
+
+  - id: "cap_02_s01"
+    position: 1
+    type: "deliberazione"
+    is_signature: false
+    moment: "giorno"
+    location:
+      id: "appartamento_rory"
+      qualifier: "cucina / scrivania"
+    characters_present:
+      - "rory_winters"
+    focal_action: "Rory fissa il biglietto nero da 18 ore, 14 schede aperte su Dante — quasi inesistente digitalmente; qualche foto a eventi beneficenza, permessi edilizi per il Vesper"
+    focal_object: "biglietto_nero_dante"
+    atmosphere: "contrasto stridente — squallore del monolocale vs. lusso del Vesper ricordato; il peso del biglietto come accusa/promessa; rubinetto gocciolante, muffa, vista sul vicolo dei gatti randagi"
+    palette: "grigio/squallido, luce diurna cruda, schermo laptop aperto su 14 schede"
+    ambient_modifier: "gocciolar del rubinetto — ninnananna irregolare"
+    onomatopee: []
+    composition_zone: null
+    panel_layout: null
+    audio_duration_seconds: null
+    asset_path: null
+    notes: "Prima apparizione 'appartamento_rory'. Dante è quasi un fantasma digitale — il potere reale non lascia tracce. Il biglietto 'pesava come un'accusa. O una promessa' — eco del registratore-arma di cap_01."
+    provenance: "original"
+
+  - id: "cap_02_s02"
+    position: 2
+    type: "dialogo_telefonico"
+    is_signature: false
+    moment: "giorno"
+    location:
+      id: "appartamento_rory"
+      qualifier: "cucina"
+    characters_present:
+      - "rory_winters"
+    focal_action: "Maya chiama Rory: mette in guardia ('quando sparisce gente a Seattle il suo nome sussurra sempre — mai indagato seriamente'), poi Rory scopre che Sofia Volkov è cugina di Natasha"
+    focal_object: null
+    atmosphere: "voce amica come filo di sicurezza che si vuole recidere — preoccupazione di Maya vs. tentazione di Rory; la scoperta della parentela Volkov come detonatore della decisione"
+    palette: "squallore monolocale, telefono, foto delle tre ragazze aperte sul laptop"
+    ambient_modifier: null
+    onomatopee: []
+    composition_zone: null
+    panel_layout: null
+    audio_duration_seconds: null
+    asset_path: null
+    notes: "Prima menzione esplicita per nome: Jessica Chen (22, studentessa legge), Amber Morrison (19, modella), Sofia Volkov (24, figlia diplomatici russi, cugina di Natasha Volkov). Seed 'tre_ragazze_scomparse' da cap_01 in piena fioritura. 'maya' appare solo via telefono — prima occorrenza."
+    provenance: "original"
+
+  - id: "cap_02_s03"
+    position: 3
+    type: "decisione_punto_svolta"
+    is_signature: true
+    moment: "giorno"
+    location:
+      id: "appartamento_rory"
+      qualifier: "cucina"
+    characters_present:
+      - "rory_winters"
+    focal_action: "Rory chiama Dante prima che cambi idea. 'Sapevo che avresti chiamato.' Accordo: entrata posteriore, un'ora prima dell'apertura. SMS sequenza: vestiti per impressionare. Te stessa. Indirizzo negozio alta moda. Già pagato."
+    focal_object: "biglietto_nero_dante"
+    atmosphere: "la voce di Dante come tocco fisico — 'velluto e acciaio che le accarezzò l'orecchio come una minaccia. O una promessa'; l'arroganza come stimolante; la decisione presa 'prima di poter cambiare idea'"
+    palette: "cucina, telefono, biglietto nero che smette di opprimere"
+    ambient_modifier: null
+    onomatopee: []
+    composition_zone: null
+    panel_layout: null
+    audio_duration_seconds: null
+    asset_path: null
+    notes: "is_signature: chiusura del debt 'risposta_rory_24h'. 'Realista' — eco identica della parola di Maya usata poco prima: Dante e Maya usano la stessa parola, Rory lo nota con pelle d'oca. Il vestito già pagato = primo gesto di controllo/test prima del meeting. Rory obbedisce pur essendo 'incazzata nera'."
+    provenance: "original"
+
+  - id: "cap_02_s04"
+    position: 4
+    type: "trasformazione"
+    is_signature: false
+    moment: "pomeriggio"
+    location:
+      id: "negozio_alta_moda"
+      qualifier: "interno / camerino"
+    characters_present:
+      - "rory_winters"
+      - "vivian"
+    focal_action: "Rory prova l'abito di seta nera da Vivian. Aderisce in punti inaspettati, tacchi +10cm, curva alla schiena. Orecchini di ossidiana con biglietto Dante: 'Per stasera.' — non per te, per stasera."
+    focal_object: null
+    atmosphere: "trasformazione identitaria — il vestito come costume/ruolo da interpretare, non invito; Vivian che veste donne per uomini pericolosi come fosse routine; lo specchio che restituisce una sconosciuta pericolosa"
+    palette: "seta nera, ossidiana che cattura luce come occhi nel buio, grande specchio, luce negozio"
+    ambient_modifier: null
+    onomatopee: []
+    composition_zone: null
+    panel_layout: null
+    audio_duration_seconds: null
+    asset_path: null
+    notes: "'Per stasera. Non per te.' — il vestito come performance, il ruolo ha già inizio. Rory si riconosce come 'pericolosa' — la maschera da PR nasce qui. Prima e unica occorrenza di 'vivian' e 'negozio_alta_moda'. Già pagato = Dante ha anticipato tutto."
+    provenance: "original"
+
+  - id: "cap_02_s05"
+    position: 5
+    type: "ingresso_scortato"
+    is_signature: false
+    moment: "sera"
+    location:
+      id: "the_vesper"
+      qualifier: "ingresso posteriore / corridoi funzionali"
+    characters_present:
+      - "rory_winters"
+      - "marco"
+    focal_action: "Marco accoglie Rory all'entrata posteriore (porta blindata, metallo/cemento). La guida attraverso corridoi che puzzano di candeggina e segreti. Salgono — oltre il piano principale, oltre i VIP, fino all'aria di potere."
+    focal_object: null
+    atmosphere: "backstage del potere — niente glamour, tutto funzionale; 'il retroscena di un teatro dove la vera magia è sudore e meccanica'; ascesa verso il centro del territorio di Dante"
+    palette: "cemento, metallo, corridoi funzionali, porte anonime, bianco industriale"
+    ambient_modifier: "odore di candeggina e segreti"
+    onomatopee: []
+    composition_zone: null
+    panel_layout: null
+    audio_duration_seconds: null
+    asset_path: null
+    notes: "Marco riconosciuto da cap_01 ('troppe cicatrici e zero espressioni'). Ingresso posteriore come soglia di verità — non l'ingresso glamour del lusso. Marco 'bussa due volte. Non aspettò risposta prima di aprire.' — gesto di potere delegato."
+    provenance: "original"
+
+  - id: "cap_02_s06"
+    position: 6
+    type: "confronto_contrattuale"
+    is_signature: true
+    moment: "sera"
+    location:
+      id: "ufficio_dante"
+      qualifier: "interno — finestra / scrivania"
+    characters_present:
+      - "rory_winters"
+      - "dante_ravencroft"
+    focal_action: "Dante in camicia bianca aperta, maniche arrotolate (più casual, più pericoloso). Scena finestra: Dante dietro Rory a 42 metri di vuoto, respiro sul collo. Negoziazione 4 regole. 'Hai ucciso quelle ragazze?' No. Rory accetta il lavoro."
+    focal_object: null
+    atmosphere: "tensione erotica come pericolo fisico — la distanza di sicurezza che non è sicura; le regole come negoziazione di confini territoriali; sfioramento dell'orecchino come marchio; il controllo che richiede più controllo"
+    palette: "camicia bianca vs. abito nero/ossidiana, vetrate su Seattle al tramonto, scrivania come confine/fortezza"
+    ambient_modifier: "Seattle al tramonto — regno visibile"
+    onomatopee: []
+    composition_zone: null
+    panel_layout: null
+    audio_duration_seconds: null
+    asset_path: null
+    notes: "is_signature: scena-contratto del cap. 4 regole Dante: 1) accesso ovunque con scorta; 2) tutto passa da lui prima; 3) rappresenta il Vesper; 4) non mentire mai. Rory tocca l'orecchino — 'bruciante come un marchio'. 'Bonus per risultati eccezionali. Definisci eccezionali. / Sopravvivere.' — la battuta che non è una battuta. Rory contro-esige: 'scopro che hai mentito → sparisco e vado dai federali'."
+    provenance: "original"
+
+  - id: "cap_02_s07"
+    position: 7
+    type: "briefing_intel"
+    is_signature: false
+    moment: "giorno"
+    location:
+      id: "ufficio_dante"
+      qualifier: "scrivania — prima dell'arrivo di Rory"
+    characters_present:
+      - "dante_ravencroft"
+      - "alexei"
+    focal_action: "Alexei briefing su Rory: 2 anni fa storia su traffico minori, politici/imprenditori/badge — non falsa ma non provabile. Fonti sparite, documenti spariti, radiata. Dante: 'Fatte sparire.' Ordine: sorveglianza discreta + trova quelle fonti."
+    focal_object: null
+    atmosphere: "intelligence fredda — Alexei preciso come orologio, Dante che legge le foto di Aurora due anni prima ('stesso fuoco, meno cicatrici e meno metaforici'); la vittimizzazione sistematica di Rory come conferma del suo valore come agente"
+    palette: "cartellina, foto d'archivio, scrivania ufficio privato, prima dell'apertura"
+    ambient_modifier: null
+    onomatopee: []
+    composition_zone: null
+    panel_layout: null
+    audio_duration_seconds: null
+    asset_path: null
+    notes: "Seed 'storia_sepolta_rory' piantato: le fonti NON sono semplicemente sparite — sono state fatte sparire. Chi l'ha fatto? Debt 'fonti_sparite_rory' aperto. Dante: 'Il che rendeva Aurora Winters ancora più interessante. E pericolosa.'"
+    provenance: "original"
+
+  - id: "cap_02_s08"
+    position: 8
+    type: "gestione_potere"
+    is_signature: false
+    moment: "pomeriggio"
+    location:
+      id: "the_vesper"
+      qualifier: "piano principale / privé 3"
+    characters_present:
+      - "dante_ravencroft"
+      - "luca"
+    focal_action: "Luca (bar manager) informa Dante: Senatore Williams ha lasciato danni al privé 3 — 'tipo che richiede pulizia professionale e nuovi arredi'. Dante: 'Fattura il triplo. Se protesta, ricordagli le foto.'"
+    focal_object: null
+    atmosphere: "il Vesper di giorno come creatura diversa — luci crude, meccanismi esposti, staff che lavora; Dante in giro per il suo feudo; il ricatto come strumento di gestione ordinaria del potere"
+    palette: "luci crude, privé 3 da sistemare, staff in movimento, preparativi apertura"
+    ambient_modifier: "suoni di preparativi: musica testata, luci accese"
+    onomatopee: []
+    composition_zone: null
+    panel_layout: null
+    audio_duration_seconds: null
+    asset_path: null
+    notes: "Prima menzione 'senatore_williams' (assente fisicamente, menzionato). Prima occorrenza 'luca' (bar manager). Seed 'senatore_williams_ricatto': Dante gestisce le minacce tramite ricatto come prassi normale. 'O diventerà un problema risolto' — eufemismo tipico di Dante."
+    provenance: "original"
+
+  - id: "cap_02_s09"
+    position: 9
+    type: "doppio_pov_negoziazione"
+    is_signature: false
+    moment: "sera"
+    location:
+      id: "ufficio_dante"
+      qualifier: "Dante POV — stessa sequenza di s06"
+    characters_present:
+      - "dante_ravencroft"
+      - "rory_winters"
+    focal_action: "Dante vede Rory con il vestito: 'un'arma puntata alla sua gola'. Dante che segue Rory alla finestra senza poterne fare a meno. L'orecchino sfiorato come tentativo di mantenere la distanza attraverso il controllo."
+    focal_object: null
+    atmosphere: "controllo millimetrico che comincia a cedere — 'gravità. magnetismo. cazzi vari che non voleva analizzare'; la lotta tra calcolo e attrazione; Dante che mente ad Alexei ('ho mentito: non sono sicuro di questa mossa')"
+    palette: "stessa scena di s06 — letta con occhi diversi, più vulnerabile"
+    ambient_modifier: null
+    onomatopee: []
+    composition_zone: null
+    panel_layout: null
+    audio_duration_seconds: null
+    asset_path: null
+    notes: "Rivela la sostituzione della camicia con macchia di sangue al polsino — mai spiegata (M03). Il ragazzo alla finestra citato per la prima volta: 'aveva guardato saltare... il suono.' Seed 'ragazzo_finestra_5anni_fa' piantato. Dante mente ad Alexei: 'Era la cosa più pericolosa che aveva fatto in anni. Ma anche la più interessante.'"
+    provenance: "original"
+
+  - id: "cap_02_s10"
+    position: 10
+    type: "piano_rivelato"
+    is_signature: false
+    moment: "sera"
+    location:
+      id: "ufficio_dante"
+      qualifier: "finestra — dopo la partenza di Rory"
+    characters_present:
+      - "dante_ravencroft"
+    focal_action: "Chiamata da numero privato 'che pochi conoscevano'. Interlocutore sfida Dante sull'assunzione di Rory. Dante rivela il piano: 'qualcuno caccia nel nostro territorio usando il Vesper come terreno di caccia. Voglio sapere chi. Rory è l'esca perfetta.'"
+    focal_object: null
+    atmosphere: "solitudine del stratega — Dante alla finestra, Seattle come scacchiera, il riflesso nel vetro; la chiamata come forma di supervisione esterna che Dante rifiuta; 'quel ponte lo bruceremo quando ci arriveremo'"
+    palette: "finestra, luci notturne Seattle, riflesso nel vetro, whiskey non toccato"
+    ambient_modifier: "club che si sveglia in basso — musica, luci"
+    onomatopee: []
+    composition_zone: null
+    panel_layout: null
+    audio_duration_seconds: null
+    asset_path: null
+    notes: "Prima occorrenza 'interlocutore_numero_privato'. Il 'nostro territorio' suggerisce che l'interlocutore è partner/associato/superiore di Dante, non nemico. 'Come l'ultima volta?' — riferimento al ragazzo alla finestra (callback non esplicitato). Dante non risponde all'ultima domanda: 'No. Meglio.'"
+    provenance: "original"
+
+  - id: "cap_02_s11"
+    position: 11
+    type: "discesa_alle_radici"
+    is_signature: true
+    moment: "sera"
+    location:
+      id: "vesper_level_minus2"
+      qualifier: "stanza blindata in fondo al corridoio"
+    characters_present:
+      - "dante_ravencroft"
+      - "voce_nel_buio"
+    focal_action: "Dante scende al livello -2 (assente dalle piantine, codice + impronte + retinica). Una figura incatenata nell'ombra riconosce Rory senza che glielo abbiano detto: 'Brucia diverso.' Profezia: 'questa volta brucerà tutto.'"
+    focal_object: null
+    atmosphere: "il buio assoluto come verità ultima — Dante non accende le luci; catene che tintinnano; respiro affannoso; atmosfera di prigionia antica; brivido lungo la schiena di Dante che non vuole ammettere"
+    palette: "nero totale, porta blindata, codice triplo (numerico + impronte + retinica), catene nell'ombra"
+    ambient_modifier: "silenzio totale, isolamento acustico completo"
+    onomatopee: []
+    composition_zone: null
+    panel_layout: null
+    audio_duration_seconds: null
+    asset_path: null
+    notes: "is_signature: scena-rivelazione del level -2. Ribalta parzialmente 'ascensore_sale_non_scende' da cap_01 — i segreti più oscuri SONO sotto. Il prigioniero 'sente' Rory senza averla vista (M04 — meccanismo non spiegato). Familiarità nel dialogo: il prigioniero conosce Dante, lo chiama implicitamente per nome. 'Deliri.' Ma Dante trema."
+    provenance: "original"

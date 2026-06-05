@@ -37,6 +37,36 @@
       "azione_suggerita": "Aggiungere campo 'pov' a TEMPLATE_unita.yaml e a build_unit_node() in write_node_to_graph.py. Richiede autorizzazione creatore (modifica strutturale template/script).",
       "risolto": false,
       "note": "Workaround applicato: pov inserito in dominant_attributes del YAML cap_01."
+    },
+    {
+      "id": "M03",
+      "rilevato_in": "distillazione cap_02 — Passata 2 (cap_02_s09)",
+      "data": "2026-06-05",
+      "tipo": "dettaglio_narrativo_non_spiegato",
+      "gravita": "bassa",
+      "descrizione": "In cap_02 (POV Dante, scena ufficio), Dante si cambia la camicia perché 'aveva una macchia di sangue sul polsino'. La provenienza della macchia non è mai spiegata nel testo — né in cap_01 né in cap_02.",
+      "fonti_in_conflitto": [
+        "progetto/narrazione_fattuale/cap_02.md ('quella di prima aveva una macchia di sangue sul polsino. Dettagli. Sempre i dettagli.')"
+      ],
+      "fonte_di_verita": "progetto/narrazione_fattuale/cap_02.md",
+      "azione_suggerita": "Decidere se la macchia di sangue è un dettaglio narrativo deliberato (continuità con eventi non mostrati prima del cap_01?) o un refuso. Se deliberato, pianta un seed esplicito.",
+      "risolto": false,
+      "note": null
+    },
+    {
+      "id": "M04",
+      "rilevato_in": "distillazione cap_02 — Passata 2 (cap_02_s11)",
+      "data": "2026-06-05",
+      "tipo": "meccanismo_narrativo_non_spiegato",
+      "gravita": "media",
+      "descrizione": "Il prigioniero del level -2 (voce_nel_buio) afferma di 'sentire' la presenza di Rory senza che glielo abbiano detto e senza averla vista: 'Hai portato qualcuno nuovo. La sento. È diversa. Brucia diverso.' Il meccanismo percettivo non è spiegato — soprannaturale? tecnologico? conoscenza pregressa?",
+      "fonti_in_conflitto": [
+        "progetto/narrazione_fattuale/cap_02.md ('So che sei sveglio.' / 'Hai portato qualcuno nuovo. La sento.')"
+      ],
+      "fonte_di_verita": "progetto/narrazione_fattuale/cap_02.md",
+      "azione_suggerita": "Definire nella bibbia o in una nota di continuità il meccanismo percettivo del prigioniero. Determinare se è elemento soprannaturale intenzionale o metafora.",
+      "risolto": false,
+      "note": "Annotato in cap_02_s11 nel grafo."
     }
   ]
 }
