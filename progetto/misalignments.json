@@ -2,7 +2,7 @@
   "_meta": {
     "note": "Rolling file misalignment — L'Ombra del Vesper. Aggiornato dal distillatore durante le passate di distillazione.",
     "formato": "lista di oggetti, uno per misalignment. Non si risolve qui: solo si segnala.",
-    "ultima_modifica": "2026-06-05 (cap_04)"
+    "ultima_modifica": "2026-06-05 (cap_05)"
   },
   "misalignments": [
     {
@@ -147,6 +147,37 @@
       "azione_suggerita": "Verificare se la discrepanza è intenzionale (6 ore passate tra la foto e l'arrivo all'attico, non due) o se è un refuso. Se intenzionale, chiarire il riferimento di Marco ('due ore fa' potrebbe essere impreciso o riferirsi a un momento diverso).",
       "risolto": false,
       "note": "Bassa gravità: non impatta la coerenza narrativa centrale, solo la precisione del countdown."
+    },
+    {
+      "id": "M10",
+      "rilevato_in": "distillazione cap_05 — Passata 1 (cap_05_s12)",
+      "data": "2026-06-05",
+      "tipo": "meccanismo_narrativo_non_spiegato",
+      "gravita": "media",
+      "descrizione": "In cap_05 (POV Dante), il Cacciatore chiama usando il numero di Alexei — 'Il telefono. Alexei. Quello vero. Ma non era Alexei. Era la voce distorta del Cacciatore.' Come il Cacciatore è in possesso del numero personale di Alexei, che è il braccio operativo riservato di Dante? Evoluzione di M08 (numero di Dante): ora la compromissione si estende al team.",
+      "fonti_in_conflitto": [
+        "progetto/narrazione_fattuale/cap_05.md ('Il telefono. Alexei. Quello vero. [...] Ma non era Alexei. Era la voce distorta del Cacciatore.')",
+        "M08: il Cacciatore aveva già il numero personale di Dante in cap_04"
+      ],
+      "fonte_di_verita": "progetto/narrazione_fattuale/cap_05.md",
+      "azione_suggerita": "Decidere se il Cacciatore ha una capacità tecnologica di spoofing dei numeri oppure ha infiltrato la rete di Dante (scenario più grave). Se spoofing: spiegare come. Se infiltrazione: chi è la talpa? La risposta impatta la geometria della minaccia e risolverebbe anche M08.",
+      "risolto": false,
+      "note": "Seed 'cacciatore_numero_privato_dante' già traccia M08. M10 espande la domanda: non solo il numero di Dante ma anche quello di Alexei."
+    },
+    {
+      "id": "M11",
+      "rilevato_in": "distillazione cap_05 — Passata 1 (cap_05_s15)",
+      "data": "2026-06-05",
+      "tipo": "pronome_ambiguo",
+      "gravita": "bassa",
+      "descrizione": "Il messaggio del Cacciatore trovato sul corpo della ragazza uccisa recita: 'Lei sa chi sono. Due anni fa l'ha quasi preso. Ora tocca a me prenderla.' Il pronome 'l'ha quasi preso' è ambiguo: chi ha quasi preso chi? Interpretazione A: Rory ha quasi scoperto il Cacciatore due anni fa (il che implicherebbe un'azione investigativa inconsapevole). Interpretazione B: il Cacciatore ha quasi preso Rory due anni fa ma si è fermato deliberatamente. Le due interpretazioni cambiano profondamente il profilo del Cacciatore.",
+      "fonti_in_conflitto": [
+        "progetto/narrazione_fattuale/cap_05.md ('Lei sa chi sono. Due anni fa l'ha quasi preso. Ora tocca a me prenderla.')"
+      ],
+      "fonte_di_verita": null,
+      "azione_suggerita": "Decidere l'interpretazione canonica del messaggio. Se A (Rory ha quasi scoperto il Cacciatore): spiegare quando e come in un capitolo successivo. Se B (il Cacciatore ha quasi preso Rory): chiarisce la motivazione della pazienza biennale.",
+      "risolto": false,
+      "note": "Bassa gravità narrativa ma alta gravità di caratterizzazione: il significato del messaggio definisce il profilo psicologico del Cacciatore."
     }
   ]
 }
