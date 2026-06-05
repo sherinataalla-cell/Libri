@@ -1,0 +1,52 @@
+# Template YAML — Scene/Hook di una unità (livello micro)
+#
+# Compila questo file con le scene/hook che compongono UNA unità
+# (riferita per unit_id). Lo script writer le scrive nel grafo come
+# array `scenes` del nodo unità.
+#
+# Convenzioni:
+# - id scena: pattern <id_unita>_s<NN>, NN zero-padded (es: cap03_s01, cap03_s02)
+# - position: numero ordinale 1..N nella sequenza della unità
+# - per livello micro denso, è normale avere 5-15 scene per unità
+# - i riferimenti a entità (characters_present, location.id) devono esistere
+#   nel grafo a livello macro
+
+unit_id: "<id_unita>"                         # OBBLIGATORIO. Riferisce la unità di appartenenza.
+
+scenes:
+
+  # === ESEMPIO: scena tipo ===
+  - id: "<id_unita>_s01"                      # OBBLIGATORIO. Pattern: <id_unita>_s<NN>
+    position: 1                                # OBBLIGATORIO. Numero ordinale.
+    type: null                                 # tipo scena (tassonomia specifica progetto)
+    is_signature: false                        # scena firma del progetto?
+    moment: null                               # es: mattino_presto, sera, notte
+    location:
+      id: "<id_luogo>"                         # OBBLIGATORIO se il progetto ha luoghi
+      qualifier: null                          # es: interno, esterno, cortile (per luoghi multi-blocco)
+    characters_present: []                     # id entità presenti nella scena
+    focal_action: null                         # azione focale, italiano presente indicativo, neutro, max ~25 parole
+    focal_object: null                         # id oggetto focale (se applicabile)
+    atmosphere: null                           # descrizione atmosferica
+    palette: null                              # palette emotiva/visiva
+    ambient_modifier: null                     # modificatore atmosferico/ambientale visibile
+    onomatopee: []                             # eventuali onomatopee firma
+    composition_zone: null                     # specifico medium illustrato/fumetto: vignette, full_page, double_spread
+    panel_layout: null                         # specifico fumetto
+    audio_duration_seconds: null               # specifico audio/podcast
+    asset_path: null                           # path asset finale (popolato in Fase 07)
+    notes: null                                # note autoriali liberi
+    provenance: "original"                     # original | extended | manual | imported
+
+  # === Aggiungi qui le altre scene della unità ===
+  # - id: "<id_unita>_s02"
+  #   position: 2
+  #   ...
+
+# === VINCOLI EDITORIALI DEL PROGETTO ===
+# Esempi tipici (lo script writer li valida se dichiarati nel progetto):
+# - numero esatto di scene per unità (es: 10)
+# - distribuzione dei tipi di scena (es: max N atmosferici, min N azione)
+# - tutte le scene must have characters_present non vuoto (eccetto type:panorama)
+# - tutte le scene must have location.id valido nel catalogo
+# - focal_action max N parole, in italiano presente indicativo

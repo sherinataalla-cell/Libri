@@ -1,0 +1,190 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "ombra_del_vesper/grafo_schema.json",
+  "title": "Grafo narrativo L'Ombra del Vesper",
+  "description": "Schema canonico del grafo. Specializzazione del template kit per un dark romance a doppio POV (Dante/Rory), 20 capitoli, 4 movimenti. DA COMPLETARE in Fase 02 con lo skill architetto_grafo.",
+  "type": "object",
+  "required": ["schema_version", "graph_version", "project", "entities", "units"],
+  "properties": {
+    "schema_version": {
+      "type": "string",
+      "description": "Versione della FORMA dei nodi. Semver — major bump vietato post-congelamento.",
+      "default": "1.0.0",
+      "pattern": "^\\d+\\.\\d+(\\.\\d+)?$"
+    },
+    "graph_version": {
+      "type": "string",
+      "description": "Versione dello STATO del contenuto. Bumpa indipendentemente dallo schema.",
+      "default": "0.0.0",
+      "pattern": "^\\d+\\.\\d+\\.\\d+$"
+    },
+    "project": {
+      "type": "object",
+      "required": ["id", "title", "medium"],
+      "properties": {
+        "id": { "type": "string", "default": "ombra_del_vesper" },
+        "title": { "type": "string", "default": "L'Ombra del Vesper" },
+        "subtitle": { "type": "string", "default": "Dark romance — Dante Ravencroft & Aurora Winters" },
+        "medium": { "type": "string", "enum": ["testo"], "default": "testo" },
+        "target_audience": { "type": "string", "default": "donne 35-50, Kindle Unlimited" },
+        "language": { "type": "string", "default": "it" },
+        "created_at": { "type": "string", "format": "date" },
+        "updated_at": { "type": "string", "format": "date" }
+      }
+    },
+    "entities": {
+      "type": "object",
+      "description": "Registro entità per categoria. Categorie del progetto: characters, locations, groups, objects.",
+      "properties": {
+        "characters": {
+          "type": "object",
+          "description": "Personaggi. Sottocategorie: protagonisti, secondari, antagonisti, minori.",
+          "additionalProperties": {
+            "type": "object",
+            "required": ["id", "name", "category"],
+            "properties": {
+              "id": { "type": "string", "pattern": "^[a-z0-9_]+$" },
+              "name": { "type": "string" },
+              "aliases": { "type": "array", "items": { "type": "string" } },
+              "category": { "type": "string", "enum": ["protagonisti", "secondari", "antagonisti", "minori"] },
+              "role_saga": { "type": "string" },
+              "appears_in_units": { "type": "array", "items": { "type": "string" } },
+              "stato_per_unita": { "type": "object" },
+              "voice": {
+                "type": "object",
+                "description": "Registro voce — linguaggio del controllo (Dante) o della resistenza (Rory).",
+                "properties": {
+                  "register": { "type": "string" },
+                  "frasi_codice": { "type": "array", "items": { "type": "string" } },
+                  "verbi_dominanti": { "type": "array", "items": { "type": "string" } },
+                  "modalita_attive": { "type": "array", "items": { "type": "string" } },
+                  "vincoli_max": { "type": "object" }
+                }
+              },
+              "arc_summary": { "type": "string", "description": "Arco narrativo in una frase." },
+              "links": {
+                "type": "object",
+                "properties": {
+                  "catalog_path": { "type": "string" },
+                  "bibbia_section": { "type": "string" }
+                }
+              },
+              "promotion": {
+                "type": "object",
+                "properties": {
+                  "promoted_at": { "type": "string", "format": "date" },
+                  "promoted_by": { "type": "string" },
+                  "promotion_unit": { "type": ["string", "null"] }
+                }
+              }
+            }
+          }
+        },
+        "locations": {
+          "type": "object",
+          "description": "Luoghi. Sottocategorie: pubblici, privati, segreti.",
+          "additionalProperties": {
+            "type": "object",
+            "required": ["id", "name", "category"],
+            "properties": {
+              "id": { "type": "string", "pattern": "^[a-z0-9_]+$" },
+              "name": { "type": "string" },
+              "aliases": { "type": "array", "items": { "type": "string" } },
+              "category": { "type": "string", "enum": ["pubblici", "privati", "segreti"] },
+              "role_saga": { "type": "string" },
+              "appears_in_units": { "type": "array", "items": { "type": "string" } },
+              "stato_per_unita": { "type": "object" },
+              "links": { "type": "object" },
+              "promotion": { "type": "object" }
+            }
+          }
+        },
+        "groups": {
+          "type": "object",
+          "description": "Organizzazioni, famiglie, reti di potere.",
+          "additionalProperties": { "type": "object" }
+        },
+        "objects": {
+          "type": "object",
+          "description": "Oggetti narrativamente rilevanti (prove, simboli, armi).",
+          "additionalProperties": { "type": "object" }
+        }
+      }
+    },
+    "units": {
+      "type": "object",
+      "description": "Unità narrative (capitoli). Chiave = id unità (es. cap_01).",
+      "additionalProperties": {
+        "type": "object",
+        "required": ["id", "title", "position"],
+        "properties": {
+          "id": { "type": "string", "pattern": "^cap_\\d{2}$" },
+          "title": { "type": "string" },
+          "slug": { "type": "string" },
+          "position": { "type": "integer", "minimum": 1, "maximum": 20 },
+          "block_id": {
+            "type": "string",
+            "description": "Movimento narrativo: la_danza | la_caduta | la_crisi | la_battaglia",
+            "enum": ["la_danza", "la_caduta", "la_crisi", "la_battaglia"]
+          },
+          "pov": {
+            "type": "string",
+            "description": "POV primario del capitolo.",
+            "enum": ["rory", "dante", "alternato"]
+          },
+          "estimated_length": { "type": "string" },
+          "premise": { "type": "string" },
+          "problem": { "type": "string" },
+          "threshold_moment": { "type": "string" },
+          "resolution_mode": { "type": "string" },
+          "cast_in_scene": { "type": "array", "items": { "type": "object" } },
+          "primary_location_id": { "type": "string" },
+          "secondary_location_ids": { "type": "array", "items": { "type": "string" } },
+          "scenes": { "type": "array", "items": { "type": "object" } },
+          "narrazione_fattuale_path": { "type": "string" },
+          "brief_path": { "type": ["string", "null"] },
+          "testo_finale_path": { "type": ["string", "null"] },
+          "status": {
+            "type": "string",
+            "enum": ["idea", "macro_distilled", "micro_distilled", "briefed", "prose_draft", "final"],
+            "default": "idea"
+          },
+          "callbacks_in": { "type": "array", "items": { "type": "string" } },
+          "seeds_planted": { "type": "array", "items": { "type": "string" } },
+          "seeds_blooming": { "type": "array", "items": { "type": "string" } },
+          "seeds_maturing": { "type": "array", "items": { "type": "string" } },
+          "debts_opened": { "type": "array", "items": { "type": "string" } },
+          "debts_closed": { "type": "array", "items": { "type": "string" } }
+        }
+      }
+    },
+    "global_relations": {
+      "type": "object",
+      "properties": {
+        "narrative_promises": { "type": "object" },
+        "explicit_callbacks": { "type": "object" },
+        "narrative_debts": { "type": "object" },
+        "character_arcs": { "type": "object" }
+      }
+    },
+    "quote_tracker": {
+      "type": "object",
+      "description": "Tracker frasi-codice e pattern ricorrenti. DA POPOLARE in Fase 02 con lo skill architetto_grafo.",
+      "additionalProperties": {
+        "type": "object",
+        "description": "Una frase o pattern tracciato. Chiave = id_pattern."
+      }
+    },
+    "misalignments_path": {
+      "type": "string",
+      "default": "misalignments.json"
+    },
+    "audit": {
+      "type": "object",
+      "properties": {
+        "last_run": { "type": ["string", "null"] },
+        "results": { "type": "object" }
+      }
+    }
+  }
+}

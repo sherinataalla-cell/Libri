@@ -1,0 +1,40 @@
+# Backup automatici timestamp-based (NON committare)
+*.bak
+*.bak.*
+
+# Backup canonici sono COMMITTATI per audit trail (vedi _convenzioni/naming_e_versioning.md §5)
+# Pattern: <file>.pre_<scope>.backup.<estensione>
+# Questi NON vanno in gitignore.
+
+# Web (Next.js)
+web/node_modules/
+web/.next/
+web/out/
+web/public/data/
+web/.env*.local
+web/package-lock.json
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+.pytest_cache/
+
+# MCP server build artifacts
+_mcp_server/build/
+_mcp_server/dist/
+_mcp_server/*.egg-info/
+_mcp_server/.eggs/
+
+# Editor
+.vscode/
+.idea/
+*.swp
+.DS_Store
+
+# Rolling files transitori (vedi _convenzioni/stato_progetto.md §3)
+# Se il progetto preferisce committarli, rimuovere queste righe.
+_provisional_state.json
+_promotion_queue.json

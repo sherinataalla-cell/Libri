@@ -1,0 +1,274 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://example.com/grafo_schema_v1.json",
+  "title": "Grafo narrativo (template kit)",
+  "description": "Schema canonico generico del grafo di un progetto narrativo. Forma frattale a 3 livelli (macro / medio / micro). Da specializzare al dominio del progetto secondo le 4 decisioni autoriali (vedi _skills/architetto_grafo/SKILL.md §3.1).",
+  "type": "object",
+  "required": ["schema_version", "graph_version", "project", "entities", "units"],
+  "properties": {
+    "schema_version": {
+      "type": "string",
+      "description": "Versione della FORMA dei nodi. Semver con major bump vietato post-congelamento.",
+      "pattern": "^\\d+\\.\\d+(\\.\\d+)?$"
+    },
+    "graph_version": {
+      "type": "string",
+      "description": "Versione dello STATO del contenuto. Bumpa indipendentemente dallo schema.",
+      "pattern": "^\\d+\\.\\d+\\.\\d+$"
+    },
+    "project": {
+      "type": "object",
+      "description": "Metadati progetto a livello macro.",
+      "required": ["id", "title", "medium"],
+      "properties": {
+        "id": { "type": "string", "description": "id snake_case del progetto" },
+        "title": { "type": "string", "description": "Titolo visualizzato" },
+        "subtitle": { "type": "string" },
+        "medium": {
+          "type": "string",
+          "enum": ["illustrato", "fumetto", "audio", "testo", "ibrido", "altro"],
+          "description": "Medium primario. Determina specializzazioni del livello micro."
+        },
+        "target_audience": { "type": "string" },
+        "language": { "type": "string", "default": "it" },
+        "created_at": { "type": "string", "format": "date" },
+        "updated_at": { "type": "string", "format": "date" }
+      }
+    },
+    "entities": {
+      "type": "object",
+      "description": "Registro delle entità promosse al livello macro. Una sezione per categoria tematica del progetto. Le universali (characters, locations) sono presenti per default; le altre dipendono dal progetto.",
+      "additionalProperties": {
+        "type": "object",
+        "description": "Una categoria tematica di entità. Chiave = nome categoria (es. characters, locations, objects, groups, phenomena, ...).",
+        "additionalProperties": {
+          "type": "object",
+          "description": "Una entità promossa. Chiave = id snake_case stabile.",
+          "required": ["id", "name", "category"],
+          "properties": {
+            "id": { "type": "string", "pattern": "^[a-z0-9_]+$" },
+            "name": { "type": "string", "description": "Nome esteso visualizzato" },
+            "aliases": { "type": "array", "items": { "type": "string" } },
+            "category": { "type": "string", "description": "Sotto-categoria della tematica (es. protagonisti / secondari / cuccioli / ...). Specifico al progetto." },
+            "type": { "type": "string", "description": "Tipo specifico (es. specie animale, tipo di luogo, classe oggetto). Specifico al progetto." },
+            "role_saga": { "type": "string", "description": "Ruolo nel progetto come opera completa." },
+            "appears_in_units": { "type": "array", "items": { "type": "string" }, "description": "Lista degli id delle unità in cui l'entità appare. Aggiornato dallo script writer." },
+            "stato_per_unita": {
+              "type": "object",
+              "description": "Stato dell'entità per ogni unità in cui appare. Chiave = id unità.",
+              "additionalProperties": { "type": "object" }
+            },
+            "voice": {
+              "type": "object",
+              "description": "Voce e modalità di comunicazione del personaggio (per categoria characters).",
+              "properties": {
+                "register": { "type": "string" },
+                "frasi_codice": { "type": "array", "items": { "type": "string" }, "description": "Frasi canoniche inalterabili." },
+                "modalita_attive": { "type": "array", "items": { "type": "string" } },
+                "vincoli_max": { "type": "object", "description": "Vincoli quantitativi locali (es. max_detti_per_unita)." }
+              }
+            },
+            "geographical": {
+              "type": "object",
+              "description": "Coordinate / posizione geografica (per categoria locations, se il progetto ha cartografia).",
+              "properties": {
+                "quartiere": { "type": "string" },
+                "coordinates": { "type": "array", "items": { "type": "number" } },
+                "geojson_feature_id": { "type": "string" }
+              }
+            },
+            "links": {
+              "type": "object",
+              "description": "Link alle altre fonti del progetto.",
+              "properties": {
+                "catalog_path": { "type": "string", "description": "Path della scheda catalogo." },
+                "bibbia_section": { "type": "string", "description": "Anchor nel canone-mondo." }
+              }
+            },
+            "promotion": {
+              "type": "object",
+              "description": "Metadati di promozione al grafo.",
+              "properties": {
+                "promoted_at": { "type": "string", "format": "date" },
+                "promoted_by": { "type": "string", "description": "Agente IA o autore." },
+                "promotion_unit": { "type": "string", "description": "id della unità durante cui è emersa, se applicabile." }
+              }
+            }
+          }
+        }
+      }
+    },
+    "units": {
+      "type": "object",
+      "description": "Livello medio: unità narrative del progetto (storie / capitoli / episodi / canti / albi / ...). Chiave = id snake_case.",
+      "additionalProperties": {
+        "type": "object",
+        "description": "Una unità narrativa.",
+        "required": ["id", "title", "position"],
+        "properties": {
+          "id": { "type": "string", "pattern": "^[a-z0-9_]+$" },
+          "title": { "type": "string" },
+          "slug": { "type": "string" },
+          "position": { "type": "integer", "minimum": 1, "description": "Ordine nella sequenza dell'opera." },
+          "block_id": { "type": "string", "description": "Eventuale raggruppamento (ciclo / volume / parte). Specifico al progetto." },
+          "register": { "type": "string", "description": "Registro stilistico/emotivo specifico della unità." },
+          "estimated_length": { "type": "integer", "description": "Parole target (per testo) o equivalente per il medium." },
+          "ambient_conditions": {
+            "type": "object",
+            "description": "Condizioni ambientali (specifico al progetto, opzionale).",
+            "properties": {
+              "season": { "type": "string" },
+              "time_of_day": { "type": "string" },
+              "weather": { "type": "string" },
+              "wind": { "type": "string" }
+            }
+          },
+          "dominant_attributes": {
+            "type": "object",
+            "description": "Attributi tematici dominanti (framework strutturale silente, opzionale).",
+            "additionalProperties": true
+          },
+          "premise": { "type": ["string", "null"] },
+          "problem": { "type": ["string", "null"] },
+          "threshold_moment": { "type": ["string", "null"] },
+          "resolution_mode": { "type": ["string", "null"] },
+          "cast_in_scene": {
+            "type": "array",
+            "description": "Cast attivo in questa unità con vincoli locali.",
+            "items": {
+              "type": "object",
+              "required": ["entity_id"],
+              "properties": {
+                "entity_id": { "type": "string" },
+                "role_in_unit": { "type": ["string", "null"] },
+                "active_modality": { "type": ["string", "null"] },
+                "vincoli_locali": { "type": "object" }
+              }
+            }
+          },
+          "primary_location_id": { "type": ["string", "null"] },
+          "secondary_location_ids": { "type": "array", "items": { "type": "string" } },
+          "scenes": {
+            "type": "array",
+            "description": "Livello micro: scene / hook / pagine / pannelli / segmenti che compongono l'unità.",
+            "items": { "$ref": "#/definitions/scene" }
+          },
+          "narrazione_fattuale_path": { "type": ["string", "null"], "description": "Path al file di narrazione fattuale (referente di verità)." },
+          "brief_path": { "type": ["string", "null"], "description": "Path al file di brief generato." },
+          "testo_finale_path": { "type": ["string", "null"], "description": "Path al testo finale prodotto dall'agente prosa." },
+          "status": {
+            "type": "string",
+            "enum": ["empty", "macro_distilled", "scenes_distilled", "brief_ready", "drafted", "final"],
+            "default": "empty"
+          },
+          "callbacks_in": { "type": "array", "items": { "type": "string" }, "description": "id callback chiamati in questa unità." },
+          "seeds_planted": { "type": "array", "items": { "type": "string" }, "description": "id seeds piantati qui." },
+          "seeds_blooming": { "type": "array", "items": { "type": "string" }, "description": "id seeds che fioriscono qui." },
+          "seeds_maturing": { "type": "array", "items": { "type": "string" }, "description": "id seeds che maturano qui." },
+          "debts_opened": { "type": "array", "items": { "type": "string" } },
+          "debts_closed": { "type": "array", "items": { "type": "string" } }
+        }
+      }
+    },
+    "global_relations": {
+      "type": "object",
+      "description": "Relazioni globali del progetto (Decisione 3 dell'architetto_grafo).",
+      "properties": {
+        "narrative_promises": {
+          "type": "object",
+          "description": "Promesse narrative (seeds). Chiave = id seed.",
+          "additionalProperties": {
+            "type": "object",
+            "properties": {
+              "id": { "type": "string" },
+              "description": { "type": "string" },
+              "planted_in": { "type": "string", "description": "id unità in cui è piantato." },
+              "blooms_in": { "type": "array", "items": { "type": "string" } },
+              "matures_in": { "type": "array", "items": { "type": "string" } },
+              "status": { "type": "string", "enum": ["planted", "blooming", "matured", "closed"] }
+            }
+          }
+        },
+        "explicit_callbacks": {
+          "type": "object",
+          "description": "Richiami espliciti tra unità.",
+          "additionalProperties": { "type": "object" }
+        },
+        "narrative_debts": {
+          "type": "object",
+          "description": "Debiti narrativi.",
+          "additionalProperties": { "type": "object" }
+        },
+        "character_arcs": {
+          "type": "object",
+          "description": "Archi personaggi attraverso le unità.",
+          "additionalProperties": { "type": "object" }
+        }
+      }
+    },
+    "quote_tracker": {
+      "type": "object",
+      "description": "Vincoli quantitativi globali del progetto (Decisione 4 dell'architetto_grafo). Vedi _convenzioni/quote_tracker.md.",
+      "additionalProperties": true
+    },
+    "misalignments_path": {
+      "type": "string",
+      "description": "Path al rolling file di misalignment. Vedi _convenzioni/stato_progetto.md §2."
+    },
+    "audit": {
+      "type": "object",
+      "description": "Risultati ultimo audit del grafo.",
+      "properties": {
+        "last_run": { "type": "string", "format": "date-time" },
+        "results": {
+          "type": "object",
+          "properties": {
+            "audit_1_integrity": { "type": "string", "enum": ["pass", "fail", "skip"] },
+            "audit_2_schema": { "type": "string", "enum": ["pass", "fail", "skip"] },
+            "audit_3_navigability": { "type": "string", "enum": ["pass", "fail", "skip"] },
+            "audit_4_drift": { "type": "string", "enum": ["pass", "fail", "skip"] }
+          }
+        }
+      }
+    }
+  },
+  "definitions": {
+    "scene": {
+      "type": "object",
+      "description": "Una scena/hook/pagina/pannello/segmento del livello micro. Specializzato al medium del progetto.",
+      "required": ["id", "position"],
+      "properties": {
+        "id": { "type": "string", "pattern": "^[a-z0-9_]+$" },
+        "position": { "type": "integer", "minimum": 1 },
+        "type": { "type": "string", "description": "Tipo di scena. Tassonomia specifica al medium del progetto." },
+        "is_signature": { "type": "boolean", "default": false },
+        "moment": { "type": "string", "description": "Momento temporale (mattino, sera, ecc.). Specifico al progetto." },
+        "location": {
+          "type": ["object", "null"],
+          "description": "Luogo della scena. Riferimento canonico al catalogo.",
+          "properties": {
+            "id": { "type": "string" },
+            "qualifier": { "type": ["string", "null"], "description": "Es. interno/esterno/cortile per luoghi multi-blocco." }
+          }
+        },
+        "characters_present": { "type": "array", "items": { "type": "string" }, "description": "id entità presenti nella scena." },
+        "focal_action": { "type": ["string", "null"], "description": "Azione focale, italiano presente indicativo, neutro." },
+        "focal_object": { "type": ["string", "null"], "description": "id oggetto focale (se applicabile)." },
+        "atmosphere": { "type": ["string", "null"] },
+        "palette": { "type": ["string", "null"], "description": "Palette emotiva/visiva. Specifico al medium." },
+        "ambient_modifier": { "type": ["string", "null"], "description": "Modificatore atmosferico/ambientale visibile." },
+        "onomatopee": { "type": "array", "items": { "type": "string" } },
+        "composition_zone": { "type": ["string", "null"], "description": "Zona compositiva (per medium illustrato/fumetto). Es. vignette, full_page, double_spread." },
+        "panel_layout": { "type": ["string", "null"], "description": "Layout pannelli (specifico fumetto)." },
+        "audio_duration_seconds": { "type": ["integer", "null"], "description": "Durata audio (specifico audio/podcast)." },
+        "asset_path": { "type": ["string", "null"], "description": "Path all'asset finale (immagine/audio/...). Popolato in Fase 07." },
+        "notes": { "type": ["string", "null"] },
+        "provenance": {
+          "type": "string",
+          "enum": ["original", "extended", "manual", "imported"],
+          "default": "original"
+        }
+      }
+    }
+  }
+}

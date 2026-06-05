@@ -1,0 +1,44 @@
+# dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# testing
+coverage/
+
+# next.js
+.next/
+out/
+
+# production
+build/
+
+# misc
+.DS_Store
+*.pem
+
+# debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# local env
+.env*.local
+.env
+
+# vercel
+.vercel
+
+# build-time copia dati dal catalogo (vedi scripts/copy-data.mjs)
+/public/data/
+
+# typescript
+*.tsbuildinfo
+next-env.d.ts
+
+# package-lock.json: temporaneamente ignorato perche' il proxy git
+# locale lo rifiuta sistematicamente con HTTP 403. Vercel lo rigenera
+# al deploy via `npm install`. Da committare quando il proxy si sblocca
+# (per riproducibilita' build sub-deps minori).
+package-lock.json

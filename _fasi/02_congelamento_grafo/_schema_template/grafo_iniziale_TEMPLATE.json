@@ -1,0 +1,36 @@
+{
+  "schema_version": "1.0",
+  "graph_version": "0.0.0",
+  "project": {
+    "id": "<id_progetto>",
+    "title": "<Titolo Progetto>",
+    "subtitle": null,
+    "medium": "altro",
+    "target_audience": "<da definire>",
+    "language": "it",
+    "created_at": "YYYY-MM-DD",
+    "updated_at": "YYYY-MM-DD"
+  },
+  "entities": {
+    "characters": {},
+    "locations": {}
+  },
+  "units": {},
+  "global_relations": {
+    "narrative_promises": {},
+    "explicit_callbacks": {},
+    "narrative_debts": {},
+    "character_arcs": {}
+  },
+  "quote_tracker": {},
+  "misalignments_path": "misalignments.json",
+  "audit": {
+    "last_run": null,
+    "results": {
+      "audit_1_integrity": "skip",
+      "audit_2_schema": "skip",
+      "audit_3_navigability": "skip",
+      "audit_4_drift": "skip"
+    }
+  }
+}
