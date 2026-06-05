@@ -129,6 +129,38 @@ Gli agenti IA che operano sulla repo:
 - **leggono** sempre dalla `main` (a meno di branch esplicito dichiarato dall'autore)
 - **scrivono** sempre su un branch dedicato (`<agente>/<scope>`), mai direttamente su `main`
 - **chiedono autorizzazione esplicita** prima di mergiare su `main`
+- **non fanno mai merge su `main` in autonomia** — il merge avviene solo su richiesta esplicita dell'utente
 - **non pushano remoto** senza l'OK dell'autore (per repo con cui non hanno credenziali, è ovvio; per repo con credenziali — es. via MCP — il push è azione autorizzata caso per caso)
+- **a inizio sessione** verificano il branch attivo: se è `main`, creano o switchano su branch appropriato prima di qualsiasi modifica
 
 L'orchestratrice mantiene questo come regola dura, e gli agenti rispettano.
+
+---
+
+## §9. Modifiche strutturali — autorizzazione creatore del sistema
+
+Le modifiche **strutturali** al grafo (che cambiano la *forma* dei nodi, non il loro contenuto) richiedono autorizzazione esplicita del **creatore del sistema** prima di procedere. Questo perché una modifica strutturale mal coordinata può rendere inconsistente l'intero grafo e rompere gli script.
+
+### Cosa rientra nelle modifiche strutturali
+
+| Operazione | Autorizzazione richiesta |
+|---|---|
+| Modificare `grafo_schema.json` (aggiunta/rimozione/rinomina campi) | ✅ sì |
+| Eseguire `_scripts/migrate_schema.py` | ✅ sì |
+| Aggiungere nuove categorie top-level in `entities` | ✅ sì |
+| Cambiare `schema_version` nel grafo | ✅ sì |
+| Modificare struttura nodi unità (campi obbligatori, nuovi livelli) | ✅ sì |
+| Aggiungere contenuto via `write_node_to_graph.py` | ❌ no — operazione normale |
+| Aggiungere entità via `promote_entities_to_graph.py` | ❌ no — operazione normale |
+| `bootstrap_graph.py` (inizializzazione) | ❌ no — operazione normale |
+| Script di lettura/audit | ❌ no — read-only |
+| Modificare file narrativi (`narrazione_fattuale/`, `testi_finali/`) | ❌ no — contenuto |
+
+### Protocollo per l'agente
+
+Se una richiesta dell'utente rientra nelle modifiche strutturali:
+1. Spiega all'utente cos'è la modifica strutturale e perché richiede coordinamento
+2. **Fermati. Non procedere.**
+3. Di' all'utente: *"Questa modifica richiede l'autorizzazione del creatore del sistema. Contatta il creatore, descrivi la modifica, e torna con la sua conferma prima di continuare."*
+
+Non è sufficiente che l'utente dica "sì, voglio farlo" — serve la conferma esplicita del creatore.

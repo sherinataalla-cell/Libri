@@ -1,6 +1,8 @@
 # Convenzioni progetto — L'Ombra del Vesper
 
 > Regole specifiche di questo progetto. Integrano (non sostituiscono) le convenzioni trasversali in `_convenzioni/`.
+>
+> **Per il workflow Git completo (branch, PR, modifiche strutturali) vedi `_convenzioni/git.md` §8-9 e `README.md`.**
 
 ---
 
@@ -27,7 +29,7 @@ Se uno script dà errore in dry-run, **non** lanciare `--apply`. Correggere prim
 | `build_catalog_index.py` | Rigenera indice catalogo (read-only) | ✅ sempre sicuro |
 | `compile_catalog_from_graph.py` | Aggiorna schede catalogo | ✅ sicuro, non sovrascrive manuale |
 | `normalize_storie.py` | Normalizza frontmatter testi_finali | ✅ sicuro, dry-run default |
-| `migrate_schema.py` | Solo quando si aggiunge un campo allo schema | ⚠️ con backup, mai senza motivazione |
+| `migrate_schema.py` | Solo quando si aggiunge un campo allo schema | 🔴 **RICHIEDE AUTORIZZAZIONE CREATORE** |
 | `split_source_to_units.py` | Splitta testo sorgente in unità | ✅ dry-run default |
 | `audit/audit_1_integrity.py` | Controlla integrità grafo | ✅ read-only |
 | `audit/audit_2_schema.py` | Valida schema | ✅ read-only |
@@ -79,3 +81,26 @@ Il `quote_tracker` in `story_graph.json` traccia frasi-codice e pattern ricorren
 ## §7 — Pattern AI da bandire (da scrivere)
 
 `progetto/_documenti_anima/pattern_ai_da_bandire.md` va scritto in chat dedicata analizzando i cap. 1-8. Contiene i cliché e pattern di linguaggio che l'agente prosa deve evitare tassativamente.
+
+---
+
+## §8 — Workflow Git per questo progetto
+
+**Regola base**: `main` è sempre stabile. Ogni sessione di lavoro = un branch.
+
+**Branch per capitolo (atomicità):**
+```
+git checkout main && git pull origin main
+git checkout -b cap/cap_09-distillazione
+# ... lavora ...
+git add <file> && git commit
+git push -u origin cap/cap_09-distillazione
+# → apri PR su GitHub
+# → merge su main SOLO su richiesta esplicita
+```
+
+**Ricorda:**
+- Mergia e chiudi il branch del capitolo corrente **prima** di aprire il prossimo
+- Il merge su `main` non avviene mai in autonomia dall'agente — solo su richiesta esplicita
+
+Vedi `_convenzioni/git.md` §8-9 e `README.md` per le regole complete.
