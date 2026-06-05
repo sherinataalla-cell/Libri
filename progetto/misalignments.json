@@ -2,7 +2,7 @@
   "_meta": {
     "note": "Rolling file misalignment — L'Ombra del Vesper. Aggiornato dal distillatore durante le passate di distillazione.",
     "formato": "lista di oggetti, uno per misalignment. Non si risolve qui: solo si segnala.",
-    "ultima_modifica": "2026-06-05"
+    "ultima_modifica": "2026-06-05 (cap_03)"
   },
   "misalignments": [
     {
@@ -67,6 +67,54 @@
       "azione_suggerita": "Definire nella bibbia o in una nota di continuità il meccanismo percettivo del prigioniero. Determinare se è elemento soprannaturale intenzionale o metafora.",
       "risolto": false,
       "note": "Annotato in cap_02_s11 nel grafo."
+    },
+    {
+      "id": "M05",
+      "rilevato_in": "distillazione cap_03 — Passata 2",
+      "data": "2026-06-05",
+      "tipo": "identita_ambigua_entita",
+      "gravita": "bassa",
+      "descrizione": "In cap_02 (finale POV Dante) Dante chiama 'un numero privato' la cui identità non è svelata — entità grafo: interlocutore_numero_privato. In cap_03 (finale POV Dante) Dante 'compose un numero che pochi conoscevano' e ordina 'Mettiti in caccia'. Non è esplicitato se sia la stessa persona. Se coincidono, interlocutore_numero_privato è il cacciatore-alleato di Dante; se diversi, c'è una seconda entità non ancora promossa.",
+      "fonti_in_conflitto": [
+        "progetto/narrazione_fattuale/cap_02.md (numero privato, identità sconosciuta)",
+        "progetto/narrazione_fattuale/cap_03.md ('compose un numero che pochi conoscevano. Mettiti in caccia.')"
+      ],
+      "fonte_di_verita": null,
+      "azione_suggerita": "Decidere se interlocutore_numero_privato (cap_02) e il contatto caccia (cap_03) sono la stessa entità. Se sì, aggiornare role_saga nel grafo. Se no, promuovere nuovo personaggio.",
+      "risolto": false,
+      "note": "Seed 'dante_contatto_caccia_segreta' piantato in cap_03 per tracciare questo arco."
+    },
+    {
+      "id": "M06",
+      "rilevato_in": "distillazione cap_03 — Passata 2",
+      "data": "2026-06-05",
+      "tipo": "identita_ambigua_entita",
+      "gravita": "media",
+      "descrizione": "In cap_02 (finale POV Dante), Dante scende al level -2 e incontra 'un prigioniero senza nome' che profetizza 'questa volta brucerà tutto'. In cap_03 apprendiamo che Sofia Volkov è al level -2 in una 'suite di recupero'. La coincidenza temporale è forte, ma la descrizione di cap_02 suggerisce una persona detenuta ('prigioniero'), non necessariamente Sofia. Tre possibilità: (1) Sofia è la voce_nel_buio; (2) ci sono due detenuti distinti al level -2; (3) la voce è un'altra entità non ancora promossa.",
+      "fonti_in_conflitto": [
+        "progetto/narrazione_fattuale/cap_02.md ('Scende al level -2 dove un prigioniero senza nome profetizza questa volta brucerà tutto')",
+        "progetto/narrazione_fattuale/cap_03.md ('Sofia Volkov era al livello -2, nella suite di recupero')"
+      ],
+      "fonte_di_verita": null,
+      "azione_suggerita": "Determinare se voce_nel_buio (grafo) è Sofia Volkov o un'entità distinta. Se è Sofia, aggiornare nome/ruolo_saga dell'entità. Se diversa, la new entity non è ancora promossa.",
+      "risolto": false,
+      "note": "Misalignment connesso a M04 (meccanismo percettivo voce_nel_buio)."
+    },
+    {
+      "id": "M07",
+      "rilevato_in": "distillazione cap_03 — Passata 2",
+      "data": "2026-06-05",
+      "tipo": "identita_ambigua_entita",
+      "gravita": "bassa",
+      "descrizione": "In cap_02 s11 la 'voce_nel_buio' proferisce profezie dal level -2 (seed profezia_voce_buio). In cap_03, la voce dagli altoparlanti durante il blackout ('Giocate con me') è chiaramente il Cacciatore. Se la voce_nel_buio di cap_02 è il Cacciatore, allora era già nel sistema del Vesper in cap_02 — il che renderebbe M04 (meccanismo percettivo) un'interferenza del Cacciatore nel sistema, non una capacità paranormale del prigioniero.",
+      "fonti_in_conflitto": [
+        "progetto/narrazione_fattuale/cap_02.md (voce_nel_buio dal level -2)",
+        "progetto/narrazione_fattuale/cap_03.md (voce_negli_altoparlanti = il_cacciatore nel sistema HVAC)"
+      ],
+      "fonte_di_verita": null,
+      "azione_suggerita": "Chiarire se voce_nel_buio (cap_02) = il_cacciatore (cap_03) oppure sono due entità distinte. La risposta risolve anche M04.",
+      "risolto": false,
+      "note": "Se il Cacciatore era già nel sistema in cap_02, il seed 'cacciatore_nel_sistema_vesper' piantato in cap_03 potrebbe dover essere anticipato a cap_02."
     }
   ]
 }
