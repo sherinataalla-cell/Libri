@@ -257,7 +257,23 @@
       "fonte_di_verita": null,
       "azione_suggerita": "Decidere se lo 'studio' e la 'terrazza/attico' sono lo stesso spazio o adiacenti. Se adiacenti, aggiungere una riga nella prosa di cap_07 (POV Dante) che mostri Adrian vedere la terrazza dallo studio attraverso vetrate. Se stesso spazio: nessuna azione.",
       "risolto": false,
-      "note": "Connesso alla posizione fisica dello studio di Dante rispetto alla terrazza del suo attico."
+      "note": "AGGIORNAMENTO cap_08: la terrazza dove Marcus è morto è inequivocabilmente la terrazza del Vesper building (42° piano, adiacente all'ufficio di Dante nel Vesper), non l'appartamento privato attico_dante. Il riferimento 'attico' in cap_07_s04 era informale. M16 si riduce alla questione studio-interno vs terrazza-esterna come posizione di Adrian al momento del salto — non alla location dell'edificio."
+    },
+    {
+      "id": "M17",
+      "rilevato_in": "distillazione cap_08 — Passata 2 (cap_08_s09)",
+      "data": "2026-06-05",
+      "tipo": "incoerenza_fisica_narrativa",
+      "gravita": "bassa",
+      "descrizione": "In cap_08, Dante e Rory entrano nel condotto di ventilazione al 7° piano ('Dante la guidò fuori dalla scala, nel settimo piano. Il sistema di ventilazione. Porta direttamente al parcheggio sotterraneo.') e il condotto collassa, facendoli atterrare nella suite del Level-2 sotterraneo. Fisicamente: un condotto al 7° piano che collassa porterebbe al 6° piano (o al massimo a un piano sotto), non al livello sotterraneo. Per cadere dal 7° piano al basement tramite collasso del condotto servirebbe un condotto verticale che scende 8+ piani — possibile architetturalmente in un grattacielo, ma narrativamente abbreviato senza spiegazione.",
+      "fonti_in_conflitto": [
+        "progetto/narrazione_fattuale/cap_08.md ('Il condotto cedette sotto il loro peso combinato. Caddero [...] atterrando duramente su qualcosa di morbido. Materassi. Erano nella suite del Level -2.')",
+        "fisica del grattacielo: collasso condotto 7° piano → caduta al piano 6, non al basement"
+      ],
+      "fonte_di_verita": "progetto/narrazione_fattuale/cap_08.md (la situazione narrativa è canonica)",
+      "azione_suggerita": "Nella prosa finale (Fase 06), chiarire la meccanica: o il condotto scende verticalmente dal 7° piano al basement (design specifico del Vesper, da giustificare in una riga) oppure la discesa è in più tappe (collasso → galleria verticale → basement). La situazione narrativa è canonica, serve solo una riga di verosimiglianza fisica.",
+      "risolto": false,
+      "note": "Gravità bassa — la convenienza narrativa è funzionale al plot. Non impatta la coerenza dei personaggi."
     }
   ]
 }

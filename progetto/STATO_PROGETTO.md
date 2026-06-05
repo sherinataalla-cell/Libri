@@ -11,9 +11,9 @@
 @capitolo.next: 09 (da scrivere)
 @parole.totali: ~60.000 stimato (8 capitoli, ~7.500 parole/cap)
 @completamento: ~40% (8/20 capitoli)
-@versione_grafo: 0.0.0 (inizializzato, cap_01+cap_02+cap_03+cap_04+cap_05+cap_06+cap_07 distillati)
+@versione_grafo: 0.0.0 (inizializzato, cap_01+cap_02+cap_03+cap_04+cap_05+cap_06+cap_07+cap_08 distillati)
 @versione_schema: bozza (grafo_schema.json — Fase 02 non ancora completata)
-@branch.attivo: claude/chapter-7-distillation-fVoQ6
+@branch.attivo: claude/chapter-8-distillation-x4qUG
 ```
 
 ---
@@ -55,7 +55,7 @@
   cap_05 ✅ — 17 scene, 5 seeds, 3 debts, 3 entità promosse (2026-06-05)
   cap_06 ✅ — 10 scene, 5 seeds, 3 debts, 3 entità promosse (2026-06-05)
   cap_07 ✅ — 10 scene, 9 seeds, 4 debts, 3 entità promosse (2026-06-05)
-  cap_08 ⬜
+  cap_08 ✅ — 10 scene, 7 seeds, 4 debts, 2 entità promosse (2026-06-05)
 ```
 
 ---
@@ -77,9 +77,9 @@
   ✅ cap_05 distillato nel grafo (17 scene, detective_chen + dimitri_volkov + album_fotografico promossi)
   ✅ cap_06 distillato nel grafo (10 scene, compound_volkov + marcus + fascicolo_adrian_bell promossi)
   ✅ cap_07 distillato nel grafo (10 scene, 9 seeds, 4 debts, safe_house + mina + chiavetta_usb_rory promossi, M16 aperto)
+  ✅ cap_08 distillato nel grafo (10 scene, 7 seeds, 4 debts, macchina_fotografica_adrian + terrazza_vesper promossi, M17 aperto)
 
 @blocchi.pending:
-  🟡 Distillazione cap_08 (una per chat)
   🟡 Completare grafo_schema.json — Fase 02 (skill architetto_grafo) — può attendere
   🟡 Completare glossario_consegna.json — entità secondarie — può attendere
   🟡 pattern_ai_da_bandire.md — chat dedicata
@@ -93,16 +93,24 @@
 ## §PROSSIMA SESSIONE
 
 ```
-@obiettivo: distillazione cap_08 — "Fantasmi e Ombre"
-@branch: creare claude/chapter-8-distillation-XXXXX (nuovo branch da main dopo merge cap_07)
-@regola: una unità per chat — non mescolare cap_08 con altro
+@obiettivo: merge branch cap_08 su main + inizio fase successiva
+@branch.corrente: claude/chapter-8-distillation-x4qUG (distillazione cap_08 completa)
+@regola: merge su richiesta esplicita utente — non fare merge autonomamente
 
 @passi:
-  1. Merge branch cap_07 su main (su richiesta utente)
-  2. Creare nuovo branch per cap_08
-  3. Leggere story_graph.json per seeds/debts aperti da cap_07 (bacio_safe_house, da_sopravvissuta_a_cacciatrice, terza_lezione_cacciatore, rory_infertilita_come_sa_adrian, foto_attico_quando_era_adrian)
-  4. Leggere narrazione_fattuale/cap_08.md
-  5. Avviare distillazione cap_08 (Passata 0 → 1 → 2)
+  1. Merge branch cap_08 su main (su richiesta utente)
+  2. Decidere prossimo obiettivo:
+     A. Scrittura cap_09 (Fase 05 brief → Fase 06 prosa) — percorso principale
+     B. Completare Fase 02 schema grafo (skill architetto_grafo)
+     C. pattern_ai_da_bandire.md (chat dedicata)
+     D. Catalogo bootstrap completo (--bootstrap-catalog)
+  3. Seeds aperti da considerare per cap_09:
+     - dante_ferita_vesper, dante_ferita_gravita
+     - sofia_volkov_cosa_sa, sofia_volkov_level2_aspettava
+     - liquido_allucinogeno_esposizione
+     - squadra_adrian_identita
+     - terza_lezione_cacciatore (maturing — manifesta ma non enunciata)
+     - rory_infertilita_come_sa_adrian, mina_dove_e_ora (cap_07 — ancora aperti)
 ```
 
 ---
@@ -125,7 +133,8 @@ M12 — doppione entità grafo: 'il_cacciatore' e 'adrian' sono la stessa person
 M13 — categoria '?' per dimitri_volkov e detective_chen nel grafo [bassa gravità]
 M14 — Sofia promessa ai Kozlov a sei anni (cap_06): info nuova, verificare vs fonti esistenti [media gravità]
 M15 — Rory appare armata in cap_06_s08 senza spiegazione di quando ha preso l'arma [bassa gravità]
-M16 — posizione di Adrian alla morte di Marcus: POV Rory dice terrazza/attico, POV Dante dice studio [bassa gravità]
+M16 — posizione di Adrian alla morte di Marcus: POV Rory dice terrazza/attico, POV Dante dice studio [bassa gravità] — cap_08 chiarisce: terrazza = Vesper top floor (non attico privato)
+M17 — condotto ventilazione 7° piano → Level-2: percorso fisico abbreviato narrativamente [bassa gravità] — cap_08
 → Dettagli: progetto/misalignments.json
 ```
 
@@ -135,6 +144,6 @@ M16 — posizione di Adrian alla morte di Marcus: POV Rory dice terrazza/attico,
 
 ```
 @data.ultima.modifica: 2026-06-05
-@evento: distillazione cap_07 completa (10 scene, 9 seeds, 4 debts, 3 entità promosse: safe_house + mina + chiavetta_usb_rory, 1 misalignment M16)
-@stato: pronto per distillazione cap_08 (dopo merge branch cap_07)
+@evento: distillazione cap_08 completa (10 scene, 7 seeds, 4 debts, 2 entità promosse: macchina_fotografica_adrian + terrazza_vesper, 1 misalignment M17, M16 aggiornato)
+@stato: distillazione retroattiva cap_01-08 COMPLETA — pronto per merge branch cap_08 e fase successiva
 ```
