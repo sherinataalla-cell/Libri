@@ -11,8 +11,9 @@
 @capitolo.next: 09 (da scrivere)
 @parole.totali: ~60.000 stimato (8 capitoli, ~7.500 parole/cap)
 @completamento: ~40% (8/20 capitoli)
-@versione_grafo: non ancora inizializzato (pre-Fase 02)
-@versione_schema: bozza (grafo_schema.json da completare in Fase 02)
+@versione_grafo: 0.0.0 (inizializzato, cap_01 distillato)
+@versione_schema: bozza (grafo_schema.json — Fase 02 non ancora completata)
+@branch.attivo: claude/chapter-1-graph-M0n6t
 ```
 
 ---
@@ -39,28 +40,47 @@
 
 ---
 
+## §GRAFO — STATO DISTILLAZIONE
+
+```
+◉bootstrap: ✅ completato (story_graph.json — 10 entità iniziali)
+◉entità.promosse.extra: marco, alexei, ufficio_dante (da cap_01)
+◉misalignments: misalignments.json aperto (M01, M02)
+
+◉distillazione.retroattiva:
+  cap_01 ✅ — 9 scene, 5 seeds, 2 debts, 3 entità promosse (2026-06-05)
+  cap_02 🟡 — prossima sessione
+  cap_03 ⬜
+  cap_04 ⬜
+  cap_05 ⬜
+  cap_06 ⬜
+  cap_07 ⬜
+  cap_08 ⬜
+```
+
+---
+
 ## §ATTIVITÀ PIPELINE
 
 ```
-@fase.corrente: importazione (transizione Fase 01→02)
+@fase.corrente: Fase 03 — Distillazione retroattiva cap.01-08
 
 @blocchi.fatti:
-  ✅ Documenti-anima importati:
-     - progetto/_documenti_anima/bibbia.md (da DNA_LIBRO.txt)
-     - progetto/_documenti_anima/framework_strutturale.md (da DNA_CAPITOLI.txt)
-     - progetto/_documenti_anima/carta_voce.md (da VOCABOLARIO_FRATTALE.txt)
-  ✅ 8 capitoli copiati in narrazione_fattuale/ + testi_finali/
-  ✅ Bozza grafo_schema.json creata
-  ✅ Bozza glossario_consegna.json creata (entità principali)
+  ✅ Documenti-anima importati (bibbia, framework, carta_voce)
+  ✅ 8 capitoli in narrazione_fattuale/ + testi_finali/
+  ✅ grafo_schema.json (bozza funzionale)
+  ✅ glossario_consegna.json (entità principali)
+  ✅ bootstrap_graph.py --apply eseguito
+  ✅ cap_01 distillato nel grafo (Passate 0→1→2 complete)
+  ✅ Catalogo: schede embrionali per marco, alexei, ufficio_dante
 
 @blocchi.pending:
-  🟡 Completare glossario_consegna.json — tutte le entità secondarie
-  🟡 Completare grafo_schema.json — specializzazione Fase 02 (skill architetto_grafo)
-  🟡 bootstrap_graph.py --apply — dopo completamento schema + glossario
-  🟡 Distillazione retroattiva cap.01-08 (Fase 03) — una per chat
-  🟡 pattern_ai_da_bandire.md — da scrivere in chat dedicata
-  🟡 Catalogo schede embrionali — dopo promote_entities --bootstrap-catalog
-  🟡 Brief cap.09 (Fase 05) — dopo distillazione
+  🟡 Distillazione cap_02..08 (una per chat)
+  🟡 Completare grafo_schema.json — Fase 02 (skill architetto_grafo) — può attendere
+  🟡 Completare glossario_consegna.json — entità secondarie — può attendere
+  🟡 pattern_ai_da_bandire.md — chat dedicata
+  🟡 Catalogo bootstrap completo (--bootstrap-catalog) — dopo distillazione cap.01-08
+  🟡 Brief cap.09 (Fase 05) — dopo distillazione completa
   🟡 Prosa cap.09 (Fase 06) — dopo brief
 ```
 
@@ -69,14 +89,26 @@
 ## §PROSSIMA SESSIONE
 
 ```
-@obiettivo: completare Fase 01→02 (schema + glossario + bootstrap)
+@obiettivo: distillazione cap_02 — "Maschere di Velluto"
+@branch: claude/chapter-1-graph-M0n6t (continuare su questo branch)
+@regola: una unità per chat — non mescolare cap_02 e cap_03
 
 @passi:
-  1. Leggere ARCHITETTURA.md per capire la pipeline completa
-  2. Usare skill architetto_grafo per specializzare grafo_schema.json
-  3. Completare glossario_consegna.json con entità emerse dai cap.1-8
-  4. Lanciare: python3 _scripts/bootstrap_graph.py (dry-run, poi --apply)
-  5. Iniziare distillazione retroattiva cap.01 (Fase 03)
+  1. Leggere STATO_PROGETTO.md (questo file)
+  2. Verificare branch attivo (deve essere claude/chapter-1-graph-M0n6t)
+  3. Leggere story_graph.json per vedere seeds/debts aperti da cap_01
+  4. Leggere narrazione_fattuale/cap_02.md
+  5. Avviare distillazione cap_02 (Passata 0 → 1 → 2)
+```
+
+---
+
+## §MISALIGNMENT APERTI
+
+```
+M01 — POV order cap_01: framework dice Dante/Rory, testo è Rory/Dante [bassa gravità]
+M02 — Campo 'pov' assente da TEMPLATE_unita.yaml e write_node_to_graph.py [media gravità]
+→ Dettagli: progetto/misalignments.json
 ```
 
 ---
@@ -85,6 +117,6 @@
 
 ```
 @data.ultima.modifica: 2026-06-05
-@evento: organizzazione repo iniziale, import materiali esistenti
-@stato: pronto per Fase 02 dopo completamento schema e glossario
+@evento: bootstrap grafo + distillazione cap_01 completa
+@stato: pronto per distillazione cap_02
 ```
