@@ -1,0 +1,55 @@
+[
+  {
+    "id": "safe_house",
+    "category": "locations",
+    "promoted_by": "distillatore_cap07",
+    "promotion_unit": "cap_07",
+    "data": {
+      "id": "safe_house",
+      "name": "Safe House — Quartiere Industriale",
+      "category": "luoghi_anonimi",
+      "type": "location",
+      "role_saga": "Appartamento anonimo nel quartiere industriale di Seattle usato da Dante come rifugio operativo. Odore di candeggina e disperazione. Il posto che la gente dimentica cinque minuti dopo averlo visto.",
+      "appears_in_units": ["cap_07"],
+      "arc_summary": "Luogo-confessione: è qui che Dante e Rory abbattono le difese reciprocamente, che il primo bacio avviene, e che la trappola per Adrian viene pianificata e attivata."
+    }
+  },
+  {
+    "id": "mina",
+    "category": "characters",
+    "promoted_by": "distillatore_cap07",
+    "promotion_unit": "cap_07",
+    "data": {
+      "id": "mina",
+      "name": "Mina",
+      "aliases": [],
+      "category": "minori",
+      "type": "character",
+      "role_saga": "Bambina siriana rifugiata di tre anni che Marcus stava per adottare prima della sua morte. Adrian avrebbe fatto parte di quella famiglia. L'adozione è saltata dopo il suicidio di Marcus; Adrian ha provato da solo ma è stato negato. Figura-chiave della motivazione di Adrian: Dante non gli ha tolto solo Marcus, ma anche il futuro promesso.",
+      "appears_in_units": ["cap_07"],
+      "arc_summary": "Mai fisicamente presente — esiste solo come assenza. La famiglia che non è mai stata, il futuro che Adrian ha perso a causa di Dante.",
+      "voice": {
+        "register": null,
+        "frasi_codice": [],
+        "verbi_dominanti": [],
+        "modalita_attive": [],
+        "vincoli_max": {}
+      }
+    }
+  },
+  {
+    "id": "chiavetta_usb_rory",
+    "category": "objects",
+    "promoted_by": "distillatore_cap07",
+    "promotion_unit": "cap_07",
+    "data": {
+      "id": "chiavetta_usb_rory",
+      "name": "Chiavetta USB di Rory",
+      "category": "documenti",
+      "type": "object",
+      "role_saga": "Insurance policy di Rory Winters. Nascosta sotto il pavimento del bagno nel suo appartamento. Contiene tutto il materiale raccolto su Adrian Bell: documentazione, prove, quello che ha fatto a lei e ad altre donne. Affidata a Maya in caso di morte di Rory.",
+      "appears_in_units": ["cap_07"],
+      "arc_summary": "MacGuffin di protezione — assicura che la morte di Rory non cancelli la verità su Adrian. Trasforma Maya in testimone-guardiana."
+    }
+  }
+]

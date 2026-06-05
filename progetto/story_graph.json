@@ -369,6 +369,30 @@
           "promoted_by": "distillatore_cap06",
           "promotion_unit": "cap_06"
         }
+      },
+      "mina": {
+        "id": "mina",
+        "name": "Mina",
+        "aliases": [],
+        "category": "minori",
+        "type": "character",
+        "role_saga": "Bambina siriana rifugiata di tre anni che Marcus stava per adottare prima della sua morte. Adrian avrebbe fatto parte di quella famiglia. L'adozione è saltata dopo il suicidio di Marcus; Adrian ha provato da solo ma è stato negato. Figura-chiave della motivazione di Adrian: Dante non gli ha tolto solo Marcus, ma anche il futuro promesso.",
+        "appears_in_units": [
+          "cap_07"
+        ],
+        "arc_summary": "Mai fisicamente presente — esiste solo come assenza. La famiglia che non è mai stata, il futuro che Adrian ha perso a causa di Dante.",
+        "voice": {
+          "register": null,
+          "frasi_codice": [],
+          "verbi_dominanti": [],
+          "modalita_attive": [],
+          "vincoli_max": {}
+        },
+        "promotion": {
+          "promoted_at": "2026-06-05",
+          "promoted_by": "distillatore_cap07",
+          "promotion_unit": "cap_07"
+        }
       }
     },
     "locations": {
@@ -555,6 +579,22 @@
           "promoted_by": "distillatore_cap06",
           "promotion_unit": "cap_06"
         }
+      },
+      "safe_house": {
+        "id": "safe_house",
+        "name": "Safe House — Quartiere Industriale",
+        "category": "luoghi_anonimi",
+        "type": "location",
+        "role_saga": "Appartamento anonimo nel quartiere industriale di Seattle usato da Dante come rifugio operativo. Odore di candeggina e disperazione. Il posto che la gente dimentica cinque minuti dopo averlo visto.",
+        "appears_in_units": [
+          "cap_07"
+        ],
+        "arc_summary": "Luogo-confessione: è qui che Dante e Rory abbattono le difese reciprocamente, che il primo bacio avviene, e che la trappola per Adrian viene pianificata e attivata.",
+        "promotion": {
+          "promoted_at": "2026-06-05",
+          "promoted_by": "distillatore_cap07",
+          "promotion_unit": "cap_07"
+        }
       }
     },
     "groups": {
@@ -626,6 +666,22 @@
           "promoted_at": "2026-06-05",
           "promoted_by": "distillatore_cap06",
           "promotion_unit": "cap_06"
+        }
+      },
+      "chiavetta_usb_rory": {
+        "id": "chiavetta_usb_rory",
+        "name": "Chiavetta USB di Rory",
+        "category": "documenti",
+        "type": "object",
+        "role_saga": "Insurance policy di Rory Winters. Nascosta sotto il pavimento del bagno nel suo appartamento. Contiene tutto il materiale raccolto su Adrian Bell: documentazione, prove, quello che ha fatto a lei e ad altre donne. Affidata a Maya in caso di morte di Rory.",
+        "appears_in_units": [
+          "cap_07"
+        ],
+        "arc_summary": "MacGuffin di protezione — assicura che la morte di Rory non cancelli la verità su Adrian. Trasforma Maya in testimone-guardiana.",
+        "promotion": {
+          "promoted_at": "2026-06-05",
+          "promoted_by": "distillatore_cap07",
+          "promotion_unit": "cap_07"
         }
       }
     }
@@ -3287,6 +3343,395 @@
       "debts_closed": [
         "identita_cacciatore_volkov",
         "incontro_con_dimitri"
+      ]
+    },
+    "cap_07": {
+      "id": "cap_07",
+      "title": "Il Gioco del Cacciatore",
+      "slug": "il_gioco_del_cacciatore",
+      "position": 7,
+      "block_id": "la_caduta",
+      "register": "dark romance/thriller — confessione reciproca nel safe house, primo bacio disperato, training da cacciatore, trappola attivata",
+      "estimated_length": 7500,
+      "ambient_conditions": {
+        "season": "autunno",
+        "time_of_day": "giorno→sera",
+        "weather": "pioggia",
+        "wind": null
+      },
+      "dominant_attributes": {
+        "tema_dominante": "il cacciatore che insegna alla preda a diventare cacciatrice — backstory reciproca svelata (sorveglianza Adrian su Rory / Marcus+Mina), primo bacio come punto di non ritorno, la trappola si attiva con la risposta 'Con piacere'",
+        "registro_emotivo": "dark romance/thriller — confessione/trauma condiviso, bacio disperato e reciproco ('dieci secondi'), training trasformativo (sopravvissuta → cacciatrice), countdown 18→6 ore",
+        "pov": "alternato (Rory → Dante)"
+      },
+      "premise": "Rory e Dante nel safe house (quartiere industriale Seattle), 18 ore rimanenti prima della mossa di Adrian. Dante insegna a Rory come sopravvivere ad Adrian mentre entrambi abbattono le difese reciproche — confessano le loro storie, le paure, i segreti mai detti.",
+      "problem": "Per costruire un piano contro Adrian, Rory e Dante devono capire perché Adrian l'ha scelta due anni fa. Questo richiede svelamento reciproco: Rory racconta la sorveglianza di Adrian (fonte 'Alex', 6 mesi di foto, la mostra nell'appartamento con la foto di Marcus morto, il biglietto-manifesto). Dante rivela Marcus+Mina (il tradimento, la tortura psicologica, l'adozione mancata). La tensione raggiunge il punto di rottura: il primo bacio. Quando l'invito viene consegnato ad Adrian, la risposta è 'Con piacere' più una foto recente della terrazza dell'attico: Adrian era già lì.",
+      "threshold_moment": "Il bacio nel safe house: 'Non fu dolce. Non fu tenero. Fu disperato e affamato e pieno di una verità che nessuno dei due poteva dire ad alta voce.' Dieci secondi, fronte contro fronte. 'Questo è un errore. Lo so. Adrian lo userà contro di noi. Lo so. Per i prossimi dieci secondi, possiamo fingere di essere solo due persone che non sono rotte oltre ogni riparazione?'",
+      "resolution_mode": "L'invito ad Adrian viene consegnato (carta color crema, inchiostro rosso sangue — Alexei) e lui risponde. Dante trasforma Rory da sopravvissuta a cacciatrice nelle 6 ore rimaste. Prima e seconda lezione enunciate. La terza lezione resta sospesa: 'a volte per vincere devi lasciare che la preda pensi di averti catturato.' Fine: 'È ora di invitare il diavolo a cena.' / 'Assicuriamoci che si strozzi col dessert.'",
+      "cast_in_scene": [
+        {
+          "entity_id": "rory_winters",
+          "role_in_unit": "protagonista_pov_1",
+          "active_modality": "testimone_che_diventa_cacciatrice — svela il passato con Adrian (fonte Alex, mostra fotografica, foto Marcus morto), riceve la verità su Marcus+Mina, slip involontario su infertilità, il bacio come resa consapevole, abbraccia l'identità di cacciatrice",
+          "vincoli_locali": {
+            "max_detti": null,
+            "max_onomatopee_firma": null
+          }
+        },
+        {
+          "entity_id": "dante_ravencroft",
+          "role_in_unit": "protagonista_pov_2",
+          "active_modality": "confessore_che_insegna — rivela Marcus+Mina senza censura, spiega come pensa Adrian, insegna con la Glock 19, il bacio come capitolazione necessaria, enuncia le prime due lezioni del cacciatore",
+          "vincoli_locali": {
+            "max_detti": null,
+            "max_onomatopee_firma": null
+          }
+        },
+        {
+          "entity_id": "maya",
+          "role_in_unit": "alleata_remota",
+          "active_modality": "tether_al_mondo_reale — voce via telefono, sollievo e rabbia, accetta il ruolo di guardiana della chiavetta USB, promette di pubblicare tutto",
+          "vincoli_locali": {
+            "max_detti": null,
+            "max_onomatopee_firma": null
+          }
+        },
+        {
+          "entity_id": "alexei",
+          "role_in_unit": "intel_operativo",
+          "active_modality": "esecutore_trappola — consegna l'invito, trasmette la risposta 'Con piacere' più foto terrazza, prepara la carta color crema inchiostro rosso sangue",
+          "vincoli_locali": {
+            "max_detti": null,
+            "max_onomatopee_firma": null
+          }
+        },
+        {
+          "entity_id": "marco",
+          "role_in_unit": "sentinella_campo",
+          "active_modality": "avvistamento_vesper — messaggio: 'Movimento al Vesper. Adrian ha mandato i suoi esploratori'",
+          "vincoli_locali": {
+            "max_detti": null,
+            "max_onomatopee_firma": null
+          }
+        },
+        {
+          "entity_id": "il_cacciatore",
+          "role_in_unit": "antagonista_assente_attivo",
+          "active_modality": "risposta_al_gioco — 'Con piacere'; foto terrazza recente; presenza come ombra che già si muove; il giocatore che accetta l'invito senza sapere che è una trappola",
+          "vincoli_locali": {
+            "max_detti": null,
+            "max_onomatopee_firma": null
+          }
+        },
+        {
+          "entity_id": "marcus",
+          "role_in_unit": "assente_referito_centrale",
+          "active_modality": null,
+          "vincoli_locali": {
+            "max_detti": null,
+            "max_onomatopee_firma": null
+          }
+        },
+        {
+          "entity_id": "mina",
+          "role_in_unit": "assente_referita",
+          "active_modality": null,
+          "vincoli_locali": {
+            "max_detti": null,
+            "max_onomatopee_firma": null
+          }
+        }
+      ],
+      "primary_location_id": "safe_house",
+      "secondary_location_ids": [
+        "appartamento_rory",
+        "attico_dante",
+        "the_vesper",
+        "seattle"
+      ],
+      "scenes": [
+        {
+          "id": "cap_07_s01",
+          "position": 1,
+          "type": "apertura_predatoria",
+          "is_signature": false,
+          "moment": "giorno",
+          "location": {
+            "id": "safe_house",
+            "qualifier": "zona living — tavolo armi"
+          },
+          "characters_present": [
+            "rory_winters",
+            "dante_ravencroft"
+          ],
+          "focal_action": "Rory tiene una pistola ('pesava come una bugia ben confezionata'). Dante pulisce metodicamente un'altra arma al tavolo. Dialogo predatorio: Dante ha catalogato ogni suo gesto ('inclini la testa di sette gradi a sinistra', 'il tuo pollice sinistro si muove'). Rory: 'Mi stai studiando.' Dante: 'Ti sto tenendo viva. C'è una differenza.' Rory mente: 'Come se fossi importante per il piano.' Dante: 'Menti meglio quando non ci credi neanche tu.'",
+          "focal_object": null,
+          "atmosphere": "safe house che puzza di candeggina e disperazione — Dante che comanda lo spazio come fosse il Vesper anche qui; Rory che studia le crepe nell'armatura di lui; la pistola come oggetto di scena e di test",
+          "palette": "appartamento grigio, tavolo armi, pistola in mano, luce piatta",
+          "ambient_modifier": "countdown implicito — 18 ore",
+          "onomatopee": [],
+          "composition_zone": null,
+          "notes": "POV Rory. Frase codice Dante: 'Ti sto tenendo viva. C'è una differenza.' Pattern: Dante studia Rory come sopravvissuta, non come oggetto — 'catalogando ogni gesto'. Prima scena del cap: stabilisce il tono predatorio-reciproco.",
+          "provenance": "original"
+        },
+        {
+          "id": "cap_07_s02",
+          "position": 2,
+          "type": "telefonata_assicurazione",
+          "is_signature": false,
+          "moment": "giorno",
+          "location": {
+            "id": "safe_house",
+            "qualifier": "zona living"
+          },
+          "characters_present": [
+            "rory_winters",
+            "dante_ravencroft"
+          ],
+          "focal_action": "Il telefono di Rory squilla: Maya. Rory risponde contro il parere di Dante ('Adrian potrebbe tracciare—'). Rivela il nome Adrian Bell. Promette a Maya la chiavetta USB ('sotto il pavimento del bagno nel mio appartamento, tutto quello che ho su Adrian — pubblicalo tutto se succede qualcosa'). Maya promette. 'Faccio del mio meglio.'",
+          "focal_object": "chiavetta_usb_rory",
+          "atmosphere": "Dante che brucia in silenzio — 'stringeva l'arma come se volesse strangolare qualcuno'; Rory che protegge la sua autonomia e costruisce la sua rete di protezione parallela",
+          "palette": "telefono, voce di Maya come tether al mondo reale, mani di Dante sulle armi",
+          "ambient_modifier": null,
+          "onomatopee": [],
+          "composition_zone": null,
+          "notes": "POV Rory. Seed piantato: chiavetta_usb_backup. Rory nomina Adrian Bell a voce alta fuori da contesti tattici per la prima volta. Maya come assicurazione di vita: 'Vengo a prenderti. No, Maya. Non puoi salvarmi da questo. Questa volta la via d'uscita è attraverso.'",
+          "provenance": "original"
+        },
+        {
+          "id": "cap_07_s03",
+          "position": 3,
+          "type": "confronto_post_telefono",
+          "is_signature": false,
+          "moment": "giorno",
+          "location": {
+            "id": "safe_house",
+            "qualifier": "zona living"
+          },
+          "characters_present": [
+            "rory_winters",
+            "dante_ravencroft"
+          ],
+          "focal_action": "Post-telefonata. Dante: 'È stato stupido.' Rory: 'Era necessario — Maya è la mia assicurazione.' Dante: 'Non ti ucciderà.' Rory: 'Come fai a esserne così sicuro?' Dante si alza, attraversa la stanza in tre passi fluidi: 'Perché dovrebbe passare sul mio cadavere per arrivarti.' Scambio di verità velate/bugie trasparenti. Poi Dante: 'Dobbiamo parlare di due anni fa.'",
+          "focal_object": null,
+          "atmosphere": "stanza che si fa più piccola, distanza che si riduce, tensione erotica mescolata a urgenza operativa; il sarcasmo come scudo ('che nobile')",
+          "palette": "spazio angusto, vicinanza progressiva, calore corporeo",
+          "ambient_modifier": null,
+          "onomatopee": [],
+          "composition_zone": null,
+          "notes": "POV Rory. Frase codice Dante: 'Perché dovrebbe passare sul mio cadavere per arrivarti.' / 'Continui a mentire. E continui a farlo male.' / 'Forse voglio che tu sappia che sto mentendo.' — 'Perché?' — 'Perché la verità è peggio.' Il momento sospeso si interrompe: 'Dobbiamo parlare di due anni fa.'",
+          "provenance": "original"
+        },
+        {
+          "id": "cap_07_s04",
+          "position": 4,
+          "type": "backstory_sorveglianza",
+          "is_signature": true,
+          "moment": "giorno",
+          "location": {
+            "id": "safe_house",
+            "qualifier": "finestra — pioggia"
+          },
+          "characters_present": [
+            "rory_winters",
+            "dante_ravencroft"
+          ],
+          "focal_action": "Rory racconta come Adrian l'ha trovata due anni fa: investigava traffico al porto (ragazze dell'Est Europa scomparse). Aveva una fonte, 'Alex', per mesi — era Adrian. Foto: prima innocue (caffè, redazione), poi intime (doccia, sonno, pianto dopo la storia affondata). Una notte: mostra fotografica nell'appartamento di Rory, centinaia di foto su ogni parete, al centro Marcus morto sulla pavimentazione dell'attico di Dante. Biglietto: 'Lui ha scelto la morte piuttosto che l'amore distorto. Tu sceglierai l'amore distorto piuttosto che la morte. Sarà la mia più grande opera.' Tutto sparito il mattino dopo.",
+          "focal_object": "fascicolo_adrian_bell",
+          "atmosphere": "due anni di cercare di dimenticare — la pioggia fuori come testimone; Rory verso la finestra incapace di stare ferma; Dante che stringe il fucile fino a biancare le nocche; la mostra nell'appartamento come flashback intrusivo",
+          "palette": "finestra con pioggia, foto su ogni parete (flashback), fucile di precisione",
+          "ambient_modifier": "pioggia incessante di Seattle",
+          "onomatopee": [],
+          "composition_zone": null,
+          "notes": "POV Rory. Seed piantato: backstory_sorveglianza_adrian_rory. Prima narrazione completa della persecuzione di Adrian (2 anni fa). Dante: 'Figlio di puttana' — violenza nella voce 'palpabile'. La foto di Marcus come prova che Adrian era sulla scena della morte — primo accenno al potenziale misalignment M16 (terrazza vs studio). Nota: in questo racconto, la foto mostra Marcus 'sulla pavimentazione sotto il tuo attico' — cap_07 POV Dante dice invece che Adrian era 'nascosto nell'ombra del mio studio' → vedi M16.",
+          "provenance": "original"
+        },
+        {
+          "id": "cap_07_s05",
+          "position": 5,
+          "type": "rivelazione_mina",
+          "is_signature": true,
+          "moment": "giorno",
+          "location": {
+            "id": "safe_house",
+            "qualifier": "seduti — dopo la finestra"
+          },
+          "characters_present": [
+            "rory_winters",
+            "dante_ravencroft"
+          ],
+          "focal_action": "Rory: 'Non voleva studiarmi per distruggermi. Voleva capirmi.' Dante rivela Marcus+Mina: Marcus stava per adottare Mina, bambina siriana rifugiata di tre anni. Adrian sarebbe stato parte della famiglia (fratello/zio). L'adozione saltata dopo la morte di Marcus. Adrian negato da solo (ex-tossico, precedenti, depressione). Dante: 'Per Adrian, Marcus era l'unico che lo aveva visto come umano. E io gliel'ho portato via.' Rory, elaborando: 'Per questo sono io. Una donna che non può avere figli—' Si interrompe. Dante la fissa: 'Come fai a saperlo?' Rory: 'Non importa.'",
+          "focal_object": null,
+          "atmosphere": "realizzazione a cascata — ogni pezzo va al suo posto; silenzio pesante come piombo; Rory che si siede sotto il peso della comprensione",
+          "palette": "luce piatta, entrambi seduti, spazio stretto",
+          "ambient_modifier": null,
+          "onomatopee": [],
+          "composition_zone": null,
+          "notes": "POV Rory. Seed piantato: mina_adozione_mancata, rory_non_puo_avere_figli. Slip involontario di Rory sulla propria infertilità — informazione che Adrian ha e che lei non ha mai detto a nessuno. Dante: 'Come fai a saperlo?' → Rory chiude: 'Non importa.' Debt aperto: rory_infertilita_come_sa_adrian. Seed maturo: le motivazioni di Adrian diventano pienamente comprensibili (specchio speculare di Rory vs Marcus — entrambe/i non possono avere/dare la famiglia promessa).",
+          "provenance": "original"
+        },
+        {
+          "id": "cap_07_s06",
+          "position": 6,
+          "type": "primo_bacio",
+          "is_signature": true,
+          "moment": "giorno→pomeriggio",
+          "location": {
+            "id": "safe_house",
+            "qualifier": "centro stanza"
+          },
+          "characters_present": [
+            "rory_winters",
+            "dante_ravencroft"
+          ],
+          "focal_action": "Rory accusa Dante: 'Non mi stai dicendo perché ti importa se vivo o muoio. Non mi stai dicendo perché le tue mani tremano quando mi tocchi.' Lui la bacia. 'Non fu dolce. Non fu tenero. Fu disperato e affamato e pieno di una verità che nessuno dei due poteva dire ad alta voce.' Rory risponde con la stessa disperazione. Poi: 'Questo è un errore. Lo so. Adrian lo userà contro di noi. Lo so. Per i prossimi dieci secondi, possiamo fingere di essere solo due persone che non sono rotte oltre ogni riparazione?' Fronte contro fronte, dieci secondi. Poi il telefono di Dante squilla: Alexei. 'L'invito è stato consegnato. Adrian ha risposto.' Due parole in calligrafia elegante: 'Con piacere.' Foto allegata: la terrazza dell'attico di Dante, scattata di recente.",
+          "focal_object": null,
+          "atmosphere": "il punto di non ritorno — la stanza che si ferma; il bacio come resa necessaria a una verità che non potevano più negare; poi il click del telefono che spezza il momento e riporta la realtà operativa",
+          "palette": "vicinanza totale, respiro pesante, poi lo schermo del telefono",
+          "ambient_modifier": null,
+          "onomatopee": [],
+          "composition_zone": null,
+          "notes": "POV Rory. Seed piantato: bacio_safe_house, foto_attico_recente. Seed maturato: dante_rifiuta_bacio_ragioni_sbagliate (il bacio ora avviene — con le ragioni giuste, disperazione condivisa non tattica). Seed maturato: trappola_per_adrian (risposta 'Con piacere'). Debt aperto: foto_attico_quando_era_adrian (Adrian era sulla terrazza dell'attico recentemente — quanto recentemente?). Frase codice Dante: 'Per i prossimi dieci secondi, possiamo fingere di essere solo due persone che non sono rotte oltre ogni riparazione?'",
+          "provenance": "original"
+        },
+        {
+          "id": "cap_07_s07",
+          "position": 7,
+          "type": "trasformazione_cacciatrice",
+          "is_signature": true,
+          "moment": "pomeriggio",
+          "location": {
+            "id": "safe_house",
+            "qualifier": "tavolo armi"
+          },
+          "characters_present": [
+            "rory_winters",
+            "dante_ravencroft"
+          ],
+          "focal_action": "Rory in modalità operativa: 'Sta già giocando.' Dante: 'Lascialo giocare. Abbiamo sei ore per trasformarti da esca a cacciatrice.' Rory: 'Sono sempre stata una cacciatrice.' Dante: 'No. Sei sempre stata una sopravvissuta. C'è una differenza.' Rory prende una lama dal tavolo, sentendo il peso. 'Allora insegnami a cacciare.' Prima lezione: 'Un cacciatore non ha paura della morte. La morte è solo un altro strumento.' Seconda lezione: 'Un cacciatore non caccia per sopravvivere. Caccia per vincere.' Rory fa roteare la lama (presa perfetta — training che lui non sa che lei ha). 'Terza lezione?' 'La imparerai quando sarà il momento. A volte, per vincere, devi lasciare che la preda pensi di averti catturato.' Fine: due predatori che affilano gli artigli.",
+          "focal_object": null,
+          "atmosphere": "inversione di paradigma — da sopravvissuta a cacciatrice come cambio di identità non solo tattico; il sorriso di Dante 'lento, pericoloso, stranamente orgoglioso'; la pioggia fuori che continua",
+          "palette": "tavolo armi, lama, luce pomeridiana grigia",
+          "ambient_modifier": "6 ore al limite",
+          "onomatopee": [],
+          "composition_zone": null,
+          "notes": "POV Rory. Seed piantato: da_sopravvissuta_a_cacciatrice, terza_lezione_cacciatore. Rory fa roteare la lama con presa perfetta — rivela training precedente che Dante non conosce. Frase codice Dante: 'Sei sempre stata una sopravvissuta. C'è una differenza [con cacciatrice].' / 'A volte, per vincere, devi lasciare che la preda pensi di averti catturato.' Fine POV Rory. Chiusura: 'E per la prima volta in due anni, Rory Winters non stava pianificando di sopravvivere. Stava pianificando di vincere.'",
+          "provenance": "original"
+        },
+        {
+          "id": "cap_07_s08",
+          "position": 8,
+          "type": "osservazione_reciproca",
+          "is_signature": false,
+          "moment": "giorno",
+          "location": {
+            "id": "safe_house",
+            "qualifier": "tavolo — zona osservazione"
+          },
+          "characters_present": [
+            "rory_winters",
+            "dante_ravencroft"
+          ],
+          "focal_action": "Dante osserva Rory che studia il safe house: tocca ogni superficie, conta le uscite, testa le finestre. I suoi gesti precisi rivelano che non è la prima volta che si nasconde. Rory: 'Smettila di fissarmi.' Dante: 'Sto memorizzando le uscite.' (bugia con facilità praticata.) Dante pensa ad Adrian: il ragazzo che Marcus aveva trovato mezzo morto di overdose, che aveva ignorato come 'progetto di Marcus', che aveva smesso di vedere quando Marcus era caduto.",
+          "focal_object": null,
+          "atmosphere": "appartamento che puzza di disinfettante e paranoia; Dante che comanda lo spazio anche qui; Rory che si muove con precisione militare",
+          "palette": "spazio angusto, serrature, finestre testate, luce grigia",
+          "ambient_modifier": null,
+          "onomatopee": [],
+          "composition_zone": null,
+          "notes": "POV Dante. Apertura speculare al cap_07_s01 (POV Rory). Dante sulla Rory: 'Cosa ti hanno fatto, piccola cacciatrice?' — pensiero interno non detto. Dante sull'Adrian: 'Il ragazzo che Dante aveva ignorato, pensando fosse solo un altro dei progetti di Marcus, un altro artista danneggiato che Marcus raccoglieva come altri collezionano francobolli.' Il nome Adrian sulla lingua 'come acido'.",
+          "provenance": "original"
+        },
+        {
+          "id": "cap_07_s09",
+          "position": 9,
+          "type": "confessione_marcus",
+          "is_signature": true,
+          "moment": "giorno",
+          "location": {
+            "id": "safe_house",
+            "qualifier": "finestra — whiskey"
+          },
+          "characters_present": [
+            "rory_winters",
+            "dante_ravencroft"
+          ],
+          "focal_action": "Rory chiede la verità su Marcus — 'Non la versione pubblica. Non le mezze verità dette a Dimitri. La verità.' Dante racconta: Marcus come possesso-coscienza-equilibrio (in realtà fragilità, 'amico di qualcosa che possiedi — lo metti in una teca'). Il tradimento: accordo con i Bratva per debiti di gioco, una porta aperta, tre uomini di Dante massacrati (uno aveva una figlia di sei anni). Le tre settimane di tortura psicologica (foto delle vedove, identificazione dei corpi, Marcus che si decompone). Adrian nell'ombra dello studio: ha visto tutto — Marcus che implora il perdono, Dante che lo rifiuta, Marcus che sceglie la morte.",
+          "focal_object": null,
+          "atmosphere": "coltelli verbali precisi; parole piatte come condanne; Dante verso la finestra con whiskey; Seattle che piange al momento giusto; il peso di cinque anni di silenzio che si svuota",
+          "palette": "bicchiere di whiskey, finestra, pioggia, studio nella memoria",
+          "ambient_modifier": null,
+          "onomatopee": [],
+          "composition_zone": null,
+          "notes": "POV Dante. Seed piantato: tre_morti_accordo_marcus. Nuovo dettaglio: uno dei tre morti aveva una figlia di sei anni (eco di Mina — bambine come specchio). Adrian era nello 'studio' di Dante (non sulla terrazza) — potenziale misalignment M16 con POV Rory (lei dice 'pavimentazione sotto il tuo attico'). Dante: 'Non sei amico di qualcosa che possiedi. Lo controlli. Lo metti in una teca. Lo proteggi finché non soffoca.' Frase codice Dante: 'Perché sei la prima persona in cinque anni che mi guarda e vede l'uomo, non solo il mostro.'",
+          "provenance": "original"
+        },
+        {
+          "id": "cap_07_s10",
+          "position": 10,
+          "type": "training_e_piano_finale",
+          "is_signature": true,
+          "moment": "pomeriggio→sera",
+          "location": {
+            "id": "safe_house",
+            "qualifier": "tavolo armi — zona centrale"
+          },
+          "characters_present": [
+            "rory_winters",
+            "dante_ravencroft"
+          ],
+          "focal_action": "Dante insegna con la Glock 19 (correzione presa — le sue dita sfiorano le sue, il contatto brucia). Rory decifra la psicologia di Adrian: 'Sei il modo in cui mi punisce. Perché sa che ti importa se vivo o muoio. Quando dici mia, non intendi possesso. Intendi protezione.' Pistola alla testa di Dante: 'Prima lezione: mai abbassare la guardia, neanche con qualcuno di cui ti fidi.' Tre tipi di fiducia. Dante: 'Sto imparando la differenza tra possesso e protezione.' Rory: 'Io tra sopravvivere e vivere.' Messaggio Marco: movimento al Vesper — esploratori di Adrian. Rory propone l'invito formale (ego, controllo della narrativa, abbassare la guardia). Dante: 'D'accordo. Ma lo facciamo a modo mio — prima ti insegno davvero a sopravvivere a lui.' Messaggio Alexei: invito pronto, carta color crema, inchiostro rosso sangue. 'È ora di invitare il diavolo a cena.' / 'Assicuriamoci che si strozzi col dessert.'",
+          "focal_object": null,
+          "atmosphere": "il tavolo armi come spazio condiviso e campo di battaglia; la pistola come terzo personaggio; inversione dei ruoli — chi insegna e chi impara si scambiano continuamente",
+          "palette": "Glock 19, tavolo armi, sera, schermi (impliciti)",
+          "ambient_modifier": "6→8 ore al limite",
+          "onomatopee": [],
+          "composition_zone": null,
+          "notes": "POV Dante. Debt parzialmente chiuso: rory_armata_quando (Dante insegna qui — ma M15 resta: la pistola in cap_06_s08 al Vesper rimane non spiegata). Debt chiuso: dove_e_quando_avviene_la_trappola (il Vesper, 6-8 ore). Frase codice finale: 'È ora di invitare il diavolo a cena.' / 'Assicuriamoci che si strozzi col dessert.' Dante: 'Prima del why di Adrian: perché ha scelto proprio te tra tutte le giornaliste di Seattle?' — questa domanda rimane aperta.",
+          "provenance": "original"
+        }
+      ],
+      "narrazione_fattuale_path": "progetto/narrazione_fattuale/cap_07.md",
+      "brief_path": null,
+      "testo_finale_path": "progetto/testi_finali/cap_07.md",
+      "status": "scenes_distilled",
+      "callbacks_in": [
+        "trappola_per_adrian",
+        "dante_si_scusa_prima_volta",
+        "dante_rifiuta_bacio_ragioni_sbagliate",
+        "adrian_chiama_direttamente",
+        "rory_armata_quando",
+        "dove_e_quando_avviene_la_trappola",
+        "marcus_figlio_per_scelta_dimitri"
+      ],
+      "seeds_planted": [
+        "bacio_safe_house",
+        "rory_non_puo_avere_figli",
+        "mina_adozione_mancata",
+        "chiavetta_usb_backup",
+        "backstory_sorveglianza_adrian_rory",
+        "tre_morti_accordo_marcus",
+        "foto_attico_recente",
+        "da_sopravvissuta_a_cacciatrice",
+        "terza_lezione_cacciatore"
+      ],
+      "seeds_blooming": [
+        "trappola_per_adrian",
+        "dante_rifiuta_bacio_ragioni_sbagliate"
+      ],
+      "seeds_maturing": [
+        "bacio_safe_house",
+        "da_sopravvissuta_a_cacciatrice"
+      ],
+      "debts_opened": [
+        "rory_infertilita_come_sa_adrian",
+        "terza_lezione_cacciatore_cosa_e",
+        "mina_dove_e_ora",
+        "foto_attico_quando_era_adrian"
+      ],
+      "debts_closed": [
+        "dove_e_quando_avviene_la_trappola",
+        "rory_armata_quando"
       ]
     }
   },
