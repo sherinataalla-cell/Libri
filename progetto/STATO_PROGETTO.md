@@ -11,9 +11,9 @@
 @capitolo.next: 09 (da scrivere)
 @parole.totali: ~60.000 stimato (8 capitoli, ~7.500 parole/cap)
 @completamento: ~40% (8/20 capitoli)
-@versione_grafo: 0.0.0 (inizializzato, cap_01+cap_02+cap_03+cap_04 distillati)
+@versione_grafo: 0.0.0 (inizializzato, cap_01+cap_02+cap_03+cap_04+cap_05 distillati)
 @versione_schema: bozza (grafo_schema.json — Fase 02 non ancora completata)
-@branch.attivo: claude/chapter-4-distillation-qkNBS
+@branch.attivo: claude/chapter-5-distillation-6ZRPK
 ```
 
 ---
@@ -52,7 +52,7 @@
   cap_02 ✅ — 11 scene, 5 seeds, 5 debts, 10 entità promosse (2026-06-05)
   cap_03 ✅ — 11 scene, 4 seeds, 3 debts, 4 entità promosse (2026-06-05)
   cap_04 ✅ — 13 scene, 4 seeds, 2 debts, 1 entità promossa (2026-06-05)
-  cap_05 ⬜
+  cap_05 ✅ — 17 scene, 5 seeds, 3 debts, 3 entità promosse (2026-06-05)
   cap_06 ⬜
   cap_07 ⬜
   cap_08 ⬜
@@ -74,6 +74,7 @@
   ✅ cap_01 distillato nel grafo (Passate 0→1→2 complete)
   ✅ Catalogo: schede embrionali per marco, alexei, ufficio_dante
   ✅ cap_04 distillato nel grafo (13 scene, attico_dante promosso)
+  ✅ cap_05 distillato nel grafo (17 scene, detective_chen + dimitri_volkov + album_fotografico promossi)
 
 @blocchi.pending:
   🟡 Distillazione cap_05..08 (una per chat)
@@ -90,16 +91,16 @@
 ## §PROSSIMA SESSIONE
 
 ```
-@obiettivo: distillazione cap_05 — "Il Primo Sangue"
-@branch: creare claude/chapter-5-distillation-XXXXX (nuovo branch da main)
-@regola: una unità per chat — non mescolare cap_05 e cap_06
+@obiettivo: distillazione cap_06 — "Quello che Non Diciamo"
+@branch: creare claude/chapter-6-distillation-XXXXX (nuovo branch da main dopo merge cap_05)
+@regola: una unità per chat — non mescolare cap_06 e cap_07
 
 @passi:
-  1. Leggere STATO_PROGETTO.md (questo file)
-  2. Verificare/creare branch per cap_05
-  3. Leggere story_graph.json per vedere seeds/debts aperti da cap_04
-  4. Leggere narrazione_fattuale/cap_05.md
-  5. Avviare distillazione cap_05 (Passata 0 → 1 → 2)
+  1. Merge branch cap_05 su main (su richiesta utente)
+  2. Creare nuovo branch per cap_06
+  3. Leggere story_graph.json per seeds/debts aperti da cap_05
+  4. Leggere narrazione_fattuale/cap_06.md
+  5. Avviare distillazione cap_06 (Passata 0 → 1 → 2)
 ```
 
 ---
@@ -116,6 +117,8 @@ M06 — prigioniero level-2 (cap_02) vs Sofia al level-2 (cap_03): stessa entit�
 M07 — voce_nel_buio (cap_02) vs voce_altoparlanti=Cacciatore (cap_03): coincidono? risolverebbe M04 [bassa gravità]
 M08 — come il Cacciatore ha il numero privato di Dante (cap_04) [bassa gravità]
 M09 — discrepanza timeline countdown: 48h−2h≠42h in cap_04 [bassa gravità]
+M10 — il Cacciatore usa il numero di Alexei (cap_05): compromissione rete Dante [media gravità]
+M11 — pronome ambiguo nel messaggio finale cap_05: chi ha "quasi preso" chi 2 anni fa? [bassa gravità]
 → Dettagli: progetto/misalignments.json
 ```
 
@@ -125,6 +128,6 @@ M09 — discrepanza timeline countdown: 48h−2h≠42h in cap_04 [bassa gravità
 
 ```
 @data.ultima.modifica: 2026-06-05
-@evento: distillazione cap_04 completa (13 scene, 4 seeds, 2 debts, 1 entità promossa, 2 misalignment annotati M08-M09)
-@stato: pronto per distillazione cap_05
+@evento: distillazione cap_05 completa (17 scene, 5 seeds, 3 debts, 3 entità promosse: detective_chen + dimitri_volkov + album_fotografico, 2 misalignment M10-M11)
+@stato: pronto per distillazione cap_06 (dopo merge branch cap_05)
 ```
