@@ -150,7 +150,9 @@ schema_brief_version: "1.0"
 
 **Canone visivo (dalla scheda catalogo)**:
 
-_(scheda non trovata)_
+Tratti che emergono nei gesti e nella voce (progetto testuale): postura controllata, lucida; il corpo che si irrigidisce quando perde il controllo della situazione. Si muove come chi sta sempre facendo un calcolo. Sotto la corazza efficiente, una vulnerabilità che il palazzo (e Giovanni) faranno affiorare scena dopo scena.
+
+_Aspetto fisico puro (statura, lineamenti, colore) non fissato dalle fonti canoniche →_ `_da popolare_` _(decisione autoriale)._
 
 
 ### Giovanni Liguori (`giovanni_liguori`)
@@ -166,7 +168,9 @@ _(scheda non trovata)_
 
 **Canone visivo (dalla scheda catalogo)**:
 
-_(scheda non trovata)_
+Tratti che emergono nei gesti e nella voce (progetto testuale): mani da chi lavora la materia, gesto fisico e concreto; risolve "con le mani" (cap. 4). Postura ferma, densa, lenta. La ruvidezza è corazza; la tenerezza esce a sprazzi e si ritira subito.
+
+_Aspetto fisico puro (statura, lineamenti, colore) non fissato dalle fonti canoniche →_ `_da popolare_` _(decisione autoriale)._
 
 ## 6 — Convenzioni del mondo applicabili
 

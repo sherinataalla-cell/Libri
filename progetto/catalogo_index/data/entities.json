@@ -1,0 +1,47 @@
+{
+  "_description": "Indice catalogo derivato da schede + grafo",
+  "_generated_at": "2026-06-06T14:44:00",
+  "_total": 3,
+  "entities": [
+    {
+      "id": "francesca_ferrante",
+      "name": "Francesca Ferrante",
+      "famiglia": "personaggio",
+      "sottotipo": "protagonisti",
+      "tipo_grafo": "protagonista_femminile",
+      "ruolo_saga": "protagonista (PoV \"lei\")",
+      "status": "provvisorio",
+      "ultima_modifica": "2026-06-06",
+      "card_path": "catalogo/francesca_ferrante/scheda.md",
+      "appare_in_storie": [
+        "cap_01"
+      ]
+    },
+    {
+      "id": "giovanni_liguori",
+      "name": "Giovanni Liguori",
+      "famiglia": "personaggio",
+      "sottotipo": "protagonisti",
+      "tipo_grafo": "protagonista_maschile",
+      "ruolo_saga": "protagonista (PoV \"lui\")",
+      "status": "provvisorio",
+      "ultima_modifica": "2026-06-06",
+      "card_path": "catalogo/giovanni_liguori/scheda.md",
+      "appare_in_storie": [
+        "cap_01"
+      ]
+    },
+    {
+      "id": "palazzo_aldovrandi",
+      "name": "Palazzo Aldovrandi",
+      "famiglia": "luogo",
+      "sottotipo": "landmark",
+      "tipo_grafo": "palazzo_storico",
+      "ruolo_saga": "campo condiviso / terzo personaggio",
+      "status": "provvisorio",
+      "ultima_modifica": "2026-06-06",
+      "card_path": "catalogo/palazzo_aldovrandi/scheda.md",
+      "appare_in_storie": []
+    }
+  ]
+}
