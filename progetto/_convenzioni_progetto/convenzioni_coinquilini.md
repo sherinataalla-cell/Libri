@@ -1,4 +1,4 @@
-# Convenzioni progetto — L'Ombra del Vesper
+# Convenzioni progetto — Coinquilini per Contratto
 
 > Regole specifiche di questo progetto. Integrano (non sostituiscono) le convenzioni trasversali in `_convenzioni/`.
 >
@@ -41,9 +41,9 @@ Se uno script dà errore in dry-run, **non** lanciare `--apply`. Correggere prim
 ## §3 — Struttura capitoli
 
 - **20 capitoli**, numerati `cap_01` → `cap_20`
-- **4 movimenti**: `la_danza` (1-5), `la_caduta` (6-10), `la_crisi` (11-15), `la_battaglia` (16-20)
-- **Doppio POV**: ogni capitolo ha sezione Rory + sezione Dante
-- **3.000-4.000 parole** per capitolo (split ~50/50 tra i due POV)
+- **3 atti: la_gabbia (1-6), il_patto (7-15), la_terza_via (16-20)` (16-20)
+- **Doppio PoV in prima persona presente: Sezione A (Francesca) + Sezione B (Giovanni)
+- **~3.000 parole** per capitolo (split ~50/50 tra i due POV)
 - **Naming file**: `cap_01.md`, `cap_02.md`, ecc. — non cambiare mai il nome dopo distillazione
 
 ---

@@ -2,11 +2,12 @@
 
 Dark contemporary romance — pipeline narrativa agentica.
 
-- **Protagonisti**: Dante Ravencroft & Aurora "Rory" Winters
-- **Setting**: Seattle, The Vesper (club esclusivo con segreti oscuri)
-- **Struttura**: 20 capitoli, 4 movimenti, doppio POV
-- **Target**: 60-80k parole, Kindle Unlimited
-- **Stato**: 8/20 capitoli scritti
+- **Protagonisti**: Francesca Ferrante & Giovanni Liguori
+- **Trope**: Forced proximity · Enemies to lovers · Opposites attract
+- **Setting**: Bologna — Palazzo Aldovrandi in ristrutturazione
+- **Struttura**: 20 capitoli, 3 atti, doppio POV, ~60.000 parole
+- **Target**: KDP Select / Kindle Unlimited
+- **Stato**: 0/20 capitoli — si parte da zero
 
 ---
 

@@ -1,260 +1,122 @@
-# Carta Voce — L'Ombra del Vesper
+# VOCABOLARIO FRATTALE — *Coinquilini per Contratto*
 
-> Vocabolario frattale e registro dei personaggi. Derivato dal VOCABOLARIO_FRATTALE originale.
+> Architettura simbolica sottosoglia (Livello 1 EAR narrativo).
+> **Questi simboli NON si nominano mai nel testo.** Lavorano in background per dare coerenza di voce, simbolica ed emotiva. Sono gli "architetti invisibili" delle due teste e delle scene.
+> Tempo narrativo: **presente, prima persona.** PoV alternato dentro ogni capitolo (lei → lui).
 
 ---
 
-# 🌑 VOCABOLARIO FRATTALE - L’OMBRA DEL VESPER
+## 1. SIMBOLI GUIDA DEI PROTAGONISTI
+
+### FRANCESCA — 📊 → 🌱
+- **Archetipo di partenza:** 📊 *misura / controllo / valore di mercato*
+- **Archetipo di arrivo:** 🌱 *radice / valore di senso / vulnerabilità scelta*
+- **Vocabolari attivi in background:**
+  - Vocabolario del **calcolo** (numeri, soglie, costi-benefici, "quanto vale")
+  - Vocabolario del **distacco protettivo** (misurare per non sentire)
+  - Vocabolario della **città-portfolio** (luoghi come asset, non come casa)
+- **Arco frattale:** 📊 si incrina → 🌑 (vuoto/paura sotto il controllo) → 🌱 (radice che accetta di crescere)
+
+### GIOVANNI — 🧱 → 🪞
+- **Archetipo di partenza:** 🧱 *intransigenza / scudo / le cose vecchie non tradiscono*
+- **Archetipo di arrivo:** 🪞 *apertura / lasciar entrare / restauro come specularità*
+- **Vocabolari attivi in background:**
+  - Vocabolario **materico** (pietra, calce, legno, stratificazione, tempo nella materia)
+  - Vocabolario del **rifugio-corazza** (il restauro come fortino contro il tradimento)
+  - Vocabolario della **memoria** (ciò che è stato, ciò che si conserva)
+- **Arco frattale:** 🧱 (muro) → 🕳️ (la crepa, la ferita esposta) → 🪞 (specchio: preservare = lasciar entrare)
+
+---
+
+## 2. SIMBOLO DEL CAMPO CONDIVISO
+
+### IL PALAZZO — 🏛️ (terzo personaggio)
+- Vocabolari: **stratificazione temporale**, **soglia**, **ciò che è nascosto sotto la superficie**
+- Funzione: ogni stato fisico del palazzo è eco di uno stato emotivo dei due
+  - 🔥 caldaia rotta → calore negato / bisogno non detto
+  - 🕯️ blackout → caduta delle difese, verità al buio
+  - 🖼️ affreschi nascosti → ciò che entrambi tengono sepolto sotto l'ostilità
+  - ⚖️ crollo/ispezione → rischio reale che fa emergere il sentimento
+
+---
+
+## 3. COPPIE POLARI (motore dell'arco)
+
+Ogni coppia è una tensione che attraversa il libro. La storia è il movimento da un polo all'altro.
+
+| Coppia | Polo A (inizio) | Polo B (fine) | Chi la incarna |
+|---|---|---|---|
+| Valore | 📊 Prezzo | 💎 Senso | Francesca |
+| Radice | 🍃 Sradicamento | 🌱 Appartenenza | Francesca |
+| Difesa | 🧱 Muro | 🪞 Apertura | Giovanni |
+| Rischio | 🕳️ Ritrarsi | ⚡ Esporsi | Giovanni |
+| Distanza | ❄️ Ostilità | 🔥 Desiderio | Entrambi |
+| Tempo | ⏳ Conservare | 🌀 Trasformare | Entrambi / il palazzo |
+
+> **Regola:** il sesso esplicito è il termometro della **coppia Distanza** (❄️↔🔥). La scena del cap. 17 deve muovere anche **Difesa** e **Rischio**, non solo Distanza — per questo è la più intensa.
+
+---
+
+## 4. MAPPATURA SIMBOLICA SULLE SCENE CHIAVE
+
+| Cap | Beat | Simbolo dominante | Vocabolario in background |
+|---|---|---|---|
+| 1 | Eredità trappola | ⚖️ ⛓️ | gabbia, vincolo, legame imposto |
+| 4 | La caldaia | 🔥(negato) | calore mancante = bisogno non detto |
+| 5–6 | Doccia / Blackout | 🕯️ 🪞 | buio che disarma, primo riflesso dell'altro |
+| 7–8 | Il muro / affreschi | 🖼️ ✨ | ciò che è nascosto riaffiora, complicità |
+| 9 | "L'errore" | 🔥 🕳️ | desiderio + paura di esporsi |
+| 10–13 | Il patto | ❄️🔥 (oscillazione) | compartimentazione che non regge |
+| 13 | Midpoint, offerta | ⚖️ ⚡ | la gabbia diventa scelta |
+| 15 | Sentimento sfonda | ⚡ 🪞 | rischio reale, lo scudo cade |
+| 17 | Resa vera | 🔥 💎 | desiderio come scelta, non errore |
+| 19 | Terza via | 🌀 💎 | trasformare senza svendere né ingessare |
+| 20 | HEA + ponte | 🌱 🪞 ➡️ | radice + apertura, gancio al vol. 2 |
+
+---
+
+## 5. LESSICO DI VOCE (livello superficie)
+
+Come i vocabolari frattali si traducono in parole concrete sulla pagina. **Le due teste devono *suonare* diverse.**
+
+### Voce di FRANCESCA
+- **Campo lessicale:** numeri, percentuali, margini, "conviene/non conviene", metriche, scadenze, ROI, plusvalenza
+- **Metafore tipiche:** dal mondo finanziario e dal misurare ("calcolo le distanze", "metto a bilancio", "non torna")
+- **Ritmo:** frasi controllate, taglienti, che diventano più spezzate e incrinate man mano che 🌱 emerge
+- **Tic:** quantifica le emozioni per non viverle; ironia di controllo
+- **Da evitare nella sua voce:** abbandono lirico (all'inizio); compare solo nel finale come segnale d'arco
+
+### Voce di GIOVANNI
+- **Campo lessicale:** materia, pietra, calce, patina, stratigrafia, intonaco, "questo muro ha 300 anni", peso, mani
+- **Metafore tipiche:** dal restauro e dall'architettura ("rimettere insieme i pezzi", "sotto l'intonaco c'è sempre dell'altro")
+- **Ritmo:** frasi più lente, dense, fisiche; calore trattenuto sotto la ruvidezza
+- **Tic:** parla delle cose per non parlare di sé; tenerezza che esce a sprazzi e subito si ritira
+- **Da evitare nella sua voce:** linguaggio da numeri/efficienza (è di Francesca — il contrasto è il punto)
+
+### Lessico tecnico CONDIVISO (credibilità del mondo)
+- **Restauro:** restauro conservativo/filologico, affresco, stratigrafia, patina, consolidamento, vincolo della Soprintendenza
+- **Immobiliare:** fondo, plusvalenza, due diligence, destinazione d'uso, rendita, business plan
+- **Eredità/legale:** clausola testamentaria, comproprietà, quota indivisa, notaio, residenza obbligata
+
+---
+
+## 6. AUTORIZZAZIONE ALL'IMPERFEZIONE (anti-derive)
+
+Per evitare la "coerenza troppo perfetta" che tradisce la scrittura algoritmica:
+- Dialoghi con **fraintendimenti reali**, pause goffe, frasi lasciate a metà
+- Ritmo **non sempre** tensione→climax→riflessione: variare, rompere lo schema
+- Qualche scena apparentemente "filler" che acquista senso dopo
+- Le metafore (materia/numeri) usate con parsimonia, **mai didattiche** — devono emergere, non spiegarsi
+- Piccole incoerenze umane nei personaggi (un dettaglio che oscilla) sono ammesse se aumentano verosimiglianza
 
-## *Le parole che tessono il mondo oscuro*
+> Regola madre EAR narrativo: **non nominare i concetti.** Il vocabolario frattale resta sotto la superficie. Il lettore deve *sentire* l'arco 📊→🌱 e 🧱→🪞 senza che nessuno glielo dica.
 
------
+---
 
-## 🎭 VOCABOLARI PERSONAGGIO
+## 7. SIMBOLO DEL PERSONAGGIO-PONTE (collana)
 
-### 💀 DANTE - Il Linguaggio del Controllo
-
-**Verbi del Potere**
-
-- Possedere, reclamare, marcare
-- Cacciare, circondare, intrappolare
-- Controllare, orchestrare, dominare
-- Proteggere, distruggere, consumare
-
-**Sostantivi del Territorio**
-
-- Regno, dominio, territorio
-- Preda, proprietà, conquista
-- Ombra, oscurità, abisso
-- Impero, trono, corona nera
-
-**Metafore Ricorrenti**
-
-- Fuoco che divora ma non si spegne
-- Tempesta controllata in un bicchiere
-- Predatore che gioca prima di colpire
-- Re di un regno fatto di segreti
-
-**Sensorialità Dante**
-
-- Profumo: tabacco, whiskey, pericolo
-- Tocco: possessivo, marchiante, controllato
-- Sguardo: valuta, penetra, comanda
-- Voce: velluto sopra acciaio
-
------
-
-### 🔥 RORY - Il Linguaggio della Resistenza
-
-**Verbi della Verità**
-
-- Scavare, scoprire, smascherare
-- Resistere, combattere, sopravvivere
-- Indagare, inseguire, rivelare
-- Bruciare, rinascere, trasformare
-
-**Sostantivi della Giustizia**
-
-- Verità, giustizia, rivelazione
-- Armatura, corazza, difesa
-- Ferita, cicatrice, sopravvivenza
-- Storia, inchiostro, testimonianza
-
-**Metafore Ricorrenti**
-
-- Fenice che sceglie quando bruciare
-- Acqua che trova sempre una via
-- Guerriera con armatura di carta
-- Cacciatrice che diventa preda
-
-**Sensorialità Rory**
-
-- Profumo: carta, pioggia, determinazione
-- Tocco: esitante poi deciso
-- Sguardo: cataloga, analizza, sfida
-- Voce: acciaio rivestito di seta
-
------
-
-## 🏛️ VOCABOLARIO DEL VESPER
-
-### L’Ambiente Come Personaggio
-
-**Il Club di Superficie**
-
-- Velluto nero, cristallo fumé
-- Luci soffuse, ombre danzanti
-- Musica che copre segreti
-- Champagne che sa di peccato
-
-**Gli Spazi del Potere**
-
-- Ufficio: fortezza moderna
-- Privé: confessionali del peccato
-- Corridoi: vene di un cuore oscuro
-- Sotterranei: dove la verità dorme
-
-**Elementi Simbolici**
-
-- Specchi: moltiplicano le menzogne
-- Scale: discese verso l’abisso
-- Porte: soglie di non ritorno
-- Finestre: occhi ciechi sulla città
-
-**Suoni del Vesper**
-
-- Musica: battito cardiaco distorto
-- Sussurri: promesse e minacce
-- Passi: predatori in agguato
-- Silenzio: il più pericoloso di tutti
-
------
-
-## ⚡ VOCABOLARIO DELLA TENSIONE
-
-### Parole del Desiderio Oscuro
-
-**Attrazione Come Guerra**
-
-- Gravità, magnetismo, forza invisibile
-- Elettricità, scintille, corto circuito
-- Marea, corrente, annegamento
-- Incendio, brace, cenere
-
-**Il Corpo che Tradisce**
-
-- Polso: tamburo di guerra
-- Respiro: confessione involontaria
-- Pelle: mappa di brividi
-- Occhi: specchio dell’anima nuda
-
-**Gesti Carichi**
-
-- Mani: che quasi toccano
-- Distanza: misurata in battiti
-- Sguardi: conversazioni mute
-- Movimento: danza di predatori
-
------
-
-## 🌹 VOCABOLARIO EMOTIVO
-
-### Le Sfumature del Dark Romance
-
-**Dolore Come Linguaggio**
-
-- Tagliare, ferire, sanguinare
-- Guarire, cicatrizzare, sopportare
-- Spezzare, ricomporre, trasformare
-- Morire, rinascere, risorgere
-
-**Amore Come Battaglia**
-
-- Resa condizionale, vittoria amara
-- Conquista reciproca, possesso mutuo
-- Guerra santa, pace impossibile
-- Alleanza nel sangue, unione nelle ceneri
-
-**Vulnerabilità Come Forza**
-
-- Crepe: dove entra la luce
-- Rotture: necessarie per crescere
-- Cadute: preludio al volo
-- Ferite: mappe di sopravvivenza
-
------
-
-## 🗝️ FRASI SIMBOLO RICORRENTI
-
-### Pensieri Non Detti
-
-**Nelle Teste dei Personaggi**
-
-- “Non qui. Non lei. Non ora.”
-- “Bruciare è meglio che congelare.”
-- “La verità ha il sapore delle ceneri.”
-- “Alcuni regni meritano di cadere.”
-
-**Dialoghi Interrotti**
-
-- “Se tu sapessi…” [mai completato]
-- “Nel mio mondo…” [silenzio]
-- “Prima di te…” [sguardo distolto]
-- “Dopo questa notte…” [promessa o minaccia]
-
------
-
-## 🔮 ELEMENTI FRATTALI
-
-### Pattern che si Ripetono
-
-**Immagini Ricorrenti**
-
-- Bicchieri mezzi vuoti/pieni
-- Porte che si chiudono/aprono
-- Luci che si spengono/accendono
-- Maschere che cadono/si indossano
-
-**Micro-Rituali**
-
-- Lui: aggiusta i gemelli quando mente
-- Lei: tocca la clavicola quando è nervosa
-- Lui: silenzio prima della tempesta
-- Lei: respiro profondo prima di tuffarsi
-
-**Oggetti Simbolici**
-
-- Una chiave: potere o prigione?
-- Un registratore: verità o tradimento?
-- Un contratto: salvezza o condanna?
-- Una fotografia: passato che non muore
-
------
-
-## 🌊 RITMI NARRATIVI
-
-### Come le Parole Danzano
-
-**Frasi Dante**
-
-- Brevi. Taglienti. Definitive.
-- Comanda anche nel silenzio.
-- Mai una parola di troppo.
-
-**Frasi Rory**
-
-- Fluiscono, si interrogano, resistono.
-- Pensieri che si aggrovigliano.
-- Verità nascoste nelle domande.
-
-**Il Vesper Parla**
-
-- In sussurri e segreti
-- In musica e minacce
-- In lusso e pericolo
-- In promesse infrante
-
------
-
-## 📜 USO PRATICO
-
-### Come Tessere il Vocabolario
-
-1. **Non Forzare**: Le parole emergono dalla scena
-1. **Ripetizione Musicale**: Stesso concetto, parole diverse
-1. **Contrasti**: Il vocabolario di uno contamina l’altro
-1. **Evoluzione**: Le parole cambiano significato nel tempo
-
-### Esempio di Tessitura
-
-```
-Primo incontro: Lei è "l'intrusa", lui "il padrone"
-Metà storia: Lei è "la chiave", lui "la serratura"  
-Finale: Entrambi sono "casa"
-```
-
------
-
-*“Nel Vesper, anche le parole hanno un prezzo. E alcune costano più di altre.”*
-
-**[VOCABOLARIO ATTIVO - PRONTO PER TESSERE]** 🖤🔥
+### LA RESTAURATRICE — 🖌️ (da nominare)
+- Appare dal cap. 7–8 (lavora agli affreschi scoperti)
+- Vocabolario: **mano che recupera il dettaglio**, sguardo ravvicinato, pazienza
+- Gancio irrisolto da seminare → diventa il 📊→🌱 / 🧱→🪞 del **Volume 2**
+- Coerenza di collana: stesso mondo (restauro/immobiliare/legale) come tessuto connettivo
