@@ -1,0 +1,124 @@
+# Annotazioni autoriali post-prosa — cap_01 "L'eredità trappola"
+# Ground truth scena per scena. Sovrascrive il NER fuzzy negli script downstream.
+
+unita_id: "cap_01"
+versione: 1
+ultima_modifica: 2026-06-06
+schema_annotazioni_version: "1.0"
+
+scene:
+
+  - scena_id: "cap_01_s01"
+    pagine_prodotto:
+      - "cap_01_s01a"
+    location:
+      id: "bologna"
+      qualifier: "interno"                     # studio del notaio (spazio di transito, non entità a catalogo)
+    cast_presente:
+      - id: "francesca_ferrante"
+        modalita_attiva: "analitica_controllo"
+        ruolo_in_scena: "primario"
+    oggetti_presenti: []                        # clausola non ancora rivelata; palazzo solo evocato
+    frasi_codice_integrate: []                  # nessuna frase-codice per il cast (da brief §5)
+    callback_chiamati: []
+    seeds_piantati:
+      - "seed_fondo_deadline"                   # il fondo come acquirente/scadenza è già nella testa di Francesca
+    seeds_blooming: []
+    seeds_maturing: []
+    debts_aperti: []
+    debts_chiusi: []
+    note_autoriali: >
+      Il notaio è funzionario di scena (NON entità del grafo, confermato dal brief): presente come
+      dispositivo, escluso dal cast_presente. Milano e fondo_immobiliare evocati fuori scena.
+      Palazzo Aldovrandi nominato ma non ancora luogo della scena.
+
+  - scena_id: "cap_01_s02"
+    pagine_prodotto:
+      - "cap_01_s02a"
+    location:
+      id: "bologna"
+      qualifier: "interno"                     # studio del notaio
+    cast_presente:
+      - id: "francesca_ferrante"
+        modalita_attiva: "analitica_controllo"
+        ruolo_in_scena: "primario"
+    oggetti_presenti:
+      - id: "clausola_testamentaria"
+        stato: "rivelata"                       # oggetto-motore: letta dal notaio in questa scena
+    frasi_codice_integrate: []
+    callback_chiamati: []
+    seeds_piantati:
+      - "seed_clausola_sei_mesi"                # 6 mesi residenza congiunta + "chi si ritira perde tutto"
+    seeds_blooming: []
+    seeds_maturing: []
+    debts_aperti:
+      - "debt_chi_tiene_il_palazzo"             # chi terrà il palazzo alla scadenza (si chiude in Atto III)
+    debts_chiusi: []
+    note_autoriali: >
+      Contenuto della clausola trasposto dal brief (referente di verità) in azione, non info-dump.
+      Coerede ancora senza nome: l'ingresso di Giovanni chiude il POV A e apre il POV B.
+
+  - scena_id: "cap_01_s03"
+    pagine_prodotto:
+      - "cap_01_s03a"
+    location:
+      id: "bologna"
+      qualifier: "interno"                     # studio del notaio
+    cast_presente:
+      - id: "francesca_ferrante"
+        modalita_attiva: "analitica_controllo"
+        ruolo_in_scena: "primario"
+      - id: "giovanni_liguori"
+        modalita_attiva: "intransigente_materica"
+        ruolo_in_scena: "primario"
+    oggetti_presenti:
+      - id: "palazzo_aldovrandi"
+        stato: "in_restauro"                    # cantiere; evocato come opera di Giovanni, non in scena fisicamente
+    frasi_codice_integrate: []
+    callback_chiamati: []
+    seeds_piantati:
+      - "seed_conflitto_vendere_vs_restaurare"  # prima scintilla: due volontà opposte incatenate
+    seeds_blooming: []
+    seeds_maturing: []
+    debts_aperti: []
+    debts_chiusi: []
+    note_autoriali: >
+      Stacco POV su Giovanni (Sezione B). Nessuna ripetizione della scena s02: il POV B ribalta
+      ciò che il POV A ha lasciato (ironia drammatica). Ostilità dichiarata sui valori, nessun contatto fisico.
+
+  - scena_id: "cap_01_s04"
+    pagine_prodotto:
+      - "cap_01_s04a"
+    location:
+      id: "bologna"
+      qualifier: "interno"                     # studio del notaio
+    cast_presente:
+      - id: "francesca_ferrante"
+        modalita_attiva: "analitica_controllo"
+        ruolo_in_scena: "primario"
+      - id: "giovanni_liguori"
+        modalita_attiva: "intransigente_materica"
+        ruolo_in_scena: "primario"
+    oggetti_presenti:
+      - id: "clausola_testamentaria"
+        stato: "operativa"                      # la residenza congiunta decorre da oggi
+      - id: "palazzo_aldovrandi"
+        stato: "in_restauro"                    # unico attico abitabile; resto cantiere
+    frasi_codice_integrate: []
+    callback_chiamati: []
+    seeds_piantati:
+      - "seed_forced_proximity_attico"          # chiavi dell'unico attico → "una sola di tutto" (prelude cap. 5)
+    seeds_blooming: []
+    seeds_maturing: []
+    debts_aperti: []
+    debts_chiusi: []
+    note_autoriali: >
+      Hook di chiusura (gabbia che scatta). Direttiva luce rispettata: scena diurna, arrivo all'attico
+      solo annunciato (ponte verso cap. 2). "Una sola camera / una sola di tutto il resto" semina la
+      doccia condivisa del cap. 5.
+
+# --- DRIFT / EMERSIONI POST-SCRITTURA (da consolidare a monte se canonici) ---
+# - Nome prozia "Beatrice / Bice Aldovrandi" + decesso "a febbraio": dettagli aggiunti in prosa,
+#   non fissati dal brief. Micro-drift coerente, da valutare per promozione/consolidamento grafo.
+# - Indirizzo "Via Galliera 14" e studio "Brandolini": dettagli di colore dello studio notarile
+#   (spazio di transito, non entità). Da consolidare solo se servono coerenza in capitoli futuri.
