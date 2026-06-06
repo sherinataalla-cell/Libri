@@ -61,11 +61,13 @@
   ✅ Fase 02 — bootstrap story_graph.json (9 entità)
   ✅ Fase 03 — distillazione cap_01 (nodo + 4 scene + narrazione fattuale)
   ✅ Fase 04 — catalogo: schede francesca_ferrante, giovanni_liguori, palazzo_aldovrandi (provvisorie) + indice
-  ✅ Fase 05 — brief cap_01 → progetto/briefs/cap_01_brief.md (canone visivo dal catalogo)
+  ✅ pattern_ai_da_bandire.md → progetto/_documenti_anima/ (proposta da validare)
+  ✅ Fase 05 — brief cap_01 → progetto/briefs/cap_01_brief.md (COMPLETO: catalogo + pattern AI, zero fallback)
 
 @blocchi.pending:
-  🟡 pattern_ai_da_bandire.md — da scrivere (fallback nel brief finché manca)
+  🟡 Validare pattern_ai_da_bandire.md (voce/stile = decisione autoriale) + raffinare dopo cap.1-8 in prosa
   🟡 Schede catalogo: sezioni `_da popolare_` (aspetto fisico/guardaroba) + passaggio critic_fisica_realismo
+  🟡 Builder brief: §6 convenzioni mondo e §9 quote tracker sono TODO interni allo script (non lacune di fonte)
   🟡 Fase 06 — prosa cap.01 (in chat dedicata, dal brief)
 ```
 
@@ -97,6 +99,16 @@
 ---
 
 ## §NOTE
+
+@comando.build_brief (path fonti non-default, da usare sempre):
+  REPO_ROOT=progetto \
+  CARTA_VOCE_PATH=progetto/_documenti_anima/carta_voce.md \
+  BIBBIA_PATH=progetto/_documenti_anima/bibbia.md \
+  PATTERN_AI_PATH=progetto/_documenti_anima/pattern_ai_da_bandire.md \
+  CATALOG_DIR=progetto/catalogo NARRAZIONE_DIR=progetto/narrazione_fattuale \
+  BRIEFS_DIR=progetto/briefs \
+  python3 _scripts/build_brief.py --unit cap_NN
+```
 
 ```
 @data.ultima.modifica: 2026-06-06
