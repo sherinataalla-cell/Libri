@@ -60,12 +60,12 @@
   ✅ glossario_consegna.json (entità principali)
   ✅ Fase 02 — bootstrap story_graph.json (9 entità)
   ✅ Fase 03 — distillazione cap_01 (nodo + 4 scene + narrazione fattuale)
-  ✅ Fase 05 — brief cap_01 → progetto/briefs/cap_01_brief.md
+  ✅ Fase 04 — catalogo: schede francesca_ferrante, giovanni_liguori, palazzo_aldovrandi (provvisorie) + indice
+  ✅ Fase 05 — brief cap_01 → progetto/briefs/cap_01_brief.md (canone visivo dal catalogo)
 
 @blocchi.pending:
   🟡 pattern_ai_da_bandire.md — da scrivere (fallback nel brief finché manca)
-  🟡 Fase 04 — catalogo (schede personaggi/luoghi; fallback nel brief finché manca)
-  🟡 Validazione autoriale bozza distillazione cap_01 (valori provvisori, entità "notaio")
+  🟡 Schede catalogo: sezioni `_da popolare_` (aspetto fisico/guardaroba) + passaggio critic_fisica_realismo
   🟡 Fase 06 — prosa cap.01 (in chat dedicata, dal brief)
 ```
 

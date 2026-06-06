@@ -49,8 +49,9 @@ schema_brief_version: "1.0"
 
 ## Hook di chiusura — 🪝A (cliffhanger d'azione + "incatenati")
 
-- Il notaio consegna le **chiavi dell'unico attico abitabile** del palazzo (il resto è cantiere, mezza ristrutturazione).
+- Il notaio consegna le **chiavi dell'unico attico abitabile** del palazzo (il resto è cantiere, mezza ristrutturazione). La consegna avviene allo studio, in pieno giorno.
 - Francesca e Giovanni dovranno **dividere l'attico a partire da stasera**: la forced proximity si installa, la gabbia si chiude.
+- **Direttiva di luce (ponte verso cap. 2):** l'appuntamento è diurno (luce fredda, registro lucido di Francesca); l'**arrivo all'attico è verso sera**, in luce calante — il crescendo va maturato fra fine cap. 1 e inizio cap. 2 (primo ingresso, primo blackout, intimità forzata).
 - Promessa di genere consegnata entro le prime pagine: questi due sono legati insieme per sei mesi e si odiano.
 
 ---
@@ -78,10 +79,12 @@ schema_brief_version: "1.0"
 
 ---
 
-## Note di distillazione (da validare)
+## Note di distillazione (validate dall'autore)
 
-- **Entità emergente non a catalogo:** *il notaio* — funzionario di una sola scena. Proposto di NON promuoverlo a entità (resta nella narrazione). Conferma?
-- **Valori provvisori (passata 2):** `time_of_day` dell'appuntamento e l'atmosfera delle scene non sono fissati dalle fonti canoniche → proposti come provvisori, segnati con `provenance`/note. Validare o correggere.
+- **Entità emergente "il notaio":** ✅ confermato — resta funzionario di scena, NON promosso a entità del grafo. Nessun arco, nessun ritorno: dispositivo che consegna clausola e chiavi. Il personaggio-ponte della collana è la *restauratrice* (🖌️), non il notaio.
+- **`time_of_day: giorno` (studio):** ✅ confermato — pieno giorno, luce fredda, carte: registro lucido/efficiente di Francesca (📊) prima che palazzo e Giovanni lo incrinino. Atmosfera scena studio: formale, luce fredda.
+- **Direttiva luce calante:** ✅ l'arrivo all'attico va spostato verso **sera** (fine cap. 1 / inizio cap. 2), per far maturare in crescendo il primo blackout e l'intimità forzata. Vedi sezione Hook.
+- **Location primaria `bologna`** (studio del notaio) + secondaria `palazzo_aldovrandi`: ✅ confermato. Lo studio notarile è spazio di transito, non entità a catalogo; il palazzo è il vero luogo-personaggio (🏛️).
 - La *restauratrice* (`restauratrice`) **non** compare nel cap. 1 (è seminata dai cap. 7–8): assente dal cast.
 
 
@@ -95,8 +98,8 @@ schema_brief_version: "1.0"
 - **Location**: bologna (qualifier: studio del notaio)
 - **Cast presente**: francesca_ferrante
 - **Focal action**: Francesca raggiunge lo studio del notaio, convinta di dover firmare una semplice formalità ereditaria.
-- **Atmosfera**: burocratica, controllata
-- **Palette**: grigio-ufficio, ⚖️
+- **Atmosfera**: formale, luce fredda diurna, carte sul tavolo
+- **Palette**: grigio-ufficio, ⚖️ (corazza lucida 📊)
 
 
 ### Scena 2 — `cap_01_s02`
@@ -147,7 +150,9 @@ schema_brief_version: "1.0"
 
 **Canone visivo (dalla scheda catalogo)**:
 
-_(scheda non trovata)_
+Tratti che emergono nei gesti e nella voce (progetto testuale): postura controllata, lucida; il corpo che si irrigidisce quando perde il controllo della situazione. Si muove come chi sta sempre facendo un calcolo. Sotto la corazza efficiente, una vulnerabilità che il palazzo (e Giovanni) faranno affiorare scena dopo scena.
+
+_Aspetto fisico puro (statura, lineamenti, colore) non fissato dalle fonti canoniche →_ `_da popolare_` _(decisione autoriale)._
 
 
 ### Giovanni Liguori (`giovanni_liguori`)
@@ -163,7 +168,9 @@ _(scheda non trovata)_
 
 **Canone visivo (dalla scheda catalogo)**:
 
-_(scheda non trovata)_
+Tratti che emergono nei gesti e nella voce (progetto testuale): mani da chi lavora la materia, gesto fisico e concreto; risolve "con le mani" (cap. 4). Postura ferma, densa, lenta. La ruvidezza è corazza; la tenerezza esce a sprazzi e si ritira subito.
+
+_Aspetto fisico puro (statura, lineamenti, colore) non fissato dalle fonti canoniche →_ `_da popolare_` _(decisione autoriale)._
 
 ## 6 — Convenzioni del mondo applicabili
 

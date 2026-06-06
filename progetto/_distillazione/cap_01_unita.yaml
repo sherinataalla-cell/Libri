@@ -90,8 +90,8 @@ scenes:
     characters_present: ["francesca_ferrante"]
     focal_action: "Francesca raggiunge lo studio del notaio, convinta di dover firmare una semplice formalità ereditaria."
     focal_object: null
-    atmosphere: "burocratica, controllata"
-    palette: "grigio-ufficio, ⚖️"
+    atmosphere: "formale, luce fredda diurna, carte sul tavolo"
+    palette: "grigio-ufficio, ⚖️ (corazza lucida 📊)"
     ambient_modifier: null
     onomatopee: []
     notes: "POV A. La testa di Francesca è già al portfolio/plusvalenza."
@@ -148,5 +148,5 @@ scenes:
     palette: "vincolo + minaccia di prossimità"
     ambient_modifier: null
     onomatopee: []
-    notes: "Hook 🪝A — cliffhanger d'azione. La forced proximity si installa."
+    notes: "Hook 🪝A — cliffhanger d'azione. Consegna diurna allo studio; l'arrivo all'attico è verso SERA (luce calante) → crescendo ponte verso cap. 2. La forced proximity si installa."
     provenance: "original"
