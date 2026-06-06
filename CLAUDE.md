@@ -1,4 +1,4 @@
-# CLAUDE.md — L'Ombra del Vesper
+# CLAUDE.md — Coinquilini per Contratto
 
 > Questo file è letto automaticamente da Claude Code. **Leggilo per intero prima di qualsiasi azione.**
 
@@ -6,23 +6,24 @@
 
 ## Cosa è questo progetto
 
-Pipeline narrativa agentica per **"L'Ombra del Vesper"** — dark contemporary romance, ~60-80k parole, target Kindle Unlimited.
+Pipeline narrativa agentica per **"Coinquilini per Contratto"** — romance contemporaneo spicy, ~60.000 parole, KDP Select / Kindle Unlimited.
 
-- **Protagonisti**: Dante Ravencroft (41, proprietario The Vesper) & Aurora "Rory" Winters (37, giornalista investigativa)
-- **Setting**: Seattle, club esclusivo The Vesper con segreti oscuri
-- **Struttura**: 20 capitoli, 4 movimenti, doppio POV (Dante/Rory)
-- **Stato**: 8 capitoli scritti (`progetto/narrazione_fattuale/`), 12 da scrivere
+- **Protagonisti**: Francesca Ferrante (31, analista fondo immobiliare) & Giovanni Liguori (36, architetto restauro)
+- **Trope**: Forced proximity · Enemies to lovers · Opposites attract
+- **Setting**: Bologna — Palazzo Aldovrandi, attico in ristrutturazione
+- **Struttura**: 20 capitoli, 3 atti, doppio POV (Francesca/Giovanni), prima persona presente
+- **Stato**: 0 capitoli scritti — si parte da zero
 
 **Documenti-anima** (`progetto/_documenti_anima/`):
-- `bibbia.md` — canone-mondo (personaggi, setting, temi)
-- `framework_strutturale.md` — struttura 20 capitoli, 4 movimenti
-- `carta_voce.md` — vocabolario frattale, registro dei personaggi
+- `bibbia.md` — DNA libro (personaggi, conflitto, struttura atti, escalation heat)
+- `framework_strutturale.md` — DNA capitoli (beat per beat, hook, note operative)
+- `carta_voce.md` — vocabolario frattale (simboli, lessico, voci distinte)
 
 **Contenuto narrativo** (`progetto/`):
-- `narrazione_fattuale/cap_01..08.md` — capitoli già scritti
-- `testi_finali/cap_01..08.md` — stessa fonte, pronti per editing
+- `narrazione_fattuale/` — capitoli (vuoto — si scrive da zero)
+- `testi_finali/` — capitoli finali (vuoto)
 - `grafo_schema.json` — schema del grafo (da completare Fase 02)
-- `glossario_consegna.json` — glossario entità (da completare Fase 01/02)
+- `glossario_consegna.json` — glossario entità (bozza — da completare)
 
 ---
 
@@ -112,7 +113,7 @@ Prima di qualsiasi altra cosa:
 | 06 — Prosa | scrittura testo finale, una scena alla volta, chat dedicata |
 | 07 — Editing/composizione | assemblaggio prodotto finale |
 
-Stato corrente: **fase di importazione** (transizione 01→02). Vedi `progetto/STATO_PROGETTO.md`.
+Stato corrente: **Fase 01 completata** — documenti-anima pronti. Prossimo passo: Fase 02 (schema + bootstrap) → scrittura cap.01. Vedi `progetto/STATO_PROGETTO.md`.
 
 ### 3. Le skill — indossa il ruolo richiesto
 
@@ -163,12 +164,10 @@ Dettaglio: `_convenzioni/` e `progetto/_convenzioni_progetto/convenzioni_vesper.
 | Componente | Stato |
 |---|---|
 | Documenti-anima (`bibbia`, `framework`, `carta_voce`) | ✅ |
-| Capitoli scritti (cap_01..08) | ✅ — in `narrazione_fattuale/` + `testi_finali/` |
 | Schema grafo (`grafo_schema.json`) | 🟡 bozza — da completare Fase 02 |
 | Glossario (`glossario_consegna.json`) | 🟡 bozza — da completare |
 | Bootstrap grafo (`story_graph.json`) | ⬜ non ancora — dopo schema + glossario |
-| Distillazione retroattiva cap.01-08 | ⬜ non ancora — dopo bootstrap |
 | Pattern AI da bandire | ⬜ da scrivere in chat dedicata |
-| Capitoli 09-20 | ⬜ da scrivere |
+| Capitoli 01-20 | ⬜ da scrivere |
 
 Prossimo passo → `progetto/STATO_PROGETTO.md`.

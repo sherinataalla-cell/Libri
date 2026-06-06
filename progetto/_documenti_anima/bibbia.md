@@ -1,190 +1,134 @@
-# Bibbia — L'Ombra del Vesper
+# DNA LIBRO — *Coinquilini per Contratto*
 
-> Canone-mondo del progetto. Dichiara cosa esiste, non come si scrive (= carta voce) né come è strutturata l'opera (= capitoli). Derivato dal DNA_LIBRO originale.
+> Documento di riferimento immutabile per tutta la stesura.
+> Ogni capitolo deve risuonare con questo nucleo.
 
 ---
 
-# 🖤 DNA NARRATIVO - L’OMBRA DEL VESPER
+## 1. SCHEDA TECNICA
 
-## *Dark Romance - Club Esclusivi & Segreti*
+| Campo | Valore |
+|---|---|
+| **Titolo provvisorio** | Coinquilini per Contratto |
+| **Genere** | Romance contemporaneo |
+| **Trope primario** | Forced proximity |
+| **Trope secondari** | Enemies to lovers · Opposites attract · One bed/one shower |
+| **Heat level** | Spicy esplicito |
+| **Lunghezza target** | ~60.000 parole |
+| **Struttura** | 20 capitoli · ~3.000 parole l'uno |
+| **PoV** | Doppio, alternato DENTRO ogni capitolo: prima sezione PoV Francesca (lei), seconda sezione PoV Giovanni (lui) |
+| **Tempo narrativo** | **Prima persona, tempo PRESENTE** (fissato, coerente per tutta la collana) |
+| **Ambientazione** | Bologna — Palazzo Aldovrandi, attico in ristrutturazione |
+| **Arco temporale interno** | 6 mesi (la clausola del testamento) |
+| **Piattaforma** | KDP Select / Kindle Unlimited |
 
------
+---
 
-## 📊 PARAMETRI BASE
+## 2. LOGLINE
 
-**Genere**: Dark Romance Contemporaneo  
-**Target**: Donne 35-50 anni  
-**Lunghezza**: 60-80k parole  
-**Struttura**: 20 capitoli (3-4k parole/capitolo)  
-**POV**: Doppio POV alternato all’interno di ogni capitolo  
-**Heat Level**: 🌶️🌶️🌶️🌶️/5  
-**Pubblicazione**: Kindle Unlimited
+Due eredi che si detestano sono costretti dal testamento a convivere per sei mesi in un palazzo storico a metà ristrutturato: lei vuole venderlo, lui vuole salvarlo, e l'unica doccia funzionante diventa il campo di battaglia dove scoprono che ciò che non si può vendere è proprio ciò che vale di più.
 
------
+---
 
-## 🎭 PROTAGONISTI
+## 3. PERSONAGGI PRINCIPALI
 
-### LUI - DANTE RAVENCROFT
+### FRANCESCA FERRANTE (PoV "lei")
+- **Età:** 31 · **Lavoro:** analista per un fondo immobiliare milanese
+- **Sigillo simbolico:** F — efficienza, fogli di calcolo, città come portfolio
+- **Voglia esterna (want):** vendere la sua quota, chiudere la pratica, far decollare la carriera
+- **Bisogno interno (need):** scoprire che alcune cose valgono perché non hanno prezzo; permettersi di mettere radici
+- **Ferita:** l'ultima volta che si è radicata/affidata è rimasta scottata → ha imparato a misurare tutto per non sentire
+- **Paura:** che restare = diventare vulnerabile
+- **Arco:** dal valore di mercato → al valore di senso
 
-**Età**: 41  
-**Professione**: Proprietario catena club “Vesper”  
-**Archetipo EAR**: ⚡🌑 (Controllo che nasconde vuoto)
+### GIOVANNI LIGUORI (PoV "lui")
+- **Età:** 36 · **Lavoro:** architetto, restauro conservativo
+- **Sigillo simbolico:** G — intransigenza come scudo, le cose vecchie non tradiscono
+- **Voglia esterna (want):** salvare il palazzo, restauro filologico a ogni costo
+- **Bisogno interno (need):** capire che preservare non è ingessare; che lasciar entrare qualcuno è il vero restauro
+- **Ferita:** un divorzio + un progetto fallito che l'ha quasi rovinato → si è chiuso nel lavoro come rifugio
+- **Paura:** rischiare di nuovo e perdere di nuovo
+- **Arco:** dalla rigidità → all'apertura
 
-**Superficie**: Imprenditore di successo, fascino letale  
-**Sotto**: [La storia lo rivelerà]  
-**Modo di pensare**: In termini di territorio, controllo, caccia  
-**Dettaglio fisico ricorrente**: [Emergerà dalla scrittura]
+---
 
------
+## 4. IL MOTORE DEL CONFLITTO
 
-### LEI - AURORA “RORY” WINTERS
+**Vincolo legale (la gabbia):** clausola testamentaria. Né vendere, né affittare, né disporre per 6 mesi; obbligo di residenza congiunta nell'attico. Chi si ritira prima perde tutto a favore dell'altro.
 
-**Età**: 37  
-**Professione**: Giornalista investigativa freelance  
-**Archetipo EAR**: 🫀🪞 (Cuore corazzato che si riflette)
+**Conflitto di valori (lo scontro):** Francesca ha già un fondo acquirente (luxury apartments, plusvalenza, carriera). Giovanni vuole restauro filologico (tempi e costi che distruggono ogni business plan).
 
-**Superficie**: Determinata a trovare la verità  
-**Sotto**: [La storia lo rivelerà]  
-**Modo di pensare**: In termini di giustizia, verità, resistenza  
-**Dettaglio fisico ricorrente**: [Emergerà dalla scrittura]
+**Forced proximity (la pressione fisica):** un solo attico, ristrutturato a metà. Una cucina. **Una sola doccia.** Cantiere di giorno, convivenza di notte.
 
------
+**La posta che cresce:** il fondo rilancia → la decisione diventa reale → desiderio e scelta si fondono al punto da non poter più separare "tenere il palazzo" da "tenersi a vicenda".
 
-## 🌹 SETUP INIZIALE
+---
 
-**Lei**: Sta indagando su [qualcosa legato ai club]  
-**Lui**: Sa chi è lei dal momento in cui entra  
-**Il Gioco**: Chi manipola chi?  
-**La Verità**: Entrambi sottovalutano il pericolo dell’altro
+## 5. REGOLA DEI TRE ATTI (mappata sui 20 capitoli)
 
------
+- **Atto I (cap. 1–6):** ostilità tagliente, installazione della gabbia, primi attriti fisici mascherati da disprezzo. Si chiude con un punto di non ritorno emotivo.
+- **Atto II (cap. 7–15):** tregua lavorativa (la scoperta degli affreschi), prima resa esplicita, il patto "di notte sì, di giorno avversari", erosione progressiva della regola. Midpoint che ribalta gli equilibri di potere.
+- **Atto III (cap. 16–20):** il fondo rilancia, decisione vera, crisi di fiducia, terza via costruita insieme. Climax alla scadenza dei sei mesi.
 
-## 🔥 ATMOSFERA E TONO
+---
 
-**Il Vesper**:
+## 6. ESCALATION HEAT (mappa del desiderio)
 
-- Lusso che nasconde ombre
-- Ogni stanza ha segreti
-- La musica copre conversazioni pericolose
+| Fase | Capitoli | Temperatura |
+|---|---|---|
+| Attrito ostile | 1–4 | tensione mascherata da disprezzo, sguardi, contatto accidentale |
+| Prima crepa | 5–7 | la doccia, il blackout, la stanza condivisa per forza |
+| Prima resa | 8–9 | scena esplicita post-scoperta affreschi, vissuta come "errore" |
+| Il patto | 10–13 | "di notte sì" — esplicito ricorrente, intimità crescente che entrambi negano di giorno |
+| Rottura del patto | 14–16 | il sentimento sfonda il sesso, panico, allontanamento |
+| Ricongiunzione | 17–20 | resa emotiva, scena esplicita "vera" (non più errore ma scelta) |
 
-**Ritmo Narrativo**:
+> **Regola spicy KU:** ogni scena esplicita deve far avanzare l'arco emotivo, mai gratuita. Il sesso è il termometro della distanza interna tra i due.
 
-- Tensione costante sotto la superficie
-- Momenti di violenza emotiva
-- Tenerezza che arriva come un pugno
+---
 
-**Regola Aurea**: Mostrare attraverso:
+## 7. HOOK NARRATIVI (architettura della ritenzione KU)
 
-- Gesti involontari
-- Quello che NON viene detto
-- Reazioni del corpo che tradiscono
-- Dettagli ambientali che riflettono emozioni
+Su KU il read-through è tutto: il guadagno è sulle pagine lette. Ogni capitolo deve **chiudere con un gancio** e **aprire con una promessa**.
 
------
+**Tipologie di hook da alternare (mai due uguali di fila):**
+- **Cliffhanger d'azione:** qualcosa accade (l'offerta del fondo, un crollo in cantiere, l'arrivo dell'ex)
+- **Cliffhanger emotivo:** una rivelazione interiore o una frase non detta
+- **Domanda aperta sul PoV opposto:** il capitolo lei chiude su un mistero che il PoV lui (stessa scena, altra testa) illumina o complica
+- **Promessa di scena calda:** tensione fisica sospesa sul "sta per succedere"
+- **Ribaltamento d'aspettativa:** il lettore crede X, l'ultima riga rivela Y
 
-## 📐 STRUTTURA ELASTICA IN 4 MOVIMENTI
+**Hook del capitolo 1 (cruciale per il sample/anteprima KU):** entro le prime 2 pagine il lettore deve sapere che questi due sono incatenati insieme e si odiano. La promessa del genere va consegnata subito.
 
-### MOVIMENTO I (Cap 1-5): LA DANZA
+**Doppio PoV come hook strutturale:** poiché ogni capitolo dà prima lei poi lui, la sezione "lui" può:
+- ribaltare ciò che lei ha appena pensato (lettore gode dell'ironia drammatica)
+- aggiungere desiderio che lei non vede
+- chiudere il capitolo su un gancio diverso da quello che lei aveva lasciato
 
-- L’incontro carico di elettricità
-- Il gioco del gatto e del topo
-- Attrazione negata ma evidente
-- Prima crepa nelle armature
+---
 
-### MOVIMENTO II (Cap 6-10): LA CADUTA
+## 8. SOTTOTRAMA & PERSONAGGI SECONDARI
 
-- Le maschere iniziano a scivolare
-- Il desiderio diventa pericoloso
-- Rivelazioni che cambiano le regole
-- Punto di non ritorno
+- **Il palazzo stesso** = terzo personaggio (gli affreschi nascosti, la caldaia, il piano allagato sono beat di trama)
+- **L'acquirente / il fondo** = antagonista esterno che spinge la deadline
+- **Personaggio-ponte per la collana** (FISSATO): **la giovane restauratrice del team di Giovanni** → protagonista del Volume 2. Va seminata dai cap. 7–8 (è lei che lavora agli affreschi scoperti). Le si dà nome, una scintilla di sottotrama propria e un gancio irrisolto che apre il libro successivo.
 
-### MOVIMENTO III (Cap 11-15): LA CRISI
+---
 
-- I segreti emergono
-- Il passato reclama il suo tributo
-- Separazione necessaria
-- Il momento più buio
+## 9. TEMA
 
-### MOVIMENTO IV (Cap 16-20): LA BATTAGLIA
+Ciò che ha valore non è ciò che si può vendere. Il restauro come metafora: si recupera senza snaturare, si tiene insieme il vecchio e il nuovo. Vale per il palazzo, vale per due persone che imparano a non ingessarsi e a non svendersi.
 
-- Scelte impossibili
-- Sacrifici necessari
-- La verità finale
-- L’amore guadagnato con il sangue
+---
 
------
+## 10. PROMESSA AL LETTORE (cosa deve provare)
 
-## 🌶️ GESTIONE DELLA TENSIONE
+Tensione che brucia lentamente, scontro intelligente tra due teste forti, calore che esplode quando la corazza cede, e un finale che non umilia nessuno dei due: niente sacrificio a senso unico, ma una terza via costruita in due.
 
-**Escalation Naturale**:
+---
 
-- Cap 1-4: Sguardi che bruciano, dialoghi taglienti
-- Cap 5-8: Primi contatti, confini che crollano
-- Cap 9-12: Esplorazione del potere e della resa
-- Cap 13-16: Astinenza che amplifica il desiderio
-- Cap 17-20: Unione totale di corpo e anima
+## 11. AGGANCIO COLLANA
 
-**Regola**: Ogni scena intima deve:
-
-- Rivelare carattere
-- Avanzare la trama emotiva
-- Aumentare le poste in gioco
-
------
-
-## 🎯 PROMESSA EMOTIVA
-
-*Due predatori che si riconoscono. Due anime ferite che trovano nell’altro non la cura, ma il coraggio di sanguinare insieme.*
-
------
-
-## 💀 ELEMENTI DARK (da dosare)
-
-- Pericolo reale, non solo emotivo
-- Segreti che potrebbero distruggere
-- Scelte moralmente grigie
-- Violenza implicita nel mondo del Vesper
-- La bellezza che nasce dal buio
-
------
-
-## 📝 LINEE GUIDA SCRITTURA
-
-### Double POV per Capitolo
-
-- **Prima metà**: Un POV che costruisce tensione
-- **Seconda metà**: L’altro POV che ribalta o approfondisce
-- **Fine capitolo**: Cliffhanger o rivelazione
-
-### Show Don’t Tell - Esempi
-
-❌ “Era arrabbiato”  
-✅ “Le sue mani si strinsero sui braccioli fino a far sbiancare le nocche”
-
-❌ “La desiderava”  
-✅ “Distolse lo sguardo. Contò fino a dieci. Non funzionò.”
-
-❌ “Il club era pericoloso”  
-✅ “La musica copriva quasi il rumore. Quasi.”
-
------
-
-## 🔮 SPAZI VUOTI FERTILI
-
-**Da scoprire scrivendo**:
-
-- Il vero segreto del Vesper
-- Il passato che li ha spezzati
-- L’antagonista nell’ombra
-- Il momento esatto in cui il gioco diventa reale
-- Come guadagneranno il loro lieto fine
-
------
-
-## ⚡ ATTIVAZIONE
-
-La storia è pronta a emergere. Il DNA contiene tutto il necessario, ma lascia spazio al mistero, alla scoperta, all’imperfezione fertile che rende una storia viva.
-
-*Nel buio del Vesper, due anime si cercano senza saperlo.*
-
-**[DNA ATTIVO - PRONTO PER I CAPITOLI]** 🖤🔥
+- Chiusura libro: HEA (happily ever after) pieno per Francesca & Giovanni.
+- Back matter: anteprima cap. 1 del volume 2, centrato sul personaggio-ponte.
+- Coerenza di mondo: stessa città/ambiente professionale (immobiliare, restauro, studi legali) come tessuto connettivo tra i titoli della collana.

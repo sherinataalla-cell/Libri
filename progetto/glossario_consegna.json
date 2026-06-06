@@ -1,113 +1,105 @@
 {
   "_meta": {
-    "note": "Glossario-consegna de L'Ombra del Vesper. DA COMPLETARE in Fase 01/02 con lo skill architetto_grafo. Usato da bootstrap_graph.py per popolare il grafo iniziale.",
+    "note": "Glossario-consegna — Coinquilini per Contratto. DA COMPLETARE in Fase 01/02 con lo skill architetto_grafo.",
     "status": "bozza"
   },
-  "project_id": "ombra_del_vesper",
-  "project_title": "L'Ombra del Vesper",
-  "project_subtitle": "Dark romance — Dante Ravencroft & Aurora Winters",
+  "project_id": "coinquilini_per_contratto",
+  "project_title": "Coinquilini per Contratto",
+  "project_subtitle": "Romance contemporaneo — Francesca Ferrante & Giovanni Liguori",
   "medium": "testo",
-  "target_audience": "donne 35-50, Kindle Unlimited",
+  "target_audience": "KDP Select / Kindle Unlimited",
   "language": "it",
   "entities": {
     "characters": {
-      "dante_ravencroft": {
-        "name": "Dante Ravencroft",
-        "aliases": ["Dante", "il Cacciatore", "il proprietario"],
-        "category": "protagonisti",
-        "type": "protagonista_maschile",
-        "role_saga": "proprietario del Vesper, antagonista/love interest",
-        "bibbia_section": "personaggi/dante",
-        "voice": {
-          "register": "linguaggio del controllo",
-          "verbi_dominanti": ["possedere", "cacciare", "controllare", "decidere", "proteggere"]
-        },
-        "arc_summary": "da predatore solitario a uomo che sceglie la vulnerabilità"
-      },
-      "rory_winters": {
-        "name": "Aurora 'Rory' Winters",
-        "aliases": ["Rory", "Aurora", "la giornalista"],
+      "francesca_ferrante": {
+        "name": "Francesca Ferrante",
+        "aliases": ["Francesca", "lei"],
         "category": "protagonisti",
         "type": "protagonista_femminile",
-        "role_saga": "giornalista investigativa, POV principale",
-        "bibbia_section": "personaggi/rory",
+        "role_saga": "analista fondo immobiliare, POV lei",
+        "bibbia_section": "personaggi/francesca",
         "voice": {
-          "register": "linguaggio della resistenza",
-          "verbi_dominanti": ["scavare", "scoprire", "combattere", "resistere", "investigare"]
+          "register": "linguaggio del calcolo e del controllo",
+          "verbi_dominanti": ["misurare", "calcolare", "valutare", "prezzare", "conviene"]
         },
-        "arc_summary": "da giornalista ossessionata dalla verità a donna che impara a fidarsi"
+        "arc_summary": "dal valore di mercato al valore di senso (📊 → 🌱)"
       },
-      "natasha_volkov": {
-        "name": "Natasha Volkov",
-        "aliases": ["Natasha"],
+      "giovanni_liguori": {
+        "name": "Giovanni Liguori",
+        "aliases": ["Giovanni", "lui"],
+        "category": "protagonisti",
+        "type": "protagonista_maschile",
+        "role_saga": "architetto restauro conservativo, POV lui",
+        "bibbia_section": "personaggi/giovanni",
+        "voice": {
+          "register": "linguaggio materico e del restauro",
+          "verbi_dominanti": ["preservare", "restaurare", "stratificare", "consolidare", "tenere"]
+        },
+        "arc_summary": "dalla rigidità all'apertura (🧱 → 🪞)"
+      },
+      "restauratrice": {
+        "name": "La Restauratrice",
+        "aliases": [],
         "category": "secondari",
-        "type": "personaggio_secondario",
-        "role_saga": "habitué del Vesper, possibile complice o vittima",
-        "bibbia_section": "personaggi/natasha"
-      },
-      "adrian": {
-        "name": "Adrian",
-        "aliases": ["Adrian"],
-        "category": "antagonisti",
-        "type": "antagonista",
-        "role_saga": "antagonista, collegamento alle ragazze scomparse",
-        "bibbia_section": "personaggi/adrian"
-      },
-      "sofia_volkov": {
-        "name": "Sofia Volkov",
-        "aliases": ["Sofia"],
-        "category": "secondari",
-        "type": "personaggio_secondario",
-        "role_saga": "figlia/sorella dei Volkov, detenuta nel Level -2",
-        "bibbia_section": "personaggi/sofia"
+        "type": "personaggio_ponte",
+        "role_saga": "protagonista del Volume 2, seminata dal cap. 7-8",
+        "bibbia_section": "personaggi/restauratrice"
       }
     },
     "locations": {
-      "the_vesper": {
-        "name": "The Vesper",
-        "aliases": ["il Vesper", "il club", "il locale"],
-        "category": "pubblici",
-        "type": "club_esclusivo",
-        "role_saga": "location centrale — arena del romanzo",
-        "bibbia_section": "luoghi/the_vesper"
+      "palazzo_aldovrandi": {
+        "name": "Palazzo Aldovrandi",
+        "aliases": ["il palazzo", "l'attico"],
+        "category": "privati",
+        "type": "palazzo_storico",
+        "role_saga": "terzo personaggio — riflette gli stati emotivi dei due",
+        "bibbia_section": "luoghi/palazzo_aldovrandi"
       },
-      "vesper_level_minus2": {
-        "name": "Level -2",
-        "aliases": ["il sotterraneo", "i sotterranei", "la suite di recupero"],
-        "category": "segreti",
-        "type": "area_segreta",
-        "role_saga": "area segreta dove Volkov detiene le persone problematiche",
-        "bibbia_section": "luoghi/level_minus2"
-      },
-      "seattle": {
-        "name": "Seattle",
+      "bologna": {
+        "name": "Bologna",
         "aliases": ["la città"],
         "category": "pubblici",
         "type": "città",
-        "role_saga": "ambientazione del romanzo",
-        "bibbia_section": "luoghi/seattle"
+        "role_saga": "ambientazione principale",
+        "bibbia_section": "luoghi/bologna"
+      },
+      "milano": {
+        "name": "Milano",
+        "aliases": [],
+        "category": "pubblici",
+        "type": "città",
+        "role_saga": "provenienza di Francesca, sede del fondo immobiliare",
+        "bibbia_section": "luoghi/milano"
       }
     },
     "groups": {
-      "famiglia_volkov": {
-        "name": "Famiglia Volkov",
-        "aliases": ["i Volkov"],
+      "fondo_immobiliare": {
+        "name": "Il Fondo Immobiliare",
+        "aliases": ["il fondo", "l'acquirente"],
         "category": "organizzazioni",
-        "type": "famiglia_criminale",
-        "role_saga": "organizzazione criminale collegata alle scomparse",
-        "bibbia_section": "gruppi/volkov"
+        "type": "antagonista_esterno",
+        "role_saga": "antagonista che spinge la deadline, vuole comprare il palazzo",
+        "bibbia_section": "gruppi/fondo"
       }
     },
     "objects": {
-      "registratore_digitale": {
-        "name": "Registratore digitale",
-        "aliases": ["il registratore"],
+      "clausola_testamentaria": {
+        "name": "Clausola testamentaria",
+        "aliases": ["la clausola", "il testamento", "la gabbia"],
         "category": "simbolici",
-        "type": "strumento_professionale",
-        "role_saga": "oggetto simbolo di Rory, la sua 'arma'",
-        "bibbia_section": "oggetti/registratore"
+        "type": "documento_legale",
+        "role_saga": "il motore del conflitto — 6 mesi di convivenza obbligata",
+        "bibbia_section": "oggetti/clausola"
+      },
+      "affreschi": {
+        "name": "Affreschi nascosti",
+        "aliases": ["gli affreschi", "il muro cavo"],
+        "category": "simbolici",
+        "type": "elemento_architettonico",
+        "role_saga": "svolta del midpoint — ciò che è nascosto sotto la superficie",
+        "bibbia_section": "oggetti/affreschi"
       }
     }
   },
-  "_note_fase02": "Completare con: frasi-codice, quote_tracker iniziale, tutte le entità secondarie emerse dalla distillazione dei cap.1-8. Poi lanciare bootstrap_graph.py."
+  "_note_fase02": "Completare con: frasi-codice per voce Francesca e Giovanni, quote_tracker iniziale, entità secondarie. Poi lanciare bootstrap_graph.py."
 }

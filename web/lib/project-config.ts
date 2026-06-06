@@ -58,10 +58,10 @@ export interface ProjectConfig {
  *   }
  */
 export const PROJECT_CONFIG: ProjectConfig = {
-  title: "L'Ombra del Vesper",
-  subtitle: "Dark romance — Dante Ravencroft & Aurora Winters",
+  title: "Coinquilini per Contratto",
+  subtitle: "Romance contemporaneo — Francesca & Giovanni",
   description:
-    "Cruscotto editoriale de L'Ombra del Vesper — catalogo entità, atlante saga, pipeline narrativa.",
+    "Cruscotto editoriale di Coinquilini per Contratto — catalogo entità, atlante saga, pipeline narrativa.",
   language: "it",
 
   expectedUnitsCount: 20,
@@ -73,7 +73,7 @@ export const PROJECT_CONFIG: ProjectConfig = {
 
   unitAxis: {
     seasonLabel: null,
-    cycleLabel: "Movimento",
+    cycleLabel: "Atto",
     atmosphereLabel: null,
   },
 

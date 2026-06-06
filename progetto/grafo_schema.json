@@ -1,8 +1,8 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "ombra_del_vesper/grafo_schema.json",
-  "title": "Grafo narrativo L'Ombra del Vesper",
-  "description": "Schema canonico del grafo. Specializzazione del template kit per un dark romance a doppio POV (Dante/Rory), 20 capitoli, 4 movimenti. DA COMPLETARE in Fase 02 con lo skill architetto_grafo.",
+  "$id": "coinquilini_per_contratto/grafo_schema.json",
+  "title": "Grafo narrativo Coinquilini per Contratto",
+  "description": "Schema canonico del grafo. Specializzazione del template kit per un romance contemporaneo a doppio POV (Francesca/Giovanni), 20 capitoli, 3 atti, prima persona presente. DA COMPLETARE in Fase 02 con lo skill architetto_grafo.",
   "type": "object",
   "required": ["schema_version", "graph_version", "project", "entities", "units"],
   "properties": {
@@ -14,7 +14,7 @@
     },
     "graph_version": {
       "type": "string",
-      "description": "Versione dello STATO del contenuto. Bumpa indipendentemente dallo schema.",
+      "description": "Versione dello STATO del contenuto.",
       "default": "0.0.0",
       "pattern": "^\\d+\\.\\d+\\.\\d+$"
     },
@@ -22,11 +22,11 @@
       "type": "object",
       "required": ["id", "title", "medium"],
       "properties": {
-        "id": { "type": "string", "default": "ombra_del_vesper" },
-        "title": { "type": "string", "default": "L'Ombra del Vesper" },
-        "subtitle": { "type": "string", "default": "Dark romance — Dante Ravencroft & Aurora Winters" },
+        "id": { "type": "string", "default": "coinquilini_per_contratto" },
+        "title": { "type": "string", "default": "Coinquilini per Contratto" },
+        "subtitle": { "type": "string", "default": "Romance contemporaneo — Francesca Ferrante & Giovanni Liguori" },
         "medium": { "type": "string", "enum": ["testo"], "default": "testo" },
-        "target_audience": { "type": "string", "default": "donne 35-50, Kindle Unlimited" },
+        "target_audience": { "type": "string", "default": "KDP Select / Kindle Unlimited" },
         "language": { "type": "string", "default": "it" },
         "created_at": { "type": "string", "format": "date" },
         "updated_at": { "type": "string", "format": "date" }
@@ -34,11 +34,11 @@
     },
     "entities": {
       "type": "object",
-      "description": "Registro entità per categoria. Categorie del progetto: characters, locations, groups, objects.",
+      "description": "Categorie: characters, locations, groups, objects.",
       "properties": {
         "characters": {
           "type": "object",
-          "description": "Personaggi. Sottocategorie: protagonisti, secondari, antagonisti, minori.",
+          "description": "Personaggi. Sottocategorie: protagonisti, secondari, personaggio_ponte.",
           "additionalProperties": {
             "type": "object",
             "required": ["id", "name", "category"],
@@ -46,67 +46,43 @@
               "id": { "type": "string", "pattern": "^[a-z0-9_]+$" },
               "name": { "type": "string" },
               "aliases": { "type": "array", "items": { "type": "string" } },
-              "category": { "type": "string", "enum": ["protagonisti", "secondari", "antagonisti", "minori"] },
+              "category": { "type": "string", "enum": ["protagonisti", "secondari", "personaggio_ponte", "antagonisti"] },
               "role_saga": { "type": "string" },
               "appears_in_units": { "type": "array", "items": { "type": "string" } },
               "stato_per_unita": { "type": "object" },
               "voice": {
                 "type": "object",
-                "description": "Registro voce — linguaggio del controllo (Dante) o della resistenza (Rory).",
+                "description": "Registro voce — calcolo/controllo (Francesca) o materico/restauro (Giovanni).",
                 "properties": {
                   "register": { "type": "string" },
                   "frasi_codice": { "type": "array", "items": { "type": "string" } },
                   "verbi_dominanti": { "type": "array", "items": { "type": "string" } },
-                  "modalita_attive": { "type": "array", "items": { "type": "string" } },
+                  "lessico_tipico": { "type": "array", "items": { "type": "string" } },
                   "vincoli_max": { "type": "object" }
                 }
               },
-              "arc_summary": { "type": "string", "description": "Arco narrativo in una frase." },
-              "links": {
-                "type": "object",
-                "properties": {
-                  "catalog_path": { "type": "string" },
-                  "bibbia_section": { "type": "string" }
-                }
-              },
-              "promotion": {
-                "type": "object",
-                "properties": {
-                  "promoted_at": { "type": "string", "format": "date" },
-                  "promoted_by": { "type": "string" },
-                  "promotion_unit": { "type": ["string", "null"] }
-                }
-              }
-            }
-          }
-        },
-        "locations": {
-          "type": "object",
-          "description": "Luoghi. Sottocategorie: pubblici, privati, segreti.",
-          "additionalProperties": {
-            "type": "object",
-            "required": ["id", "name", "category"],
-            "properties": {
-              "id": { "type": "string", "pattern": "^[a-z0-9_]+$" },
-              "name": { "type": "string" },
-              "aliases": { "type": "array", "items": { "type": "string" } },
-              "category": { "type": "string", "enum": ["pubblici", "privati", "segreti"] },
-              "role_saga": { "type": "string" },
-              "appears_in_units": { "type": "array", "items": { "type": "string" } },
-              "stato_per_unita": { "type": "object" },
+              "arc_summary": { "type": "string" },
+              "ferita": { "type": "string" },
+              "want": { "type": "string" },
+              "need": { "type": "string" },
               "links": { "type": "object" },
               "promotion": { "type": "object" }
             }
           }
         },
+        "locations": {
+          "type": "object",
+          "description": "Luoghi. Sottocategorie: privati, pubblici.",
+          "additionalProperties": { "type": "object" }
+        },
         "groups": {
           "type": "object",
-          "description": "Organizzazioni, famiglie, reti di potere.",
+          "description": "Organizzazioni, fondi, reti.",
           "additionalProperties": { "type": "object" }
         },
         "objects": {
           "type": "object",
-          "description": "Oggetti narrativamente rilevanti (prove, simboli, armi).",
+          "description": "Oggetti narrativamente rilevanti (clausola, affreschi, simboli).",
           "additionalProperties": { "type": "object" }
         }
       }
@@ -124,22 +100,27 @@
           "position": { "type": "integer", "minimum": 1, "maximum": 20 },
           "block_id": {
             "type": "string",
-            "description": "Movimento narrativo: la_danza | la_caduta | la_crisi | la_battaglia",
-            "enum": ["la_danza", "la_caduta", "la_crisi", "la_battaglia"]
+            "description": "Atto narrativo.",
+            "enum": ["la_gabbia", "il_patto", "la_terza_via"]
           },
-          "pov": {
+          "pov_a": { "type": "string", "description": "Prima sezione PoV (sempre Francesca).", "default": "francesca" },
+          "pov_b": { "type": "string", "description": "Seconda sezione PoV (sempre Giovanni).", "default": "giovanni" },
+          "heat_level": {
             "type": "string",
-            "description": "POV primario del capitolo.",
-            "enum": ["rory", "dante", "alternato"]
+            "description": "Temperatura della scena.",
+            "enum": ["tensione", "crepa", "esplicito_errore", "esplicito_patto", "esplicito_scelta"]
           },
-          "estimated_length": { "type": "string" },
+          "hook_type": {
+            "type": "string",
+            "description": "Tipo hook di chiusura capitolo.",
+            "enum": ["azione", "emotivo", "ribaltamento_pov", "promessa_calda", "domanda_aperta"]
+          },
           "premise": { "type": "string" },
-          "problem": { "type": "string" },
-          "threshold_moment": { "type": "string" },
-          "resolution_mode": { "type": "string" },
+          "beat_a": { "type": "string", "description": "Beat sezione Francesca" },
+          "beat_b": { "type": "string", "description": "Beat sezione Giovanni" },
+          "palazzo_beat": { "type": "string", "description": "Stato fisico del palazzo in questo capitolo" },
           "cast_in_scene": { "type": "array", "items": { "type": "object" } },
           "primary_location_id": { "type": "string" },
-          "secondary_location_ids": { "type": "array", "items": { "type": "string" } },
           "scenes": { "type": "array", "items": { "type": "object" } },
           "narrazione_fattuale_path": { "type": "string" },
           "brief_path": { "type": ["string", "null"] },
@@ -149,10 +130,8 @@
             "enum": ["idea", "macro_distilled", "micro_distilled", "briefed", "prose_draft", "final"],
             "default": "idea"
           },
-          "callbacks_in": { "type": "array", "items": { "type": "string" } },
           "seeds_planted": { "type": "array", "items": { "type": "string" } },
           "seeds_blooming": { "type": "array", "items": { "type": "string" } },
-          "seeds_maturing": { "type": "array", "items": { "type": "string" } },
           "debts_opened": { "type": "array", "items": { "type": "string" } },
           "debts_closed": { "type": "array", "items": { "type": "string" } }
         }
@@ -169,22 +148,10 @@
     },
     "quote_tracker": {
       "type": "object",
-      "description": "Tracker frasi-codice e pattern ricorrenti. DA POPOLARE in Fase 02 con lo skill architetto_grafo.",
-      "additionalProperties": {
-        "type": "object",
-        "description": "Una frase o pattern tracciato. Chiave = id_pattern."
-      }
+      "description": "Tracker frasi-codice e pattern ricorrenti. DA POPOLARE in Fase 02.",
+      "additionalProperties": { "type": "object" }
     },
-    "misalignments_path": {
-      "type": "string",
-      "default": "misalignments.json"
-    },
-    "audit": {
-      "type": "object",
-      "properties": {
-        "last_run": { "type": ["string", "null"] },
-        "results": { "type": "object" }
-      }
-    }
+    "misalignments_path": { "type": "string", "default": "misalignments.json" },
+    "audit": { "type": "object" }
   }
 }
