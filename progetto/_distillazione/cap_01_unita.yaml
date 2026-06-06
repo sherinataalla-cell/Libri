@@ -1,0 +1,152 @@
+# YAML distillazione — Unità cap_01 "L'eredità trappola"
+# Derivato da framework_strutturale.md (CAP 1) + bibbia.md §4 + carta_voce.md §4.
+# Bozza distillatore, da validare blocco per blocco.
+
+# === IDENTITA UNITA ===
+unit_id: "cap_01"
+title: "L'eredità trappola"
+slug: "l_eredita_trappola"
+position: 1
+block_id: "atto_1_la_gabbia"
+
+# === REGISTRO ===
+register: "teso e asciutto, doppia voce (Francesca analitica / Giovanni materico)"
+estimated_length: 3000
+
+# === CONDIZIONI AMBIENTALI ===
+ambient_conditions:
+  season: null
+  time_of_day: "giorno"          # provvisorio (appuntamento notarile diurno) — da validare
+  weather: null
+  wind: null
+
+# === ATTRIBUTI DOMINANTI (stash schema-specifico: pov/beat/heat/hook) ===
+dominant_attributes:
+  tema_dominante: "gabbia / vincolo imposto"
+  simbolo_dominante: "⚖️ ⛓️"
+  heat_level: "tensione mascherata (nessun contatto fisico)"
+  hook_type: "cliffhanger d'azione + incatenati"
+  pov_sequence: "doppio — A Francesca → B Giovanni"
+  beat_a: "Convocata a Bologna per una presunta formalità, Francesca scopre la clausola: metà palazzo in comproprietà indivisa, sei mesi di residenza obbligata, un coerede sconosciuto. Vede già fondo, plusvalenza, carriera."
+  beat_b: "Entra il coerede: è Giovanni, l'architetto del restauro incaricato dalla prozia. Per lui il palazzo è l'opera della vita. Riconosce in Francesca 'la donna che lo venderà'. Prima scintilla d'ostilità."
+  palazzo_beat: "Il palazzo entra in scena come posta in gioco: mezza ristrutturazione, un solo attico abitabile."
+
+# === CORE NARRATIVO ===
+premise: "Francesca Ferrante, convocata a Bologna per quella che crede una formalità ereditaria, scopre di aver ereditato metà di Palazzo Aldovrandi insieme a un coerede sconosciuto, con una clausola che impone sei mesi di residenza congiunta."
+problem: "Il coerede è Giovanni Liguori, l'architetto del restauro che vede in lei 'la donna che venderà il palazzo': due volontà opposte (vendere vs restaurare filologicamente) incatenate dalla stessa clausola."
+threshold_moment: "Il notaio consegna le chiavi dell'unico attico abitabile: da stasera Francesca e Giovanni dovranno dividerlo."
+resolution_mode: "Hook d'azione — la gabbia si chiude (forced proximity installata). Ostilità dichiarata, nessuna risoluzione."
+
+# === CAST IN SCENA ===
+cast_in_scene:
+  - entity_id: "francesca_ferrante"
+    role_in_unit: "protagonista — POV A"
+    active_modality: "analitica, di controllo (quantifica per non sentire)"
+    vincoli_locali:
+      max_detti: null
+      max_onomatopee_firma: null
+  - entity_id: "giovanni_liguori"
+    role_in_unit: "protagonista — POV B"
+    active_modality: "intransigente, materica (parla delle cose per non parlare di sé)"
+    vincoli_locali:
+      max_detti: null
+      max_onomatopee_firma: null
+
+# === LUOGHI ===
+primary_location_id: "bologna"                 # studio del notaio, a Bologna
+secondary_location_ids: ["palazzo_aldovrandi"]
+
+# === RELAZIONI GLOBALI ===
+callbacks_in: []
+seeds_planted:
+  - "seed_clausola_sei_mesi"
+  - "seed_conflitto_vendere_vs_restaurare"
+  - "seed_forced_proximity_attico"
+  - "seed_fondo_deadline"
+seeds_blooming: []
+seeds_maturing: []
+debts_opened:
+  - "debt_chi_tiene_il_palazzo"
+debts_closed: []
+
+# === RIFERIMENTI A FILE ESTERNI ===
+narrazione_fattuale_path: "narrazione_fattuale/cap_01_l_eredita_trappola.md"
+brief_path: null
+testo_finale_path: null
+
+# === STATO ===
+status: "scenes_distilled"
+
+# === SCENE (livello micro) ===
+scenes:
+  - id: "cap_01_s01"
+    position: 1
+    type: "apertura"
+    is_signature: false
+    moment: "giorno"
+    location:
+      id: "bologna"
+      qualifier: "studio del notaio"
+    characters_present: ["francesca_ferrante"]
+    focal_action: "Francesca raggiunge lo studio del notaio, convinta di dover firmare una semplice formalità ereditaria."
+    focal_object: null
+    atmosphere: "burocratica, controllata"
+    palette: "grigio-ufficio, ⚖️"
+    ambient_modifier: null
+    onomatopee: []
+    notes: "POV A. La testa di Francesca è già al portfolio/plusvalenza."
+    provenance: "original"
+
+  - id: "cap_01_s02"
+    position: 2
+    type: "rivelazione"
+    is_signature: false
+    moment: "giorno"
+    location:
+      id: "bologna"
+      qualifier: "studio del notaio"
+    characters_present: ["francesca_ferrante"]
+    focal_action: "Il notaio legge la clausola: metà palazzo in comproprietà indivisa, sei mesi di residenza obbligata, un coerede sconosciuto."
+    focal_object: "clausola_testamentaria"
+    atmosphere: "la gabbia si rivela, ⛓️"
+    palette: "stretta, vincolante"
+    ambient_modifier: null
+    onomatopee: []
+    notes: "POV A. 'Chi si ritira prima perde tutto a favore dell'altro.'"
+    provenance: "original"
+
+  - id: "cap_01_s03"
+    position: 3
+    type: "scontro"
+    is_signature: false
+    moment: "giorno"
+    location:
+      id: "bologna"
+      qualifier: "studio del notaio"
+    characters_present: ["francesca_ferrante", "giovanni_liguori"]
+    focal_action: "Entra Giovanni, l'architetto del restauro; i due si riconoscono come avversari e scatta la prima scintilla d'ostilità."
+    focal_object: null
+    atmosphere: "elettrica, ostile (nessun contatto)"
+    palette: "scintilla a freddo"
+    ambient_modifier: null
+    onomatopee: []
+    notes: "Switch di testa verso POV B. Lui la inquadra come 'la donna che lo venderà'."
+    provenance: "original"
+
+  - id: "cap_01_s04"
+    position: 4
+    type: "hook"
+    is_signature: false
+    moment: "giorno"
+    location:
+      id: "bologna"
+      qualifier: "studio del notaio"
+    characters_present: ["francesca_ferrante", "giovanni_liguori"]
+    focal_action: "Il notaio consegna le chiavi dell'unico attico abitabile: dovranno dividerlo a partire da stasera."
+    focal_object: null
+    atmosphere: "trappola che scatta, ⛓️"
+    palette: "vincolo + minaccia di prossimità"
+    ambient_modifier: null
+    onomatopee: []
+    notes: "Hook 🪝A — cliffhanger d'azione. La forced proximity si installa."
+    provenance: "original"
