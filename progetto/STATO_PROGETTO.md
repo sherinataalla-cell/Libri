@@ -36,6 +36,16 @@
 
 ---
 
+## §GRAFO — STATO DISTILLAZIONE
+
+```
+◉bootstrap: ⬜ non ancora inizializzato
+◉entità: vedi glossario_consegna.json (bozza)
+◉misalignments: nessuno aperti
+```
+
+---
+
 ## §ATTIVITÀ PIPELINE
 
 ```
@@ -70,6 +80,14 @@
      - Distillazione: descrivere beat A (Francesca) + beat B (Giovanni)
      - Brief generato automaticamente
      - Prosa in chat dedicata
+```
+
+---
+
+## §MISALIGNMENT APERTI
+
+```
+(nessuno)
 ```
 
 ---
