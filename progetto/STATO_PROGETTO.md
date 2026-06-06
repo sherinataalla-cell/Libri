@@ -7,12 +7,12 @@
 ## §POSIZIONE
 
 ```
-@capitolo.corrente: 00 (nessuno scritto ancora)
-@capitolo.next: 01 (da scrivere)
-@parole.totali: 0
-@completamento: 0% (0/20 capitoli)
-@versione_grafo: non ancora inizializzato (pre-Fase 02)
-@versione_schema: bozza (grafo_schema.json da completare in Fase 02)
+@capitolo.corrente: 01 (distillato + brief pronto, prosa da scrivere)
+@capitolo.next: 02 (da distillare)
+@parole.totali: 0 (testo finale ancora da scrivere)
+@completamento: 0% (0/20 capitoli in prosa) — cap.01 in stato brief_ready
+@versione_grafo: 0.0.0 (bootstrap fatto, 9 entità + nodo cap_01)
+@versione_schema: 1.0.0 (story_graph.json bootstrappato dallo schema)
 ```
 
 ---
@@ -39,9 +39,10 @@
 ## §GRAFO — STATO DISTILLAZIONE
 
 ```
-◉bootstrap: ⬜ non ancora inizializzato
-◉entità: vedi glossario_consegna.json (bozza)
-◉misalignments: nessuno aperti
+◉bootstrap: ✅ story_graph.json (schema v1.0.0, graph v0.0.0)
+◉entità: 9 promosse (3 characters, 3 locations, 1 group, 2 objects)
+◉unità distillate: cap_01 (4 scene, status scenes_distilled)
+◉misalignments: nessuno aperto
 ```
 
 ---
@@ -49,21 +50,23 @@
 ## §ATTIVITÀ PIPELINE
 
 ```
-@fase.corrente: Fase 01 (documenti-anima pronti, glossario bozza)
+@fase.corrente: Fase 05 completata per cap.01 (brief pronto) → prossimo Fase 06 (prosa)
 
 @blocchi.fatti:
   ✅ DNA Libro → progetto/_documenti_anima/bibbia.md
   ✅ DNA Capitoli → progetto/_documenti_anima/framework_strutturale.md
   ✅ Vocabolario Frattale → progetto/_documenti_anima/carta_voce.md
-  ✅ Bozza grafo_schema.json
-  ✅ Bozza glossario_consegna.json (entità principali)
+  ✅ grafo_schema.json (usato per bootstrap, v1.0.0)
+  ✅ glossario_consegna.json (entità principali)
+  ✅ Fase 02 — bootstrap story_graph.json (9 entità)
+  ✅ Fase 03 — distillazione cap_01 (nodo + 4 scene + narrazione fattuale)
+  ✅ Fase 05 — brief cap_01 → progetto/briefs/cap_01_brief.md
 
 @blocchi.pending:
-  🟡 Completare glossario_consegna.json (entità secondarie, frasi-codice)
-  🟡 Completare grafo_schema.json — Fase 02 (skill architetto_grafo)
-  🟡 pattern_ai_da_bandire.md — da scrivere in chat dedicata
-  🟡 bootstrap_graph.py --apply — dopo schema + glossario
-  🟡 Scrittura cap.01 (Fase 03 + 05 + 06)
+  🟡 pattern_ai_da_bandire.md — da scrivere (fallback nel brief finché manca)
+  🟡 Fase 04 — catalogo (schede personaggi/luoghi; fallback nel brief finché manca)
+  🟡 Validazione autoriale bozza distillazione cap_01 (valori provvisori, entità "notaio")
+  🟡 Fase 06 — prosa cap.01 (in chat dedicata, dal brief)
 ```
 
 ---
@@ -71,15 +74,16 @@
 ## §PROSSIMA SESSIONE
 
 ```
-@obiettivo: iniziare scrittura cap.01
+@obiettivo: validare la bozza di distillazione cap.01 + scrivere la prosa
 
 @passi suggeriti:
-  1. Completare Fase 02 (schema + glossario) con skill architetto_grafo
-  2. Bootstrap del grafo: python3 _scripts/bootstrap_graph.py --apply
-  3. Scrittura cap.01:
-     - Distillazione: descrivere beat A (Francesca) + beat B (Giovanni)
-     - Brief generato automaticamente
-     - Prosa in chat dedicata
+  1. Rivedere la bozza distillazione cap_01 (narrazione fattuale + nodo grafo):
+     - confermare/correggere i valori provvisori (time_of_day, atmosfere)
+     - decidere su entità "notaio" (promuovere o lasciare in narrazione)
+  2. (Opzionale) Fase 04 — catalogo schede Francesca/Giovanni/palazzo, poi
+     rigenerare il brief per arricchire il canone visivo
+  3. Fase 06 — prosa cap.01 in chat dedicata, partendo da
+     progetto/briefs/cap_01_brief.md (doppio POV, prima persona presente)
 ```
 
 ---
