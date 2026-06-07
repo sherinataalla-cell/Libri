@@ -34,14 +34,17 @@ schema_brief_version: "1.0"
 
 ## Beat A — Francesca (POV "lei")
 
-- Primo ingresso nell'attico di Palazzo Aldovrandi. Arrivo **verso sera**, in luce calante (raccordo diretto con l'hook del cap. 1: la consegna delle chiavi era diurna, l'arrivo all'attico matura il crescendo).
-- L'attico è a **metà cantiere**: una cucina, **una sola doccia** funzionante, stanze inagibili, teli, impalcature, polvere. Niente del comfort che Francesca dà per scontato.
+- Primo ingresso nell'attico di Palazzo Aldovrandi. Arrivo **verso sera**, in luce calante (raccordo diretto con l'hook del cap. 1: "ci vediamo stasera. A casa." — parola usata per ferire, ora realtà).
+- **Francesca ha le chiavi** — le ha prese lei alla fine del cap. 1, gesto di controllo già codificato. È lei ad aprire la porta; arriva prima o insieme, ma è la sua mano a girare la chiave. Questo piccolo potere le appartiene.
+- L'attico è a **metà cantiere**: una cucina, **una sola doccia** funzionante, due camere (una era il cucito di Adelaide, letto stretto inutilizzabile), teli, impalcature, polvere. Il layout è già noto dal notaio — ma sapere a parole e vederlo fisicamente sono due cose diverse.
 - Reazione da analista: invece di abitarlo, lo **prezza** e calcola come uscirne. Misura metri quadri, immagina la quota venduta, cerca la via d'uscita dalla clausola. Mette a bilancio anche il disagio.
 - **Primo scontro su una regola di convivenza**: l'attico è uno solo e va condiviso da stasera. Spazi, turni, confini. Lei vorrebbe organizzare, ottimizzare, dividere a tavolino; lui ha già altre idee.
 
 ## Beat B — Giovanni (POV "lui")
 
-- Giovanni la **guarda toccare le cose "sue"** — il palazzo che restaura è la sua opera — col distacco di chi prezza tutto invece di sentirlo. Lo irrita.
+- Giovanni conosce l'attico da dentro: **ci saliva decine di volte** a prendere il tè con Adelaide, a sentirla raccontare il palazzo com'era da bambina. Conosce ogni angolo — la stanza del cucito, il letto stretto, il bagno unico. Non è il suo cantiere che difende: è anche il luogo di qualcuno che non c'è più. La territorialità ha una componente di **lutto**, non solo professionale.
+- La vede **aprire la porta con le sue chiavi** — le chiavi che lei ha preso alla fine dal notaio, senza aspettare. Lo irrita ancora prima di entrare.
+- Giovanni la **guarda toccare le cose** col distacco di chi prezza tutto invece di sentirlo. Le mani di lei su quegli oggetti — gli oggetti di Adelaide — lo indispongono in un modo che non riesce a nominare.
 - **Stabilisce confini territoriali**: cosa è zona di cantiere e cosa è zona vivibile, cosa non si tocca, dove lei non deve mettere mano. Primo "contratto" implicito di convivenza, dettato da lui.
 - Nota — **controvoglia** — che Francesca è attraente. **Se lo vieta** subito: è "la donna che venderà il palazzo", non può permettersi di vederla così. Tensione mascherata, nessun contatto fisico.
 
