@@ -7,11 +7,11 @@
 ## §POSIZIONE
 
 ```
-@capitolo.corrente: 01 (distillato + brief pronto, prosa da scrivere)
-@capitolo.next: 02 (da distillare)
-@parole.totali: 0 (testo finale ancora da scrivere)
-@completamento: 0% (0/20 capitoli in prosa) — cap.01 in stato brief_ready
-@versione_grafo: 0.0.0 (bootstrap fatto, 9 entità + nodo cap_01)
+@capitolo.corrente: 02 (distillato + brief pronto, prosa da scrivere)
+@capitolo.next: 03 (da distillare)
+@parole.totali: cap.01 in prosa (testo finale scritto) — cap.02 testo da scrivere
+@completamento: cap.01 in prosa (1/20) — cap.02 in stato brief_ready
+@versione_grafo: 0.0.0 (bootstrap fatto, 9 entità + nodi cap_01, cap_02)
 @versione_schema: 1.0.0 (story_graph.json bootstrappato dallo schema)
 ```
 
@@ -41,8 +41,12 @@
 ```
 ◉bootstrap: ✅ story_graph.json (schema v1.0.0, graph v0.0.0)
 ◉entità: 9 promosse (3 characters, 3 locations, 1 group, 2 objects)
-◉unità distillate: cap_01 (4 scene, status scenes_distilled)
+◉unità distillate: cap_01 (4 scene), cap_02 (4 scene) — status scenes_distilled
 ◉misalignments: nessuno aperto
+◉audit noto: audit_3 (navigability) segnala seed/debt non registrati in
+  global_relations (narrative_promises/narrative_debts vuoti) — gap di tooling
+  preesistente dal cap_01 (write_node non popola i registri). Da colmare in un
+  giro dedicato, non bloccante per brief/prosa.
 ```
 
 ---
@@ -50,7 +54,8 @@
 ## §ATTIVITÀ PIPELINE
 
 ```
-@fase.corrente: Fase 05 completata per cap.01 (brief pronto) → prossimo Fase 06 (prosa)
+@fase.corrente: cap.01 → prosa scritta (Fase 06 fatta). cap.02 → Fase 03 (distillato)
+  + Fase 05 (brief pronto) → prossimo Fase 06 (prosa cap.02)
 
 @blocchi.fatti:
   ✅ DNA Libro → progetto/_documenti_anima/bibbia.md
@@ -63,6 +68,9 @@
   ✅ Fase 04 — catalogo: schede francesca_ferrante, giovanni_liguori, palazzo_aldovrandi (provvisorie) + indice
   ✅ pattern_ai_da_bandire.md → progetto/_documenti_anima/ (proposta da validare)
   ✅ Fase 05 — brief cap_01 → progetto/briefs/cap_01_brief.md (COMPLETO: catalogo + pattern AI, zero fallback)
+  ✅ Fase 06 — prosa cap_01 → progetto/testi_finali/cap_01.md (+ annotazioni)
+  ✅ Fase 03 — distillazione cap_02 (nodo + 4 scene + narrazione fattuale)
+  ✅ Fase 05 — brief cap_02 → progetto/briefs/cap_02_brief.md (COMPLETO: catalogo + pattern AI)
 
 @blocchi.pending:
   🟡 Validare pattern_ai_da_bandire.md (voce/stile = decisione autoriale) + raffinare dopo cap.1-8 in prosa
@@ -111,7 +119,7 @@
 ```
 
 ```
-@data.ultima.modifica: 2026-06-06
-@evento: setup repo per nuova storia Coinquilini per Contratto
-@stato: pronto per Fase 02 → bootstrap → scrittura cap.01
+@data.ultima.modifica: 2026-06-07
+@evento: distillazione cap.02 + brief cap.02 pronto
+@stato: cap.01 in prosa; cap.02 brief_ready → prossimo prosa cap.02
 ```
