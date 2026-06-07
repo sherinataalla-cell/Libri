@@ -1,0 +1,170 @@
+# Annotazioni autoriali post-prosa — cap_01 "L'eredità trappola"
+#
+# Ground truth scena per scena. Sovrascrive il NER fuzzy downstream.
+# Da rivedere/validare dall'autore (in particolare i DRIFT segnalati in coda).
+
+unita_id: "cap_01"
+versione: 1
+ultima_modifica: 2026-06-07
+schema_annotazioni_version: "1.0"
+
+scene:
+
+  # ── SEZIONE A — Francesca (POV) ──────────────────────────────
+  - scena_id: "cap_01_s01"
+    pagine_prodotto:
+      - "cap_01_s01a"
+
+    location:
+      id: "bologna"
+      qualifier: "studio del notaio"            # interno; spazio di transito, non entità a catalogo
+
+    cast_presente:
+      - id: "francesca_ferrante"
+        modalita_attiva: "analitica_di_controllo"
+        ruolo_in_scena: "primario"
+
+    oggetti_presenti: []                          # palazzo evocato, non ancora "in scena"
+
+    frasi_codice_integrate: []                    # il brief non contiene frasi-codice
+
+    callback_chiamati: []
+    seeds_piantati: []
+    seeds_blooming: []
+    seeds_maturing: []
+    debts_aperti: []
+    debts_chiusi: []
+
+    note_autoriali: >
+      Apertura. Luce fredda diurna, registro lucido 📊. Francesca crede sia
+      una formalità ereditaria; nessun indizio di comproprietà fino alla
+      battuta finale del notaio (rivelazione rinviata a s02).
+
+  - scena_id: "cap_01_s02"
+    pagine_prodotto:
+      - "cap_01_s02a"
+
+    location:
+      id: "bologna"
+      qualifier: "studio del notaio"
+
+    cast_presente:
+      - id: "francesca_ferrante"
+        modalita_attiva: "analitica_di_controllo"
+        ruolo_in_scena: "primario"
+
+    oggetti_presenti:
+      - id: "clausola_testamentaria"
+        stato: "rivelata"                         # oggetto-motore: comproprietà indivisa + 6 mesi + chi recede perde
+
+    frasi_codice_integrate: []
+
+    callback_chiamati: []
+    seeds_piantati:
+      - "seed_clausola_sei_mesi"
+      - "seed_fondo_deadline"                     # fondo immobiliare evocato (telefonata, due diligence lunedì)
+    seeds_blooming: []
+    seeds_maturing: []
+    debts_aperti:
+      - "debt_chi_tiene_il_palazzo"               # "devo essere quella che resta"
+    debts_chiusi: []
+
+    note_autoriali: >
+      Rivelazione clausola + reazione da analista (cerca la crepa, mette le
+      opzioni a bilancio). "chi si ritira perde tutto" interiorizzato come
+      strategia. Coerede ancora non rivelato: chi-è-Giovanni tenuto per la
+      Sez. B (ironia drammatica). Coda di scena fa da ponte allo scontro.
+
+  # ── SEZIONE B — Giovanni (POV) ───────────────────────────────
+  - scena_id: "cap_01_s03"
+    pagine_prodotto:
+      - "cap_01_s03a"
+
+    location:
+      id: "bologna"
+      qualifier: "studio del notaio"
+
+    cast_presente:
+      - id: "francesca_ferrante"
+        modalita_attiva: "analitica_di_controllo"
+        ruolo_in_scena: "primario"                # presente in scena, vista da fuori (POV Giovanni)
+      - id: "giovanni_liguori"
+        modalita_attiva: "intransigente_materica"
+        ruolo_in_scena: "primario"
+
+    oggetti_presenti:
+      - id: "palazzo_aldovrandi"
+        stato: "cantiere_evocato"                 # affreschi sepolti, solai, scala d'onore — campo condiviso
+
+    frasi_codice_integrate: []
+
+    callback_chiamati: []
+    seeds_piantati:
+      - "seed_conflitto_vendere_vs_restaurare"    # "Non vendo." vs "le cose valgono quel che si paga"
+    seeds_blooming: []
+    seeds_maturing: []
+    debts_aperti: []
+    debts_chiusi: []
+
+    note_autoriali: >
+      Scontro. Prima scintilla d'ostilità, nessun contatto fisico oltre la
+      stretta di mano professionale. Sottotesto 🧱 (le cose vecchie non
+      tradiscono) tenuto NON detto in scena. DRIFT: rapporto pregresso
+      Giovanni–Adelaide (vedi coda file).
+
+  - scena_id: "cap_01_s04"
+    pagine_prodotto:
+      - "cap_01_s04a"
+
+    location:
+      id: "bologna"
+      qualifier: "studio del notaio"
+
+    cast_presente:
+      - id: "francesca_ferrante"
+        modalita_attiva: "analitica_di_controllo"
+        ruolo_in_scena: "primario"
+      - id: "giovanni_liguori"
+        modalita_attiva: "intransigente_materica"
+        ruolo_in_scena: "primario"
+
+    oggetti_presenti:
+      - id: "clausola_testamentaria"
+        stato: "operativa"                        # residenza congiunta da stasera
+      - id: "palazzo_aldovrandi"
+        stato: "attico_unico_agibile"             # chiavi consegnate; resto cantiere
+
+    frasi_codice_integrate: []
+
+    callback_chiamati: []
+    seeds_piantati:
+      - "seed_forced_proximity_attico"            # un attico, mezza ristrutturazione, un solo bagno ("Un bagno. Uno.")
+    seeds_blooming: []
+    seeds_maturing: []
+    debts_aperti: []
+    debts_chiusi: []
+
+    note_autoriali: >
+      Hook. Chiavi dell'unico attico abitabile consegnate allo studio in
+      pieno giorno; residenza "da stasera"; gabbia chiusa, ostilità senza
+      risoluzione. Direttiva luce rispettata: arrivo all'attico NON scritto
+      (rinviato a fine cap.1/inizio cap.2). Seed "un solo bagno" → prelude
+      cap.5. Francesca prende le chiavi (controllo della porta).
+
+# ── DRIFT RILEVATI (decisione autoriale richiesta) ─────────────
+# Da consolidare nel grafo (rientro Fase 03) se canonici, altrimenti revisione.
+drift:
+  - id: "drift_giovanni_adelaide_legame"
+    descrizione: >
+      Aggiunto rapporto pregresso affettivo Giovanni–Adelaide (tè all'attico,
+      racconti d'infanzia di lei; mezza-frase "lo lascio a chi lo merita e a
+      chi lo capisce"). Non previsto esplicitamente nel brief. Dà a Giovanni
+      movente personale e giustifica la sua conoscenza intima dell'attico
+      (necessaria all'hook). NON è una frase-codice.
+    scene_coinvolte: ["cap_01_s03", "cap_01_s04"]
+    proposta: "promuovere a canone (relazione giovanni_liguori ↔ adelaide_aldovrandi)"
+
+# ── DETTAGLI DI COLORE NON VINCOLATI (sostituibili) ────────────
+colore_non_canonico:
+  - "Notaio nominato 'Beltrami' (il brief lo vuole funzionario anonimo: nome eliminabile)."
+  - "Studio in 'via Farini', Bologna (dettaglio ambientale inventato)."
