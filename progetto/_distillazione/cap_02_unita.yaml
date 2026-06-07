@@ -1,0 +1,154 @@
+# YAML distillazione — Unità cap_02 "Un attico, mezza ristrutturazione"
+# Derivato da framework_strutturale.md (CAP 2) + bibbia.md §4 + carta_voce.md.
+# Bozza distillatore, da validare blocco per blocco.
+
+# === IDENTITA UNITA ===
+unit_id: "cap_02"
+title: "Un attico, mezza ristrutturazione"
+slug: "un_attico_mezza_ristrutturazione"
+position: 2
+block_id: "atto_1_la_gabbia"
+
+# === REGISTRO ===
+register: "teso e asciutto, doppia voce (Francesca analitica / Giovanni materico)"
+estimated_length: 3000
+
+# === CONDIZIONI AMBIENTALI ===
+ambient_conditions:
+  season: null
+  time_of_day: "sera"            # arrivo all'attico in luce calante (raccordo hook cap.1) — da validare
+  weather: null
+  wind: null
+
+# === ATTRIBUTI DOMINANTI (stash schema-specifico: pov/beat/heat/hook) ===
+dominant_attributes:
+  tema_dominante: "territorio / prossimità forzata che si installa"
+  simbolo_dominante: "🏛️ ⛓️ (🔥 negato)"
+  heat_level: "tensione mascherata (prima attrazione negata, lato Giovanni; nessun contatto)"
+  hook_type: "rivelazione che ribalta lo sguardo (twist)"
+  pov_sequence: "doppio — A Francesca → B Giovanni"
+  beat_a: "Primo ingresso nell'attico a metà cantiere (una cucina, una sola doccia, stanze inagibili). Reazione da analista: prezza tutto e calcola come uscirne. Primo scontro su una regola di convivenza."
+  beat_b: "Giovanni la guarda toccare le cose 'sue' col distacco di chi prezza tutto. Stabilisce confini territoriali. Nota controvoglia che è attraente e se lo vieta."
+  palazzo_beat: "Il palazzo da posta in gioco diventa spazio vissuto: l'attico in cantiere è la gabbia concreta della forced proximity."
+
+# === CORE NARRATIVO ===
+premise: "Francesca e Giovanni mettono piede nell'unico attico abitabile di Palazzo Aldovrandi, a metà cantiere, e devono iniziare a condividerlo da stasera: una cucina, una sola doccia, stanze inagibili."
+problem: "Due modi opposti di stare nello spazio si scontrano — lei lo prezza per uscirne, lui ne difende ogni confine come opera della propria vita — e la prima attrazione negata (lato Giovanni) complica la guerra territoriale."
+threshold_moment: "Giovanni rivela un dettaglio che Francesca non sa: il fondo che lei vuole come acquirente ha già fatto crollare un altro palazzo che lui amava."
+resolution_mode: "Hook di rivelazione — il conflitto vendere↔restaurare diventa personale. Nessuna risoluzione: la convivenza inizia su un terreno minato."
+
+# === CAST IN SCENA ===
+cast_in_scene:
+  - entity_id: "francesca_ferrante"
+    role_in_unit: "protagonista — POV A"
+    active_modality: "analitica, di controllo (prezza lo spazio invece di abitarlo)"
+    vincoli_locali:
+      max_detti: null
+      max_onomatopee_firma: null
+  - entity_id: "giovanni_liguori"
+    role_in_unit: "protagonista — POV B"
+    active_modality: "intransigente, territoriale (difende le cose per non difendere sé)"
+    vincoli_locali:
+      max_detti: null
+      max_onomatopee_firma: null
+
+# === LUOGHI ===
+primary_location_id: "palazzo_aldovrandi"      # l'attico in cantiere
+secondary_location_ids: []
+
+# === RELAZIONI GLOBALI ===
+callbacks_in:
+  - "seed_forced_proximity_attico"
+seeds_planted:
+  - "seed_una_sola_doccia"
+  - "seed_confini_territoriali"
+  - "seed_attrazione_negata"
+  - "seed_ferita_giovanni_palazzo_crollato"
+seeds_blooming:
+  - "seed_forced_proximity_attico"
+seeds_maturing: []
+debts_opened:
+  - "debt_ferita_giovanni"
+debts_closed: []
+
+# === RIFERIMENTI A FILE ESTERNI ===
+narrazione_fattuale_path: "narrazione_fattuale/cap_02_un_attico_mezza_ristrutturazione.md"
+brief_path: null
+testo_finale_path: null
+
+# === STATO ===
+status: "scenes_distilled"
+
+# === SCENE (livello micro) ===
+scenes:
+  - id: "cap_02_s01"
+    position: 1
+    type: "apertura"
+    is_signature: false
+    moment: "sera"
+    location:
+      id: "palazzo_aldovrandi"
+      qualifier: "l'attico, ingresso a metà cantiere"
+    characters_present: ["francesca_ferrante"]
+    focal_action: "Francesca entra per la prima volta nell'attico in luce calante: cucina, una sola doccia, stanze inagibili. Invece di abitarlo, lo prezza e calcola come uscirne."
+    focal_object: null
+    atmosphere: "polvere, teli, luce calante; spaesamento mascherato da calcolo"
+    palette: "grigio-cantiere, 📊 che misura, 🏛️ ferito"
+    ambient_modifier: null
+    onomatopee: []
+    notes: "POV A. Raccordo diretto con l'hook del cap. 1 (arrivo verso sera). La forced proximity (seed cap.1) fiorisce."
+    provenance: "original"
+
+  - id: "cap_02_s02"
+    position: 2
+    type: "scontro"
+    is_signature: false
+    moment: "sera"
+    location:
+      id: "palazzo_aldovrandi"
+      qualifier: "l'attico, zona giorno/cantiere"
+    characters_present: ["francesca_ferrante", "giovanni_liguori"]
+    focal_action: "Primo scontro su una regola di convivenza: Giovanni stabilisce confini territoriali (cosa è cantiere, cosa non si tocca); Francesca vorrebbe dividere e ottimizzare a tavolino."
+    focal_object: null
+    atmosphere: "territoriale, attriti su spazi e regole; ⛓️ che stringe"
+    palette: "confini tracciati, ❄️ ostilità"
+    ambient_modifier: null
+    onomatopee: []
+    notes: "Switch verso POV B. Lui la guarda 'prezzare' le cose sue. Seed confini_territoriali + seed una_sola_doccia."
+    provenance: "original"
+
+  - id: "cap_02_s03"
+    position: 3
+    type: "tensione interna"
+    is_signature: false
+    moment: "sera"
+    location:
+      id: "palazzo_aldovrandi"
+      qualifier: "l'attico"
+    characters_present: ["francesca_ferrante", "giovanni_liguori"]
+    focal_action: "Giovanni nota — controvoglia — che Francesca è attraente, e se lo vieta subito: è 'la donna che venderà il palazzo'."
+    focal_object: null
+    atmosphere: "prima crepa latente, desiderio respinto; 🔥 negato"
+    palette: "attrazione a freddo, autocontrollo"
+    ambient_modifier: null
+    onomatopee: []
+    notes: "POV B. Tensione mascherata, nessun contatto fisico. Seed attrazione_negata."
+    provenance: "original"
+
+  - id: "cap_02_s04"
+    position: 4
+    type: "hook"
+    is_signature: false
+    moment: "sera"
+    location:
+      id: "palazzo_aldovrandi"
+      qualifier: "l'attico"
+    characters_present: ["francesca_ferrante", "giovanni_liguori"]
+    focal_action: "Giovanni rivela un dettaglio che lei non sa: il fondo che Francesca vuole come acquirente ha già fatto crollare un altro palazzo che lui amava."
+    focal_object: null
+    atmosphere: "rivelazione che ribalta lo sguardo; il conflitto diventa personale"
+    palette: "colpo basso, ferita accennata 🕳️"
+    ambient_modifier: null
+    onomatopee: []
+    notes: "Hook 🔀 — twist/rivelazione. La ferita di Giovanni resta accennata (matura al cap. 5). Seed ferita_giovanni_palazzo_crollato; debt_ferita_giovanni aperto."
+    provenance: "original"
