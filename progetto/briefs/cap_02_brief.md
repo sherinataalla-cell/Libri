@@ -19,7 +19,7 @@ schema_brief_version: "1.0"
 
 **Problema:** Due modi opposti di stare nello spazio si scontrano — lei lo prezza per uscirne, lui ne difende ogni confine come opera della propria vita — e la prima attrazione negata (lato Giovanni) complica la guerra territoriale.
 
-**Soglia:** Giovanni rivela un dettaglio che Francesca non sa: il fondo che lei vuole come acquirente ha già fatto crollare un altro palazzo che lui amava.
+**Soglia:** Giovanni rivela un dettaglio che Francesca non sa: il fondo che lei vuole come acquirente ha già fatto crollare un palazzo che lui amava — lo stesso 'progetto fallito' della sua ferita. È il fondo di lei ad averlo rovinato.
 
 **Risoluzione:** Hook di rivelazione — il conflitto vendere↔restaurare diventa personale. Nessuna risoluzione: la convivenza inizia su un terreno minato.
 
@@ -48,7 +48,8 @@ schema_brief_version: "1.0"
 ## Hook di chiusura — 🔀 (rivelazione che ribalta lo sguardo)
 
 - Giovanni chiude rivelando **un dettaglio che Francesca non sa**: il **fondo immobiliare** che lei vuole come acquirente ha **già fatto crollare un altro palazzo che lui amava**.
-- La rivelazione sposta la posta: per Francesca il fondo è una plusvalenza pulita; per Giovanni è chi gli ha già distrutto qualcosa di insostituibile. Il conflitto vendere↔restaurare smette di essere astratto e diventa **personale**.
+- **Un solo palazzo, non due.** Questo palazzo crollato È il **"progetto fallito" della ferita di Giovanni** (bibbia §Ferita: "un progetto fallito che l'ha quasi rovinato"): la ferita e il crollo causato dal fondo sono lo **stesso evento**. È stato il fondo *di Francesca* a rovinarlo — anche se lei, qui, non sa ancora di esserne parte.
+- La rivelazione sposta la posta: per Francesca il fondo è una plusvalenza pulita; per Giovanni è chi gli ha già distrutto qualcosa di insostituibile. Il conflitto vendere↔restaurare smette di essere astratto e diventa **personale** — Giovanni ha una ragione concreta per diffidare proprio di lei (carburante enemies-to-lovers).
 - La ferita di Giovanni resta **accennata, non spiegata** qui (matura verso cap. 5, quando una telefonata la riapre). Seme retroattivo, non backstory esplicita.
 
 ---
@@ -67,7 +68,7 @@ schema_brief_version: "1.0"
 - **`seed_una_sola_doccia`** — l'unica doccia funzionante installata come futuro campo di battaglia (paga al cap. 5).
 - **`seed_confini_territoriali`** — la divisione degli spazi/regole di convivenza (prelude al "contratto di convivenza" del cap. 3).
 - **`seed_attrazione_negata`** — Giovanni nota e si vieta l'attrazione (prima crepa latente, paga dal cap. 4 in poi).
-- **`seed_ferita_giovanni_palazzo_crollato`** — il fondo ha fatto crollare un altro palazzo che lui amava (ferita di Giovanni, matura al cap. 5).
+- **`seed_ferita_giovanni_palazzo_crollato`** — il fondo (quello di Francesca) ha fatto crollare un palazzo che lui amava: **è lo stesso "progetto fallito"** della sua ferita (bibbia §Ferita). Un unico evento, non due. Matura al cap. 5.
 
 ## Semi che fioriscono / maturano qui
 
@@ -83,7 +84,8 @@ schema_brief_version: "1.0"
 ## Note di distillazione (da validare dall'autore)
 
 - **time_of_day `sera`:** arrivo all'attico in luce calante, raccordo diretto con la direttiva-ponte dell'hook del cap. 1. Da validare se preferisci spingere fino al "buio/notte" già qui (il blackout vero è però seminato per il cap. 5/6, quindi propongo di tenere `sera`).
-- **Entità "palazzo crollato" (hook):** ✅ proposto come **seed** della ferita di Giovanni, NON promosso a entità del grafo. Non compare in scena, non ha arco proprio: è dispositivo retroattivo (come "il notaio" nel cap. 1 era funzionario di scena). Da promuovere solo se in futuro torna come luogo nominato. Conferma o correggi.
+- **Entità "palazzo crollato" (hook):** ✅ confermato dall'autore — **seed** della ferita di Giovanni, NON promosso a entità del grafo. Non compare in scena, non ha arco proprio: è materia del suo 🕳️ (crepa/ferita), un riferimento evocato dalla sua voce, non un luogo che il lettore visita. Da promuovere a scheda solo se in un libro futuro della collana torna come luogo reale e ricorrente.
+- **Unicità del palazzo crollato:** ✅ confermato dall'autore — il palazzo crollato della rivelazione e il "progetto fallito" della ferita di Giovanni sono **lo stesso palazzo, intenzionalmente**. È il fondo di Francesca ad averlo rovinato: chiude il cerchio e dà a Giovanni una ragione concreta per diffidare proprio di lei. Mai due palazzi distinti (genererebbe confusione).
 - **heat_level:** `tensione mascherata` (coerente con la heat-map cap. 1–4), con la prima **attrazione negata** lato Giovanni. Nessun contatto fisico ancora.
 - **Location primaria spostata su `palazzo_aldovrandi`** (l'attico): nel cap. 1 era `bologna` (studio del notaio), qui il palazzo entra in scena come luogo vissuto.
 
@@ -130,7 +132,7 @@ schema_brief_version: "1.0"
 - **Momento**: sera
 - **Location**: palazzo_aldovrandi (qualifier: l'attico)
 - **Cast presente**: francesca_ferrante, giovanni_liguori
-- **Focal action**: Giovanni rivela un dettaglio che lei non sa: il fondo che Francesca vuole come acquirente ha già fatto crollare un altro palazzo che lui amava.
+- **Focal action**: Giovanni rivela un dettaglio che lei non sa: il fondo che Francesca vuole come acquirente ha già fatto crollare un palazzo che lui amava — lo stesso 'progetto fallito' della sua ferita.
 - **Atmosfera**: rivelazione che ribalta lo sguardo; il conflitto diventa personale
 - **Palette**: colpo basso, ferita accennata 🕳️
 

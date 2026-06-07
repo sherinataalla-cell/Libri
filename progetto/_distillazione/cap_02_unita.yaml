@@ -34,7 +34,7 @@ dominant_attributes:
 # === CORE NARRATIVO ===
 premise: "Francesca e Giovanni mettono piede nell'unico attico abitabile di Palazzo Aldovrandi, a metà cantiere, e devono iniziare a condividerlo da stasera: una cucina, una sola doccia, stanze inagibili."
 problem: "Due modi opposti di stare nello spazio si scontrano — lei lo prezza per uscirne, lui ne difende ogni confine come opera della propria vita — e la prima attrazione negata (lato Giovanni) complica la guerra territoriale."
-threshold_moment: "Giovanni rivela un dettaglio che Francesca non sa: il fondo che lei vuole come acquirente ha già fatto crollare un altro palazzo che lui amava."
+threshold_moment: "Giovanni rivela un dettaglio che Francesca non sa: il fondo che lei vuole come acquirente ha già fatto crollare un palazzo che lui amava — lo stesso 'progetto fallito' della sua ferita. È il fondo di lei ad averlo rovinato."
 resolution_mode: "Hook di rivelazione — il conflitto vendere↔restaurare diventa personale. Nessuna risoluzione: la convivenza inizia su un terreno minato."
 
 # === CAST IN SCENA ===
@@ -144,11 +144,11 @@ scenes:
       id: "palazzo_aldovrandi"
       qualifier: "l'attico"
     characters_present: ["francesca_ferrante", "giovanni_liguori"]
-    focal_action: "Giovanni rivela un dettaglio che lei non sa: il fondo che Francesca vuole come acquirente ha già fatto crollare un altro palazzo che lui amava."
+    focal_action: "Giovanni rivela un dettaglio che lei non sa: il fondo che Francesca vuole come acquirente ha già fatto crollare un palazzo che lui amava — lo stesso 'progetto fallito' della sua ferita."
     focal_object: null
     atmosphere: "rivelazione che ribalta lo sguardo; il conflitto diventa personale"
     palette: "colpo basso, ferita accennata 🕳️"
     ambient_modifier: null
     onomatopee: []
-    notes: "Hook 🔀 — twist/rivelazione. La ferita di Giovanni resta accennata (matura al cap. 5). Seed ferita_giovanni_palazzo_crollato; debt_ferita_giovanni aperto."
+    notes: "Hook 🔀 — twist/rivelazione. Un solo palazzo: il crollo causato dal fondo È il progetto fallito della ferita di Giovanni (bibbia §Ferita) → è il fondo di Francesca ad averlo rovinato (carburante enemies-to-lovers). Resta accennata, matura al cap. 5. Seed ferita_giovanni_palazzo_crollato; debt_ferita_giovanni aperto."
     provenance: "original"
