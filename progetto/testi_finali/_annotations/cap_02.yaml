@@ -1,0 +1,121 @@
+unita_id: cap_02
+titolo: Un attico, mezza ristrutturazione
+slug: un_attico_mezza_ristrutturazione
+status_annotazioni: bozza   # da validare dall'autore
+compilato_il: 2026-06-07
+parole_totali: 3201
+split_pov: {francesca: ~1560, giovanni: ~1640}   # ~49/51
+
+scene:
+  - id: cap_02_s01
+    sezione: A
+    pov: francesca_ferrante
+    tipo: apertura
+    momento: sera
+    location: palazzo_aldovrandi
+    location_qualifier: "l'attico, ingresso a metà cantiere"
+    cast_presente: [francesca_ferrante]
+    cast_evocato: [fondo_immobiliare, milano, clausola_testamentaria]
+    frasi_codice_integrate: []   # nessuna prevista dal brief
+    note: "Francesca apre con le proprie chiavi, prezza l'attico, cerca la via d'uscita dalla clausola."
+
+  - id: cap_02_s02
+    sezione: A
+    pov: francesca_ferrante
+    tipo: scontro
+    momento: sera
+    location: palazzo_aldovrandi
+    location_qualifier: "l'attico, zona giorno/cantiere"
+    cast_presente: [francesca_ferrante, giovanni_liguori]
+    frasi_codice_integrate: []
+    note: "Primo scontro sui confini: lei vuole dividere/ottimizzare a tavolino, lui detta il territorio."
+
+  - id: cap_02_s03
+    sezione: B
+    pov: giovanni_liguori
+    tipo: tensione_interna
+    momento: sera
+    location: palazzo_aldovrandi
+    location_qualifier: "l'attico"
+    cast_presente: [francesca_ferrante, giovanni_liguori]
+    cast_evocato: [adelaide]   # defunta, presenza-memoria (non entità in scena)
+    frasi_codice_integrate: []
+    note: >
+      Stessa scena fattuale dello scontro (s02) ribaltata dal POV di Giovanni (ironia drammatica,
+      non ripetizione). Territorialità con componente di lutto (Adelaide), attrazione notata e vietata.
+
+  - id: cap_02_s04
+    sezione: B
+    pov: giovanni_liguori
+    tipo: hook
+    momento: sera (notte fonda)
+    location: palazzo_aldovrandi
+    location_qualifier: "l'attico, cucina"
+    cast_presente: [francesca_ferrante, giovanni_liguori]
+    cast_evocato: [fondo_immobiliare]
+    frasi_codice_integrate: []
+    note: "Rivelazione: il fondo di Francesca (Meridiana) ha fatto crollare Sant'Agnese, il palazzo amato da Giovanni = la sua ferita."
+
+cast_unita:
+  francesca_ferrante:
+    ruolo: protagonista_pov_A
+    modalita_attiva: analitica_di_controllo
+    arco_sottosoglia: "📊 (prezza/controlla) con prima incrinatura (i conti 'non tornano')"
+  giovanni_liguori:
+    ruolo: protagonista_pov_B
+    modalita_attiva: intransigente_territoriale
+    arco_sottosoglia: "🧱 (muro/difesa) con crepa a sprazzi (🪞) — bicchiere riempito, subito ritirato"
+
+relazioni_narrative:
+  callback_chiamati: [seed_forced_proximity_attico]
+  seeds_piantati:
+    - seed_una_sola_doccia          # bagno unico + caldaia 20 min — agganciato di striscio
+    - seed_confini_territoriali     # divisione spazi/regole di convivenza
+    - seed_attrazione_negata        # Giovanni nota e si vieta
+    - seed_ferita_giovanni_palazzo_crollato   # Sant'Agnese = progetto fallito = stesso evento
+  seeds_fioriti: [seed_forced_proximity_attico]   # da minaccia annunciata a realtà concreta
+  seeds_maturati: []
+  debts_aperti: [debt_ferita_giovanni]
+  debts_chiusi: []
+
+heat:
+  livello: tensione_mascherata
+  contatto_fisico: nessuno
+  note: "🔥 negato lato Giovanni; coerente con heat-map cap. 1-4 (prima scena piena attesa cap. 9)."
+
+vincoli_applicati:
+  pov_doppio_prima_persona_presente: true
+  head_hopping: assente
+  contaminazione_lessicale_voci: assente   # Francesca=calcolo, Giovanni=materico/memoria
+  pattern_ai_banditi_violati: nessuno
+  regola_madre_simboli_nominati: nessuno   # arco fatto accadere, mai spiegato
+  lunghezza_entro_15pct: true   # 3160 vs 3000 target = +5.3%
+
+raccordi_continuita:
+  - "Chiavi prese da Francesca dal notaio (hook cap.1) → lei apre la porta (s01) e Giovanni lo registra (s03)."
+  - "'ci vediamo stasera. A casa.' (chiusura cap.1) → convivenza nell'attico la sera stessa."
+  - "Tutto avviene nella STESSA giornata (notaio → attico la sera). Correzione applicata in s03: 'oggi/stamattina', non 'ieri'."
+
+drift_da_consolidare:   # decisione autoriale: canonico (rientro Fase 03) o revisione
+  - id: drift_serratura_nuova
+    dove: cap_02_s01
+    descrizione: "Serratura dell'attico montata da poco — micro-indizio caratterizzante (Francesca 'legge' dati). Non nel brief."
+    impatto: basso
+    proposta: "Innocuo; consolidabile come dettaglio del cantiere o eliminabile senza conseguenze."
+  - id: drift_lampadina_marzo
+    dove: cap_02_s03
+    descrizione: "Giovanni ha montato la lampadina 'a marzo' per Adelaide — datazione non nel brief."
+    impatto: basso
+    proposta: "Rafforza legame Giovanni/Adelaide; verificare coerenza con timeline saga in Fase 03."
+  - id: drift_nome_palazzo_crollato
+    dove: cap_02_s04
+    descrizione: >
+      Il palazzo crollato è nominato 'Sant'Agnese, Strada San Vitale'. Il brief lo tiene come SEED
+      non promosso a entità del grafo (riferimento evocato, non luogo visitato).
+    impatto: medio
+    proposta: >
+      Confermato 'tenere' dall'autore in chat. Se torna in un volume futuro → promuovere a scheda (Fase 04).
+      Altrimenti resta seed nominato. Alternativa scartata: lasciarlo generico ('un palazzo in Strada San Vitale').
+
+punti_incertezza_residui:
+  - "s03 chiusa su 'non è il solo respiro che sento' — interno/sottosoglia, ritenuto entro tensione mascherata; verifica autoriale."
