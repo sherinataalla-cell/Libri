@@ -560,6 +560,172 @@
         "debt_ferita_giovanni"
       ],
       "debts_closed": []
+    },
+    "cap_03": {
+      "id": "cap_03",
+      "title": "Le regole della casa",
+      "slug": "le_regole_della_casa",
+      "position": 3,
+      "block_id": "atto_1_la_gabbia",
+      "register": "ironico e tagliente (Francesca) / strategico e trattenuto (Giovanni)",
+      "estimated_length": 3000,
+      "ambient_conditions": {
+        "season": null,
+        "time_of_day": "mattina→sera",
+        "weather": null,
+        "wind": null
+      },
+      "dominant_attributes": {
+        "tema_dominante": "regole come armatura / sabotaggio come strategia",
+        "simbolo_dominante": "⛓️ (regola/contratto) 🔥 (primo contatto accidentale)",
+        "heat_level": "tensione mascherata con prima escalation corporea (contatto accidentale, negato)",
+        "hook_type": "promessa calda (🔥 — primo contatto fisico accidentale)",
+        "pov_sequence": "doppio — A Francesca → B Giovanni",
+        "beat_a": "Francesca negozia un 'contratto di convivenza' assurdo (turni, zone, silenzio) — vince sulla carta, perde sui nervi. Telefona al fondo: l'affare è ancora caldo.",
+        "beat_b": "Giovanni la porta a vedere gli affreschi danneggiati (sabotaggio gentile). Fallisce. Tensione fisica nel corridoio stretto.",
+        "palazzo_beat": "Il corridoio est con le lunette affrescate diventa spazio sensoriale: stretto, semi-buio, odore di calce. Il palazzo non è più solo valutazione ma materia."
+      },
+      "premise": "La mattina dopo il primo scontro, Francesca presenta un 'contratto di convivenza' scritto per istituzionalizzare la coabitazione; Giovanni accetta e risponde portandola a vedere gli affreschi del corridoio est.",
+      "problem": "Francesca usa le regole per proteggere sé stessa ma l'operazione rivela quanto ne abbia bisogno; Giovanni prova a far sentire il palazzo a Francesca, fallisce, e capisce che il campo dello scontro deve cambiare.",
+      "threshold_moment": "Nel punto più stretto del corridoio est, tornando dalla visita agli affreschi, i loro corpi si sfiorano per un mezzo secondo: contatto accidentale, entrambi fingono che non sia successo niente.",
+      "resolution_mode": "Hook di promessa calda — il contatto fisico rompe la soglia della prossimità; la finzione collettiva ('non è successo niente') rivela quanto sia successo qualcosa.",
+      "cast_in_scene": [
+        {
+          "entity_id": "francesca_ferrante",
+          "role_in_unit": "protagonista — POV A",
+          "active_modality": "di controllo tramite procedura (il contratto è la sua armatura)",
+          "vincoli_locali": {
+            "max_detti": null,
+            "max_onomatopee_firma": null
+          }
+        },
+        {
+          "entity_id": "giovanni_liguori",
+          "role_in_unit": "protagonista — POV B",
+          "active_modality": "strategico-affettivo (sabotaggio gentile: mostra invece di convincere)",
+          "vincoli_locali": {
+            "max_detti": null,
+            "max_onomatopee_firma": null
+          }
+        }
+      ],
+      "primary_location_id": "palazzo_aldovrandi",
+      "secondary_location_ids": [],
+      "scenes": [
+        {
+          "id": "cap_03_s01",
+          "position": 1,
+          "type": "apertura",
+          "is_signature": false,
+          "moment": "mattina",
+          "location": {
+            "id": "palazzo_aldovrandi",
+            "qualifier": "l'attico, cucina"
+          },
+          "characters_present": [
+            "francesca_ferrante",
+            "giovanni_liguori"
+          ],
+          "focal_action": "Francesca presenta il 'contratto di convivenza' scritto: turni doccia, zone, silenzio. Negoziazione assurda nella forma, serissima per lei. Giovanni acconsente. Lei vince sulla carta, perde sui nervi.",
+          "focal_object": null,
+          "atmosphere": "ironico-burocratico, disagio mascherato da procedura; ⛓️ che diventa cartacea",
+          "palette": "bianco foglio, regole come barricate, ironia tagliente",
+          "ambient_modifier": null,
+          "onomatopee": [],
+          "notes": "POV A. Seed contratto_convivenza. Il 'contratto' è lo specchio caratteriale di Francesca: usa il linguaggio del lavoro perché è l'unico in cui si sente al sicuro. Callbacks seed_confini_territoriali (cap.2).",
+          "provenance": "original"
+        },
+        {
+          "id": "cap_03_s02",
+          "position": 2,
+          "type": "pausa/svolta interna",
+          "is_signature": false,
+          "moment": "mattina",
+          "location": {
+            "id": "palazzo_aldovrandi",
+            "qualifier": "l'attico, stanza di Francesca"
+          },
+          "characters_present": [
+            "francesca_ferrante"
+          ],
+          "focal_action": "Francesca telefona al fondo milanese: l'affare è ancora caldo, l'opzione d'acquisto si struttura alla scadenza dei sei mesi. Si riequilibra — la carriera è viva. Milano è il suo ancoraggio.",
+          "focal_object": null,
+          "atmosphere": "telefonata come boccata d'aria, contrasto con il palazzo che la circonda",
+          "palette": "Milano astratta, 📊 lontano, voce professionale",
+          "ambient_modifier": null,
+          "onomatopee": [],
+          "notes": "POV A. La telefonata rende reale la motivazione esterna di Francesca per il lettore — non è solo ostinazione astratta. Contrappeso alla scena degli affreschi: due bussole in conflitto, la bussola professionale vince per ora.",
+          "provenance": "original"
+        },
+        {
+          "id": "cap_03_s03",
+          "position": 3,
+          "type": "scontro/sabotaggio",
+          "is_signature": false,
+          "moment": "pomeriggio",
+          "location": {
+            "id": "palazzo_aldovrandi",
+            "qualifier": "corridoio est con lunette affrescate"
+          },
+          "characters_present": [
+            "francesca_ferrante",
+            "giovanni_liguori"
+          ],
+          "focal_action": "Giovanni porta Francesca a vedere gli affreschi del corridoio est (Madonna, santi, danni da umidità, intervento anni '60). Le spiega nomi, secoli, cause, possibilità di recupero. Lei guarda, annota mentalmente, non si smuove: 'capisco il valore storico' col tono di una scheda tecnica. Giovanni capisce che mostrare non basta.",
+          "focal_object": null,
+          "atmosphere": "corridoio semi-buio, odore di calce e legno, luce obliqua sugli affreschi; tensione intellettuale che non sfonda",
+          "palette": "ocra-affresco 🏛️, polvere, fallimento gentile di Giovanni",
+          "ambient_modifier": null,
+          "onomatopee": [],
+          "notes": "POV B. Sabotaggio gentile — strategia di Giovanni: far sentire, non convincere. Fallisce qui ma rivela il suo modo sotto la corazza. Seed affreschi_corridoio_est (paga al cap.7 quando lei batte sul muro vuoto). Seed sabotaggio_gentile_giovanni.",
+          "provenance": "original"
+        },
+        {
+          "id": "cap_03_s04",
+          "position": 4,
+          "type": "hook",
+          "is_signature": true,
+          "moment": "sera",
+          "location": {
+            "id": "palazzo_aldovrandi",
+            "qualifier": "corridoio est, punto di passaggio più stretto (scaffalatura cantiere)"
+          },
+          "characters_present": [
+            "francesca_ferrante",
+            "giovanni_liguori"
+          ],
+          "focal_action": "Tornando verso la cucina, nel punto più stretto del corridoio, lui si gira per indicare un dettaglio e lei si avvicina per guardare. Si incrociano nel passaggio obbligato: spalla, poi fianco di lei contro braccio di lui. Mezzo secondo. Entrambi si scusano nello stesso istante, entrambi guardano altrove. Entrambi fingono niente — e la perfezione con cui fingono rivela tutto.",
+          "focal_object": null,
+          "atmosphere": "elettrica, sospesa; la finzione collettiva è il punto di non ritorno",
+          "palette": "🔥 trattenuto, buio del corridoio, silenzio dopo la scusa",
+          "ambient_modifier": null,
+          "onomatopee": [],
+          "notes": "Hook 🔥. Primo contatto fisico accidentale — breve, negato, ineludibile. Seed contatto_accidentale_corridoio (paga al cap.5 doccia e all'escalation Atto I). Matura seed_attrazione_negata (ora bidirezionale: non solo Giovanni). Chiusura su Francesca che entra in camera e resta ferma un momento prima di aprire il laptop.",
+          "provenance": "original"
+        }
+      ],
+      "narrazione_fattuale_path": "narrazione_fattuale/cap_03_le_regole_della_casa.md",
+      "brief_path": null,
+      "testo_finale_path": null,
+      "status": "scenes_distilled",
+      "callbacks_in": [
+        "seed_confini_territoriali",
+        "seed_attrazione_negata"
+      ],
+      "seeds_planted": [
+        "seed_contratto_convivenza",
+        "seed_affreschi_corridoio_est",
+        "seed_contatto_accidentale_corridoio",
+        "seed_sabotaggio_gentile_giovanni"
+      ],
+      "seeds_blooming": [
+        "seed_confini_territoriali"
+      ],
+      "seeds_maturing": [
+        "seed_attrazione_negata"
+      ],
+      "debts_opened": [],
+      "debts_closed": []
     }
   },
   "global_relations": {
